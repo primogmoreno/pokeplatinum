@@ -1,7 +1,10 @@
 {
     "name": "Maylene",
     "class": "TRAINER_CLASS_LEADER_MAYLENE",
-    "items": [],
+    "items": [
+        "ITEM_HYPER_POTION",
+        "ITEM_HYPER_POTION"
+    ],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EVAL_ATTACK",
@@ -12,43 +15,85 @@
         {
             "species": "SPECIES_MEDITITE",
             "form": 0,
-            "level": 28,
-            "item": "ITEM_NONE",
+            "level": 24,
+            "item": "ITEM_LUM_BERRY",
             "moves": [
-                "MOVE_DRAIN_PUNCH",
+                "MOVE_FORCE_PALM",
                 "MOVE_CONFUSION",
-                "MOVE_ROCK_TOMB",
-                "MOVE_FAKE_OUT"
+                "MOVE_BULK_UP",
+                "MOVE_PSYCH_UP"
             ],
-            "iv_scale": 200,
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_HARIYAMA",
+            "form": 0,
+            "level": 25,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_FORCE_PALM",
+                "MOVE_WHIRLWIND",
+                "MOVE_KNOCK_OFF",
+                "MOVE_BELLY_DRUM"
+            ],
+            "iv_scale": 255,
             "ball_seal": 0
         },
         {
             "species": "SPECIES_MACHOKE",
             "form": 0,
-            "level": 29,
-            "item": "ITEM_NONE",
+            "level": 25,
+            "item": "ITEM_LUM_BERRY",
             "moves": [
-                "MOVE_KARATE_CHOP",
-                "MOVE_ROCK_TOMB",
-                "MOVE_STRENGTH",
-                "MOVE_FOCUS_ENERGY"
+                "MOVE_CROSS_CHOP",
+                "MOVE_KNOCK_OFF",
+                "MOVE_BULK_UP",
+                "MOVE_SCARY_FACE"
             ],
-            "iv_scale": 200,
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_HERACROSS",
+            "form": 0,
+            "level": 26,
+            "item": "ITEM_SALAC_BERRY",
+            "moves": [
+                "MOVE_MEGAHORN",
+                "MOVE_CLOSE_COMBAT",
+                "MOVE_KNOCK_OFF",
+                "MOVE_ENDURE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_MEDICHAM",
+            "form": 0,
+            "level": 27,
+            "item": "ITEM_SALAC_BERRY",
+            "moves": [
+                "MOVE_HI_JUMP_KICK",
+                "MOVE_PSYCHO_CUT",
+                "MOVE_FAKE_OUT",
+                "MOVE_BULLET_PUNCH"
+            ],
+            "iv_scale": 255,
             "ball_seal": 0
         },
         {
             "species": "SPECIES_LUCARIO",
             "form": 0,
-            "level": 32,
-            "item": "ITEM_NONE",
+            "level": 28,
+            "item": "ITEM_SITRUS_BERRY",
             "moves": [
-                "MOVE_DRAIN_PUNCH",
-                "MOVE_FORCE_PALM",
-                "MOVE_METAL_CLAW",
-                "MOVE_BONE_RUSH"
+                "MOVE_CLOSE_COMBAT",
+                "MOVE_BONE_RUSH",
+                "MOVE_QUICK_ATTACK",
+                "MOVE_BULK_UP"
             ],
-            "iv_scale": 200,
+            "iv_scale": 255,
             "ball_seal": 0
         }
     ],
@@ -57,12 +102,12 @@
             "type": "TRMSG_LAST_BATTLER",
             "en_US": [
                 "Oh!\n",
-                "But this isn’t the end, my friend!\n"
+                "But this isn't the end, my friend!\n"
             ]
         },
         {
             "type": "TRMSG_LAST_BATTLER_HALF_HP",
-            "en_US": "I’m in a bit of a bind, aren’t I?\n"
+            "en_US": "I'm in a bit of a bind, aren't I?\n"
         },
         {
             "type": "TRMSG_DEFEAT",

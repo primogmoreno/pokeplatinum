@@ -2465,6 +2465,10 @@ static BOOL BtlCmd_CalcExpGain(BattleSystem *battleSys, BattleContext *battleCtx
         BattleScript_Iter(battleCtx, jump);
     }
 
+    // Blitz: no EXP from battles — level up via Rare Candy only
+    battleCtx->gainedExp = 0;
+    battleCtx->sharedExp = 0;
+
     return FALSE;
 }
 
