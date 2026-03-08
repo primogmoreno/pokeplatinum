@@ -668,9 +668,7 @@ BOOL BattleSystem_UseBagItem(BattleSystem *battleSys, int battler, int partySlot
         param = 0;
 
         if (Item_LoadParam(item, ITEM_PARAM_REVIVE, HEAP_ID_BATTLE)) {
-            if (Pokemon_GetValue(mon, MON_DATA_HP, NULL) == 0) {
-                param = 1;
-            }
+            // Blitz: reviving is disabled — param stays 0
         } else {
             param = Pokemon_GetValue(mon, MON_DATA_HP, NULL);
         }

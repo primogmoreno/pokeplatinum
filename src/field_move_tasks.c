@@ -277,10 +277,6 @@ static enum FieldMoveError FieldMoves_CheckCut(const FieldMoveContext *fieldMove
         return FIELD_MOVE_ERROR_LOCATION;
     }
 
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_FOREST) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
-    }
-
     if (FieldMoves_IsMoveUsable(fieldMoveContext, FIELD_MOVE_CUT)) {
         return FIELD_MOVE_ERROR_NONE;
     }
@@ -318,10 +314,6 @@ static enum FieldMoveError FieldMoves_CheckFly(const FieldMoveContext *fieldMove
         return FIELD_MOVE_ERROR_LOCATION;
     }
 
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_COBBLE) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
-    }
-
     if (MapHeader_IsFlyAllowed(fieldMoveContext->mapId) == FALSE) {
         return FIELD_MOVE_ERROR_LOCATION;
     }
@@ -357,10 +349,6 @@ static enum FieldMoveError FieldMoves_CheckSurf(const FieldMoveContext *fieldMov
 {
     if (PlayerOutsideLinkRoom(fieldMoveContext) == FALSE) {
         return FIELD_MOVE_ERROR_LOCATION;
-    }
-
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_FEN) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
     }
 
     if (PlayerAvatar_GetPlayerState(fieldMoveContext->fieldSystem->playerAvatar) == 0x2) {
@@ -408,10 +396,6 @@ static enum FieldMoveError FieldMoves_CheckStrength(const FieldMoveContext *fiel
         return FIELD_MOVE_ERROR_LOCATION;
     }
 
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_MINE) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
-    }
-
     if (FieldMoves_IsMoveUsable(fieldMoveContext, FIELD_MOVE_STRENGTH)) {
         return FIELD_MOVE_ERROR_NONE;
     }
@@ -449,10 +433,6 @@ static enum FieldMoveError FieldMoves_CheckDefog(const FieldMoveContext *fieldMo
         return FIELD_MOVE_ERROR_LOCATION;
     }
 
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_RELIC) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
-    }
-
     if (FieldMoves_IsMoveUsable(fieldMoveContext, FIELD_MOVE_DEFOG)) {
         return FIELD_MOVE_ERROR_NONE;
     }
@@ -488,10 +468,6 @@ static enum FieldMoveError FieldMoves_CheckRockSmash(const FieldMoveContext *fie
 {
     if (PlayerOutsideLinkRoom(fieldMoveContext) == FALSE) {
         return FIELD_MOVE_ERROR_LOCATION;
-    }
-
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_COAL) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
     }
 
     if (PlayerAvatar_GetPlayerState(fieldMoveContext->fieldSystem->playerAvatar) == 0x2) {
@@ -535,10 +511,6 @@ static enum FieldMoveError FieldMoves_CheckWaterfall(const FieldMoveContext *fie
         return FIELD_MOVE_ERROR_LOCATION;
     }
 
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_BEACON) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
-    }
-
     if (FieldMoves_IsMoveUsable(fieldMoveContext, FIELD_MOVE_WATERFALL)) {
         return FIELD_MOVE_ERROR_NONE;
     }
@@ -574,10 +546,6 @@ static enum FieldMoveError FieldMoves_CheckRockClimb(const FieldMoveContext *fie
 {
     if (PlayerOutsideLinkRoom(fieldMoveContext) == FALSE) {
         return FIELD_MOVE_ERROR_LOCATION;
-    }
-
-    if (PlayerHasRequiredBadge(fieldMoveContext, BADGE_ID_ICICLE) == FALSE) {
-        return FIELD_MOVE_ERROR_BADGE;
     }
 
     if (!(FieldMoves_IsMoveUsable(fieldMoveContext, FIELD_MOVE_ROCK_CLIMB))) {

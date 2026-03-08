@@ -316,6 +316,7 @@ pokeplatinum_c = files(
     'unk_02095E98.c',
     'unk_020961E8.c',
     'item_use_pokemon.c',
+    'blitz_level_cap.c',
     'unk_020972FC.c',
     'berry_data.c',
     'unk_0209747C.c',

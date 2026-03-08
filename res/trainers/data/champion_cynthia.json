@@ -103,14 +103,14 @@
         {
             "type": "TRMSG_LAST_BATTLER",
             "en_US": [
-                "I can't remember the last time I\n",
+                "I can’t remember the last time I\n",
                 "was put in a corner like this!\n"
             ]
         },
         {
             "type": "TRMSG_LAST_BATTLER_HALF_HP",
             "en_US": [
-                "I won't let this end yet! This match\n",
+                "I won’t let this end yet! This match\n",
                 "is too fun to let it end this easily!\n"
             ]
         },

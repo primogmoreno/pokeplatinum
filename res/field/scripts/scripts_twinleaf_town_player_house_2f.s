@@ -13,6 +13,7 @@
     ScriptEntry TwinleafTownPlayerHouse2F_RivalTriggerWest
     ScriptEntry TwinleafTownPlayerHouse2F_RivalTriggerEast
     ScriptEntry TwinleafTownPlayerHouse2F_RivalTriggerSouth
+    ScriptEntry TwinleafTownPlayerHouse2F_Catalog
     ScriptEntryEnd
 
 TwinleafTownPlayerHouse2F_OnTransition:
@@ -438,3 +439,63 @@ TwinleafTownPlayerHouse2F_Movement_PlayerWatchRivalLeave:
     Delay8 2
     WalkOnSpotNormalEast
     EndMovement
+
+TwinleafTownPlayerHouse2F_Catalog:
+    LockAll
+    PlayFanfare SEQ_SE_CONFIRM
+    Message TwinleafTownPlayerHouse2F_Text_CatalogPrompt
+    WaitABXPadPress
+    CloseMessage
+    InitLocalTextListMenu 1, 1, 0, VAR_MAP_LOCAL_1
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogPiplup, 0
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogChimchar, 1
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogTurtwig, 2
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogCancel, 3
+    ShowListMenu
+    GoToIfEq VAR_MAP_LOCAL_1, 0, TwinleafTownPlayerHouse2F_CatalogGivePiplup
+    GoToIfEq VAR_MAP_LOCAL_1, 1, TwinleafTownPlayerHouse2F_CatalogGiveChimchar
+    GoToIfEq VAR_MAP_LOCAL_1, 2, TwinleafTownPlayerHouse2F_CatalogGiveTurtwig
+    ReleaseAll
+    End
+
+TwinleafTownPlayerHouse2F_CatalogGivePiplup:
+    GetPartyCount VAR_MAP_LOCAL_2
+    GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
+    GivePokemon SPECIES_PIPLUP, 15, ITEM_NONE, VAR_RESULT
+    AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    PlaySound SEQ_FANFA4
+    Message TwinleafTownPlayerHouse2F_Text_ReceivedPiplup
+    WaitSound
+    CloseMessage
+    ReleaseAll
+    End
+
+TwinleafTownPlayerHouse2F_CatalogGiveChimchar:
+    GetPartyCount VAR_MAP_LOCAL_2
+    GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
+    GivePokemon SPECIES_CHIMCHAR, 15, ITEM_NONE, VAR_RESULT
+    AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    PlaySound SEQ_FANFA4
+    Message TwinleafTownPlayerHouse2F_Text_ReceivedChimchar
+    WaitSound
+    CloseMessage
+    ReleaseAll
+    End
+
+TwinleafTownPlayerHouse2F_CatalogGiveTurtwig:
+    GetPartyCount VAR_MAP_LOCAL_2
+    GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
+    GivePokemon SPECIES_TURTWIG, 15, ITEM_NONE, VAR_RESULT
+    AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    PlaySound SEQ_FANFA4
+    Message TwinleafTownPlayerHouse2F_Text_ReceivedTurtwig
+    WaitSound
+    CloseMessage
+    ReleaseAll
+    End
+
+TwinleafTownPlayerHouse2F_CatalogPartyFull:
+    Message TwinleafTownPlayerHouse2F_Text_CatalogPartyFull
+    CloseMessage
+    ReleaseAll
+    End

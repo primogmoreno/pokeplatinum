@@ -114,12 +114,12 @@
         },
         {
             "type": "TRMSG_LAST_BATTLER_HALF_HP",
-            "en_US": "Shocking... I didn't see this coming!\n"
+            "en_US": "Shocking... I didn’t see this coming!\n"
         },
         {
             "type": "TRMSG_DEFEAT",
             "en_US": [
-                "You've got me beat...\r",
+                "You’ve got me beat...\r",
                 "Your desire and the noble way\n",
                 "your Pokémon battled for you...\r",
                 "I even felt thrilled during our\n",

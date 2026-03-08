@@ -3,6 +3,8 @@
 #include <nitro.h>
 #include <string.h>
 
+#include "blitz_level_cap.h"
+
 #include "constants/battle/condition.h"
 #include "constants/items.h"
 #include "constants/moves.h"
@@ -157,10 +159,7 @@ u8 Pokemon_CheckItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, enum HeapID 
 
     if ((Item_Get(item, ITEM_PARAM_REVIVE) || Item_Get(item, ITEM_PARAM_REVIVE_ALL))
         && Item_Get(item, ITEM_PARAM_LEVEL_UP) == FALSE) {
-        if (vCheckCurrentHP == 0) {
-            Heap_Free(item);
-            return TRUE;
-        }
+        // Blitz: reviving is disabled — never allow revive items
     } else if (Item_Get(item, ITEM_PARAM_HP_RESTORE)) {
         if (vCheckCurrentHP != 0 && vCheckCurrentHP < Pokemon_GetValue(mon, MON_DATA_MAX_HP, NULL)) {
             Heap_Free(item);
@@ -169,7 +168,8 @@ u8 Pokemon_CheckItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, enum HeapID 
     }
 
     if (Item_Get(item, ITEM_PARAM_LEVEL_UP)) {
-        if (Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL) < MAX_POKEMON_LEVEL) {
+        u32 currentLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
+        if (currentLevel < MAX_POKEMON_LEVEL && currentLevel < BlitzLevelCap_GetCurrent()) {
             Heap_Free(item);
             return TRUE;
         }
@@ -278,7 +278,8 @@ u8 Pokemon_ApplyItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, u16 location
 
         effectFound = TRUE;
     } else if (Item_Get(item, ITEM_PARAM_HP_RESTORE)) {
-        if (vApplyCurrentHP < vApplyMaxHP) {
+        // Blitz: do not restore HP to a fainted Pokemon (no reviving via HP restore path)
+        if (vApplyCurrentHP != 0 && vApplyCurrentHP < vApplyMaxHP) {
             RestorePokemonHP(mon, vApplyCurrentHP, vApplyMaxHP, Item_Get(item, ITEM_PARAM_HP_RESTORED));
             effectApplied = TRUE;
         }
@@ -289,7 +290,7 @@ u8 Pokemon_ApplyItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, u16 location
     vApplyLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
 
     if (Item_Get(item, ITEM_PARAM_LEVEL_UP)) {
-        if (vApplyLevel < MAX_POKEMON_LEVEL) {
+        if (vApplyLevel < MAX_POKEMON_LEVEL && vApplyLevel < BlitzLevelCap_GetCurrent()) {
             Pokemon_IncreaseValue(mon, MON_DATA_EXPERIENCE, Pokemon_GetExpToNextLevel(mon));
             Pokemon_CalcLevelAndStats(mon);
 

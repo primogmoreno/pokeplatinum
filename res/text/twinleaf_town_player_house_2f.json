@@ -86,6 +86,42 @@
         "OK, {STRVAR_1 3, 1, 0}? If you’re late, I’m\n",
         "fining you $10 million!\r"
       ]
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogPrompt",
+      "en_US": "Pokémon Catalog - Choose your partner!"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogPiplup",
+      "en_US": "Piplup"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogChimchar",
+      "en_US": "Chimchar"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogTurtwig",
+      "en_US": "Turtwig"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogCancel",
+      "en_US": "Cancel"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_ReceivedPiplup",
+      "en_US": "You received Piplup!"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_ReceivedChimchar",
+      "en_US": "You received Chimchar!"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_ReceivedTurtwig",
+      "en_US": "You received Turtwig!"
+    },
+    {
+      "id": "TwinleafTownPlayerHouse2F_Text_CatalogPartyFull",
+      "en_US": "Your party is full!"
     }
   ]
 }

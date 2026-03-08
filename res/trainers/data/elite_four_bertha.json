@@ -101,8 +101,8 @@
         {
             "type": "TRMSG_LAST_BATTLER_HALF_HP",
             "en_US": [
-                "Dear child, don't assume for an\n",
-                "instant that you've won.\n"
+                "Dear child, don’t assume for an\n",
+                "instant that you’ve won.\n"
             ]
         },
         {
@@ -112,7 +112,7 @@
                 "was most impressive.\r",
                 "Your Pokémon believed in you and did\n",
                 "their best to earn you the win.\r",
-                "Even though I've lost, I find myself\n",
+                "Even though I’ve lost, I find myself\n",
                 "with this silly grin!\n"
             ]
         }
