@@ -24,6 +24,9 @@
 #include "functypes/funcptr_0207E634.h"
 
 #include "bag.h"
+#include "map_header.h"
+#include "save_player.h"
+#include "trainer_info.h"
 #include "battle_regulation.h"
 #include "battle_regulation_validation.h"
 #include "bg_window.h"
@@ -2630,6 +2633,18 @@ static u8 HandleSpecialInput(PartyMenuApplication *application)
     return v0;
 }
 
+static const u8 sBlitzLevelCaps[] = {
+    15, // 0 badges (before Coal Badge)
+    23, // 1 badge  (Coal — Roark)
+    29, // 2 badges (Forest — Gardenia)
+    35, // 3 badges (Cobble — Maylene)
+    40, // 4 badges (Fen — Wake)
+    45, // 5 badges (Relic — Fantina)
+    52, // 6 badges (Mine — Byron)
+    58, // 7 badges (Icicle — Candice)
+    62, // 8 badges (Beacon — Volkner / E4 entry)
+};
+
 static int ApplyItemEffectOnPokemon(PartyMenuApplication *app)
 {
     ItemData *itemData = Item_Load(app->partyMenu->usedItemID, 0, HEAP_ID_PARTY_MENU);
@@ -2654,7 +2669,42 @@ static int ApplyItemEffectOnPokemon(PartyMenuApplication *app)
         return 6;
     }
 
-    if (Party_CheckItemEffectsOnMember(app->partyMenu->party, app->partyMenu->usedItemID, app->currPartySlot, 0, HEAP_ID_PARTY_MENU) == 1) {
+    if (Item_Get(itemData, ITEM_PARAM_LEVEL_UP) != 0) {
+        TrainerInfo *blitzInfo = SaveData_GetTrainerInfo(SaveData_Ptr());
+        int blitzBadges = TrainerInfo_BadgeCount(blitzInfo);
+        if (blitzBadges < 0) {
+            blitzBadges = 0;
+        }
+        int blitzCapCount = (int)(sizeof(sBlitzLevelCaps) / sizeof(sBlitzLevelCaps[0]));
+        if (blitzBadges >= blitzCapCount) {
+            blitzBadges = blitzCapCount - 1;
+        }
+        u8 blitzCap = sBlitzLevelCaps[blitzBadges];
+
+        Pokemon *blitzMon = Party_GetPokemonBySlotIndex(app->partyMenu->party, app->currPartySlot);
+        u32 blitzLevel = Pokemon_GetValue(blitzMon, MON_DATA_LEVEL, NULL);
+
+        if (blitzLevel >= blitzCap || blitzLevel >= MAX_POKEMON_LEVEL) {
+            PartyMenu_PrintLongMessage(app, pl_msg_00000453_00205, TRUE);
+            app->currPartySlot = 7;
+            app->unk_B00 = sub_02085348;
+            Heap_Free(itemData);
+            return 5;
+        }
+
+        // Pre-apply levels up to (cap - 1); sub_02085A70 will apply the final level
+        for (int blitzI = 0; blitzI < 24; blitzI++) {
+            u32 level = Pokemon_GetValue(blitzMon, MON_DATA_LEVEL, NULL);
+            if (level + 1 >= blitzCap || level + 1 >= MAX_POKEMON_LEVEL) {
+                break;
+            }
+            Pokemon_IncreaseValue(blitzMon, MON_DATA_EXPERIENCE, Pokemon_GetExpToNextLevel(blitzMon));
+            Pokemon_CalcLevelAndStats(blitzMon);
+        }
+    }
+
+    u8 checkResult = Party_CheckItemEffectsOnMember(app->partyMenu->party, app->partyMenu->usedItemID, app->currPartySlot, 0, HEAP_ID_PARTY_MENU);
+    if (checkResult == 1) {
         Bag_TryRemoveItem(app->partyMenu->bag, app->partyMenu->usedItemID, 1, HEAP_ID_PARTY_MENU);
 
         if (Item_Get(itemData, ITEM_PARAM_EVOLVE) != 0) {

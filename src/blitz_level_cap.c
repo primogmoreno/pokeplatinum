@@ -1,7 +1,6 @@
 #include "blitz_level_cap.h"
 
 #include "save_player.h"
-#include "savedata.h"
 #include "trainer_info.h"
 
 // Level caps indexed by badge count (0–8 badges).
@@ -18,9 +17,8 @@ static const u8 sBlitzLevelCaps[] = {
     62, // 8 badges (Beacon — Volkner / E4 entry)
 };
 
-u8 BlitzLevelCap_GetCurrent(void)
+u8 BlitzLevelCap_GetCurrent(SaveData *saveData)
 {
-    SaveData *saveData = SaveData_Ptr();
     TrainerInfo *info = SaveData_GetTrainerInfo(saveData);
     int badges = TrainerInfo_BadgeCount(info);
 

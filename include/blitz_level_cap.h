@@ -2,4 +2,6 @@
 
 #include <nitro/types.h>
 
-u8 BlitzLevelCap_GetCurrent(void);
+#include "savedata.h"
+
+u8 BlitzLevelCap_GetCurrent(SaveData *saveData);

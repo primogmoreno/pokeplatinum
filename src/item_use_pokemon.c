@@ -3,8 +3,6 @@
 #include <nitro.h>
 #include <string.h>
 
-#include "blitz_level_cap.h"
-
 #include "constants/battle/condition.h"
 #include "constants/items.h"
 #include "constants/moves.h"
@@ -169,7 +167,7 @@ u8 Pokemon_CheckItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, enum HeapID 
 
     if (Item_Get(item, ITEM_PARAM_LEVEL_UP)) {
         u32 currentLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
-        if (currentLevel < MAX_POKEMON_LEVEL && currentLevel < BlitzLevelCap_GetCurrent()) {
+        if (currentLevel < MAX_POKEMON_LEVEL) {
             Heap_Free(item);
             return TRUE;
         }
@@ -290,7 +288,7 @@ u8 Pokemon_ApplyItemEffects(Pokemon *mon, u16 itemId, u16 moveSlot, u16 location
     vApplyLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
 
     if (Item_Get(item, ITEM_PARAM_LEVEL_UP)) {
-        if (vApplyLevel < MAX_POKEMON_LEVEL && vApplyLevel < BlitzLevelCap_GetCurrent()) {
+        if (vApplyLevel < MAX_POKEMON_LEVEL) {
             Pokemon_IncreaseValue(mon, MON_DATA_EXPERIENCE, Pokemon_GetExpToNextLevel(mon));
             Pokemon_CalcLevelAndStats(mon);
 
