@@ -461,17 +461,13 @@ static void BattleControllerPlayer_CommandSelectionInput(BattleSystem *battleSys
                     break;
 
                 case PLAYER_INPUT_ITEM:
-                    if (BattleSystem_GetBattleType(battleSys) & BATTLE_TYPE_NO_ITEMS) {
-                        msg.id = 593; // "Items can’t be used here."
-                        msg.tags = TAG_NONE;
-                        BattleController_EmitSetAlertMessage(battleSys, i, msg);
+                    // Blitz: bag items are never allowed in battle
+                    msg.id = 593; // "Items can’t be used here."
+                    msg.tags = TAG_NONE;
+                    BattleController_EmitSetAlertMessage(battleSys, i, msg);
 
-                        battleCtx->curCommandState[i] = COMMAND_SELECTION_ALERT_MESSAGE_WAIT;
-                        battleCtx->nextCommandState[i] = COMMAND_SELECTION_INIT;
-                    } else {
-                        battleCtx->battlerActions[i][BATTLE_ACTION_PICK_COMMAND] = BATTLE_CONTROL_ITEM;
-                        battleCtx->curCommandState[i] = COMMAND_SELECTION_ITEM_SELECT_INIT;
-                    }
+                    battleCtx->curCommandState[i] = COMMAND_SELECTION_ALERT_MESSAGE_WAIT;
+                    battleCtx->nextCommandState[i] = COMMAND_SELECTION_INIT;
                     break;
 
                 case PLAYER_INPUT_PARTY:

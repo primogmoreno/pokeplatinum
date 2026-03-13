@@ -2692,14 +2692,46 @@ static int ApplyItemEffectOnPokemon(PartyMenuApplication *app)
             return 5;
         }
 
-        // Pre-apply levels up to (cap - 1); sub_02085A70 will apply the final level
+        // Pre-apply levels one at a time, stopping before any move-learn or evolution level.
+        // sub_02085A70 applies the final (breakpoint) level; sub_02085C50 handles the UI.
+        FieldSystem *blitzFs = app->partyMenu->fieldSystem;
+        u32 blitzMapEvoMethod = MapHeader_GetMapEvolutionMethod(blitzFs->location->mapId);
         for (int blitzI = 0; blitzI < 24; blitzI++) {
             u32 level = Pokemon_GetValue(blitzMon, MON_DATA_LEVEL, NULL);
             if (level + 1 >= blitzCap || level + 1 >= MAX_POKEMON_LEVEL) {
                 break;
             }
+
+            // Save EXP so we can undo if this level is a breakpoint
+            u32 prevExp = Pokemon_GetValue(blitzMon, MON_DATA_EXPERIENCE, NULL);
             Pokemon_IncreaseValue(blitzMon, MON_DATA_EXPERIENCE, Pokemon_GetExpToNextLevel(blitzMon));
             Pokemon_CalcLevelAndStats(blitzMon);
+
+            // Check for a move learned at this level (local index, does not touch unk_34)
+            int localIdx = 0;
+            u16 localMove = 0;
+            BOOL hasMoveBreakpoint = FALSE;
+            while (TRUE) {
+                u16 moveResult = Pokemon_LevelUpMove(blitzMon, &localIdx, &localMove);
+                if (moveResult == 0x0000) {
+                    break;
+                }
+                if (moveResult != 0xFFFE) {
+                    hasMoveBreakpoint = TRUE;
+                    break;
+                }
+            }
+
+            // Check for evolution at this level
+            int blitzEvoType = 0;
+            u16 blitzEvoTarget = Pokemon_GetEvolutionTargetSpecies(app->partyMenu->party, blitzMon, EVO_CLASS_BY_LEVEL, blitzMapEvoMethod, &blitzEvoType);
+
+            if (hasMoveBreakpoint || blitzEvoTarget != SPECIES_NONE) {
+                // Undo this level so sub_02085A70 applies it and sub_02085C50 handles the UI
+                Pokemon_SetValue(blitzMon, MON_DATA_EXPERIENCE, &prevExp);
+                Pokemon_CalcLevelAndStats(blitzMon);
+                break;
+            }
         }
     }
 
