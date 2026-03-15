@@ -65,6 +65,8 @@
     ScriptEntry CommonScript_SetLookerBGM @ 0x807
     ScriptEntry CommonScript_FadeToDefaultMusic @ 0x808
     ScriptEntry CommonScript_GriseousOrbCouldNotBeRemoved @ 0x809
+    ScriptEntry CommonScript_BlitzRepelOff @ 0x80A
+    ScriptEntry CommonScript_BlitzRepelOn @ 0x80B
     ScriptEntryEnd
 
 CommonScript_EmptyScript1:
@@ -1693,6 +1695,22 @@ CommonScript_Frontier_End:
 
 CommonScript_GriseousOrbCouldNotBeRemoved:
     Message CommonStrings_Text_GriseousOrbCouldNotBeRemoved
+    WaitABXPadPress
+    CloseMessage
+    ReleaseAll
+    ReturnCommonScript
+    End
+
+CommonScript_BlitzRepelOff:
+    Message pl_msg_00000213_00132
+    WaitABXPadPress
+    CloseMessage
+    ReleaseAll
+    ReturnCommonScript
+    End
+
+CommonScript_BlitzRepelOn:
+    Message pl_msg_00000213_00133
     WaitABXPadPress
     CloseMessage
     ReleaseAll

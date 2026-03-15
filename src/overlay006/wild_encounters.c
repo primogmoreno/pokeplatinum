@@ -230,6 +230,11 @@ static void WildEncounters_ReplaceTrophyGardenEncounters(FieldSystem *fieldSyste
 
 BOOL WildEncounters_TryWildEncounter(FieldSystem *fieldSystem)
 {
+    // Blitz Repel: suppress all wild encounters when active
+    if (VarsFlags_CheckFlag(SaveData_GetVarsFlags(fieldSystem->saveData), 0x09FF)) {
+        return FALSE;
+    }
+
     FieldBattleDTO *battleParams;
     Pokemon *firstPartyMon;
     u8 tileBehavior;

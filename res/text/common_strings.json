@@ -873,6 +873,20 @@
         "It will be fixed if you enter the\n",
         "Hall of Fame again.\r"
       ]
+    },
+    {
+      "id": "pl_msg_00000213_00132",
+      "en_US": [
+        "Blitz Repel: Wild encounters\n",
+        "are now OFF."
+      ]
+    },
+    {
+      "id": "pl_msg_00000213_00133",
+      "en_US": [
+        "Blitz Repel: Wild encounters\n",
+        "are now ON."
+      ]
     }
   ]
 }

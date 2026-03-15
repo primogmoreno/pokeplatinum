@@ -69,6 +69,9 @@ int (*const Unk_020EF6D0[])(UnkStruct_020EF6D0 *);
 
 int sub_02067A84(FieldSystem *fieldSystem, BOOL param1)
 {
+    // Blitz: trainers never initiate battles on sight — talk to them to battle
+    return 0;
+
     UnkStruct_02067C28 v0;
     MapObjectManager *mapObjMan = fieldSystem->mapObjMan;
     PlayerAvatar *playerAvatar = fieldSystem->playerAvatar;

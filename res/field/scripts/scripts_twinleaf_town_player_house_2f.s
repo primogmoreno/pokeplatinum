@@ -462,7 +462,10 @@ TwinleafTownPlayerHouse2F_CatalogGivePiplup:
     GetPartyCount VAR_MAP_LOCAL_2
     GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
     GivePokemon SPECIES_PIPLUP, 15, ITEM_NONE, VAR_RESULT
+    SetVar VAR_PLAYER_STARTER, SPECIES_PIPLUP
     AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    AddItem ITEM_BICYCLE, 1, VAR_RESULT
+    AddItem ITEM_BLITZ_REPEL, 1, VAR_RESULT
     PlaySound SEQ_FANFA4
     Message TwinleafTownPlayerHouse2F_Text_ReceivedPiplup
     WaitSound
@@ -474,7 +477,10 @@ TwinleafTownPlayerHouse2F_CatalogGiveChimchar:
     GetPartyCount VAR_MAP_LOCAL_2
     GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
     GivePokemon SPECIES_CHIMCHAR, 15, ITEM_NONE, VAR_RESULT
+    SetVar VAR_PLAYER_STARTER, SPECIES_CHIMCHAR
     AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    AddItem ITEM_BICYCLE, 1, VAR_RESULT
+    AddItem ITEM_BLITZ_REPEL, 1, VAR_RESULT
     PlaySound SEQ_FANFA4
     Message TwinleafTownPlayerHouse2F_Text_ReceivedChimchar
     WaitSound
@@ -486,7 +492,10 @@ TwinleafTownPlayerHouse2F_CatalogGiveTurtwig:
     GetPartyCount VAR_MAP_LOCAL_2
     GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
     GivePokemon SPECIES_TURTWIG, 15, ITEM_NONE, VAR_RESULT
+    SetVar VAR_PLAYER_STARTER, SPECIES_TURTWIG
     AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    AddItem ITEM_BICYCLE, 1, VAR_RESULT
+    AddItem ITEM_BLITZ_REPEL, 1, VAR_RESULT
     PlaySound SEQ_FANFA4
     Message TwinleafTownPlayerHouse2F_Text_ReceivedTurtwig
     WaitSound

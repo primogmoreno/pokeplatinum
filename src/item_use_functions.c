@@ -96,6 +96,8 @@ static void UseEscapeRopeFromMenu(ItemMenuUseContext *usageContext, const ItemUs
 static void UseAzureFluteFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseVsRecorderFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseGracideaFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
+static void UseBlitzRepelFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
+static BOOL UseBlitzRepelInField(ItemFieldUseContext *usageContext);
 static BOOL UseBicycleInField(ItemFieldUseContext *usageContext);
 static BOOL UseJournalInField(ItemFieldUseContext *usageContext);
 static BOOL UseOldRodInField(ItemFieldUseContext *usageContext);
@@ -163,6 +165,7 @@ static const ItemUseFuncDat sItemUseFuncs[] = {
     [ITEM_USE_FUNC_AZURE_FLUTE]  = { UseAzureFluteFromMenu,  UseAzureFluteInField,  CanUseAzureFlute  },
     [ITEM_USE_FUNC_VS_RECORDER]  = { UseVsRecorderFromMenu,  UseVsRecorderInField,  NULL              },
     [ITEM_USE_FUNC_GRACIDEA]     = { UseGracideaFromMenu,    UseGracideaInField,    NULL              },
+    [ITEM_USE_FUNC_BLITZ_REPEL]  = { UseBlitzRepelFromMenu,  UseBlitzRepelInField,  NULL              },
 };
 // clang-format on
 
@@ -1043,6 +1046,33 @@ static BOOL UseGracideaInField(ItemFieldUseContext *usageContext)
 static void *OpenPartyMenuForGracidea(void *fieldSystem)
 {
     return FieldSystem_OpenPartyMenu_SelectForItemUsage(fieldSystem, HEAP_ID_FIELD2, ITEM_GRACIDEA);
+}
+
+// Blitz Repel: toggle wild encounter suppression (FLAG_UNK_0x09FF)
+#define FLAG_BLITZ_REPEL_ACTIVE 0x09FF
+
+static void UseBlitzRepelFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext)
+{
+    FieldSystem *fieldSystem = FieldTask_GetFieldSystem(usageContext->fieldTask);
+    if (FieldSystem_CheckFlag(fieldSystem, FLAG_BLITZ_REPEL_ACTIVE)) {
+        FieldSystem_ClearFlag(fieldSystem, FLAG_BLITZ_REPEL_ACTIVE);
+        sub_02068540(usageContext, additionalContext, SCRIPT_ID(COMMON_SCRIPTS, 58));
+    } else {
+        FieldSystem_SetFlag(fieldSystem, FLAG_BLITZ_REPEL_ACTIVE);
+        sub_02068540(usageContext, additionalContext, SCRIPT_ID(COMMON_SCRIPTS, 59));
+    }
+}
+
+static BOOL UseBlitzRepelInField(ItemFieldUseContext *usageContext)
+{
+    if (FieldSystem_CheckFlag(usageContext->fieldSystem, FLAG_BLITZ_REPEL_ACTIVE)) {
+        FieldSystem_ClearFlag(usageContext->fieldSystem, FLAG_BLITZ_REPEL_ACTIVE);
+        sub_02068584(usageContext, SCRIPT_ID(COMMON_SCRIPTS, 58));
+    } else {
+        FieldSystem_SetFlag(usageContext->fieldSystem, FLAG_BLITZ_REPEL_ACTIVE);
+        sub_02068584(usageContext, SCRIPT_ID(COMMON_SCRIPTS, 59));
+    }
+    return FALSE;
 }
 
 BOOL sub_02069238(FieldSystem *fieldSystem)
