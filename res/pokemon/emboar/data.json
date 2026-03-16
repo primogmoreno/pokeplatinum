@@ -1,0 +1,188 @@
+{
+  "base_stats": {
+    "hp": 110,
+    "attack": 123,
+    "defense": 65,
+    "speed": 65,
+    "special_attack": 100,
+    "special_defense": 65
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_FIGHTING"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 264,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 3,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        13,
+        "MOVE_NONE"
+      ],
+      [
+        15,
+        "MOVE_NONE"
+      ],
+      [
+        20,
+        "MOVE_NONE"
+      ],
+      [
+        23,
+        "MOVE_NONE"
+      ],
+      [
+        28,
+        "MOVE_NONE"
+      ],
+      [
+        31,
+        "MOVE_NONE"
+      ],
+      [
+        38,
+        "MOVE_NONE"
+      ],
+      [
+        43,
+        "MOVE_NONE"
+      ],
+      [
+        50,
+        "MOVE_NONE"
+      ],
+      [
+        55,
+        "MOVE_NONE"
+      ],
+      [
+        62,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_EMBOAR",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 16,
+    "weight": 1500,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    },
+    "de": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    },
+    "it": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    },
+    "es": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    },
+    "jp": {
+      "name": "Emboar",
+      "category": "Mega Fire Pig Pok\u00e9mon",
+      "entry_text": [
+        "It can throw a fire punch by setting its fists on fire with its fiery chin. It cares deeply about its friends."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

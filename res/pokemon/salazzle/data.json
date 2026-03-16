@@ -1,0 +1,200 @@
+{
+  "base_stats": {
+    "hp": 68,
+    "attack": 64,
+    "defense": 60,
+    "speed": 117,
+    "special_attack": 111,
+    "special_defense": 60
+  },
+  "types": [
+    "TYPE_POISON",
+    "TYPE_FIRE"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 168,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 2,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_ONLY",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MONSTER",
+    "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+    "ABILITY_CORROSION",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BLACK",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_FIRELASH"
+      ],
+      [
+        1,
+        "MOVE_ENDEAVOR"
+      ],
+      [
+        1,
+        "MOVE_KNOCK_OFF"
+      ],
+      [
+        1,
+        "MOVE_TORMENT"
+      ],
+      [
+        1,
+        "MOVE_SWAGGER"
+      ],
+      [
+        1,
+        "MOVE_POISON_GAS"
+      ],
+      [
+        1,
+        "MOVE_ENCORE"
+      ],
+      [
+        1,
+        "MOVE_EMBER"
+      ],
+      [
+        1,
+        "MOVE_DISABLE"
+      ],
+      [
+        1,
+        "MOVE_SCRATCH"
+      ],
+      [
+        1,
+        "MOVE_SMOG"
+      ],
+      [
+        1,
+        "MOVE_POUND"
+      ],
+      [
+        15,
+        "MOVE_POISON_FANG"
+      ],
+      [
+        20,
+        "MOVE_SWEET_SCENT"
+      ],
+      [
+        25,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        30,
+        "MOVE_INCINERATE"
+      ],
+      [
+        37,
+        "MOVE_VENOSHOCK"
+      ],
+      [
+        44,
+        "MOVE_DRAGON_PULSE"
+      ],
+      [
+        51,
+        "MOVE_FLAMETHROWER"
+      ],
+      [
+        58,
+        "MOVE_TOXIC"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_SALAZZLE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 12,
+    "weight": 222,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    },
+    "fr": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    },
+    "de": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    },
+    "it": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    },
+    "es": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    },
+    "jp": {
+      "name": "SALAZZLE",
+      "category": "Toxic Lizard Pok\u00e9mon",
+      "entry_text": [
+        "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

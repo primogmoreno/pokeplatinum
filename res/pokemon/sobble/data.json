@@ -1,0 +1,164 @@
+{
+  "base_stats": {
+    "hp": 50,
+    "attack": 40,
+    "defense": 40,
+    "speed": 70,
+    "special_attack": 70,
+    "special_defense": 40
+  },
+  "types": [
+    "TYPE_WATER",
+    "TYPE_WATER"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 62,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_WATER_1",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_TORRENT",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BLUE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_GROWL"
+      ],
+      [
+        1,
+        "MOVE_POUND"
+      ],
+      [
+        6,
+        "MOVE_WATER_GUN"
+      ],
+      [
+        8,
+        "MOVE_BIND"
+      ],
+      [
+        12,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        17,
+        "MOVE_TEARFULLOOK"
+      ],
+      [
+        20,
+        "MOVE_SUCKER_PUNCH"
+      ],
+      [
+        24,
+        "MOVE_U_TURN"
+      ],
+      [
+        28,
+        "MOVE_LIQUIDATION"
+      ],
+      [
+        32,
+        "MOVE_SOAK"
+      ],
+      [
+        36,
+        "MOVE_RAIN_DANCE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_SOBBLE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 3,
+    "weight": 40,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    },
+    "fr": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    },
+    "de": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    },
+    "it": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    },
+    "es": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    },
+    "jp": {
+      "name": "SOBBLE",
+      "category": "Water Lizard Pok\u00e9mon",
+      "entry_text": [
+        "When scared, this Pok\u00e9mon cries. Its tears pack the chemical punch of 100 onions, and attackers won’t be able to resist weeping."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "base_stats": {
+    "hp": 50,
+    "attack": 72,
+    "defense": 35,
+    "speed": 65,
+    "special_attack": 35,
+    "special_defense": 35
+  },
+  "types": [
+    "TYPE_GROUND",
+    "TYPE_DARK"
+  ],
+  "catch_rate": 180,
+  "base_exp_reward": 58,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        3,
+        "MOVE_NONE"
+      ],
+      [
+        6,
+        "MOVE_NONE"
+      ],
+      [
+        9,
+        "MOVE_NONE"
+      ],
+      [
+        12,
+        "MOVE_NONE"
+      ],
+      [
+        15,
+        "MOVE_NONE"
+      ],
+      [
+        18,
+        "MOVE_NONE"
+      ],
+      [
+        21,
+        "MOVE_NONE"
+      ],
+      [
+        24,
+        "MOVE_NONE"
+      ],
+      [
+        27,
+        "MOVE_NONE"
+      ],
+      [
+        30,
+        "MOVE_NONE"
+      ],
+      [
+        33,
+        "MOVE_NONE"
+      ],
+      [
+        36,
+        "MOVE_NONE"
+      ],
+      [
+        39,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_SANDILE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 7,
+    "weight": 152,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    },
+    "de": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    },
+    "it": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    },
+    "es": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    },
+    "jp": {
+      "name": "Sandile",
+      "category": "Desert Croc Pok\u00e9mon",
+      "entry_text": [
+        "It moves along below the sand’s surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

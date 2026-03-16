@@ -1,0 +1,160 @@
+{
+  "base_stats": {
+    "hp": 55,
+    "attack": 63,
+    "defense": 90,
+    "speed": 42,
+    "special_attack": 50,
+    "special_defense": 80
+  },
+  "types": [
+    "TYPE_BUG",
+    "TYPE_GRASS"
+  ],
+  "catch_rate": 120,
+  "base_exp_reward": 133,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_BUG",
+    "EGG_GROUP_BUG"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_GREEN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        22,
+        "MOVE_NONE"
+      ],
+      [
+        29,
+        "MOVE_NONE"
+      ],
+      [
+        31,
+        "MOVE_NONE"
+      ],
+      [
+        36,
+        "MOVE_NONE"
+      ],
+      [
+        43,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_SWADLOON",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 5,
+    "weight": 73,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    },
+    "de": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    },
+    "it": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    },
+    "es": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    },
+    "jp": {
+      "name": "Swadloon",
+      "category": "Leaf-Wrapped Pok\u00e9mon",
+      "entry_text": [
+        "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 80,
+    "attack": 110,
+    "defense": 60,
+    "speed": 70,
+    "special_attack": 150,
+    "special_defense": 130
+  },
+  "types": [
+    "TYPE_PSYCHIC",
+    "TYPE_GHOST"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 300,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 120,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_MAGICIAN",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PURPLE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ALLYSWITCH"
+      ],
+      [
+        1,
+        "MOVE_DESTINY_BOND"
+      ],
+      [
+        1,
+        "MOVE_CONFUSION"
+      ],
+      [
+        6,
+        "MOVE_ASTONISH"
+      ],
+      [
+        10,
+        "MOVE_TRICK"
+      ],
+      [
+        15,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        19,
+        "MOVE_PSYBEAM"
+      ],
+      [
+        25,
+        "MOVE_SKILL_SWAP"
+      ],
+      [
+        29,
+        "MOVE_GUARDSPLIT"
+      ],
+      [
+        29,
+        "MOVE_POWERSPLIT"
+      ],
+      [
+        35,
+        "MOVE_PHANTOMFORCE"
+      ],
+      [
+        46,
+        "MOVE_ZEN_HEADBUTT"
+      ],
+      [
+        50,
+        "MOVE_WONDERROOM"
+      ],
+      [
+        50,
+        "MOVE_TRICK_ROOM"
+      ],
+      [
+        55,
+        "MOVE_SHADOW_BALL"
+      ],
+      [
+        68,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        75,
+        "MOVE_PSYCHIC"
+      ],
+      [
+        85,
+        "MOVE_HYPERSPACEHOLE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_HOOPA",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 5,
+    "weight": 90,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    },
+    "fr": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    },
+    "de": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    },
+    "it": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    },
+    "es": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    },
+    "jp": {
+      "name": "HOOPA",
+      "category": "Mischief Pok\u00e9mon",
+      "entry_text": [
+        "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

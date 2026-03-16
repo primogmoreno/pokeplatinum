@@ -1,0 +1,180 @@
+{
+  "base_stats": {
+    "hp": 71,
+    "attack": 120,
+    "defense": 95,
+    "speed": 99,
+    "special_attack": 120,
+    "special_defense": 95
+  },
+  "types": [
+    "TYPE_BUG",
+    "TYPE_STEEL"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 300,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PURPLE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        7,
+        "MOVE_NONE"
+      ],
+      [
+        14,
+        "MOVE_NONE"
+      ],
+      [
+        21,
+        "MOVE_NONE"
+      ],
+      [
+        28,
+        "MOVE_NONE"
+      ],
+      [
+        35,
+        "MOVE_NONE"
+      ],
+      [
+        42,
+        "MOVE_NONE"
+      ],
+      [
+        49,
+        "MOVE_NONE"
+      ],
+      [
+        56,
+        "MOVE_NONE"
+      ],
+      [
+        63,
+        "MOVE_NONE"
+      ],
+      [
+        70,
+        "MOVE_NONE"
+      ],
+      [
+        77,
+        "MOVE_NONE"
+      ],
+      [
+        84,
+        "MOVE_NONE"
+      ],
+      [
+        91,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_GENESECT",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 15,
+    "weight": 825,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    },
+    "de": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    },
+    "it": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    },
+    "es": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    },
+    "jp": {
+      "name": "Genesect",
+      "category": "Paleozoic Pok\u00e9mon",
+      "entry_text": [
+        "This ancient bug Pok\u00e9mon was altered by Team Plasma. They upgraded the cannon on its back."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

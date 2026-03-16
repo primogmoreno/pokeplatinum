@@ -1,0 +1,208 @@
+{
+  "base_stats": {
+    "hp": 85,
+    "attack": 60,
+    "defense": 65,
+    "speed": 100,
+    "special_attack": 135,
+    "special_defense": 105
+  },
+  "types": [
+    "TYPE_BUG",
+    "TYPE_FIRE"
+  ],
+  "catch_rate": 15,
+  "base_exp_reward": 275,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 40,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_BUG",
+    "EGG_GROUP_BUG"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_WHITE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        18,
+        "MOVE_NONE"
+      ],
+      [
+        24,
+        "MOVE_NONE"
+      ],
+      [
+        30,
+        "MOVE_NONE"
+      ],
+      [
+        36,
+        "MOVE_NONE"
+      ],
+      [
+        42,
+        "MOVE_NONE"
+      ],
+      [
+        48,
+        "MOVE_NONE"
+      ],
+      [
+        54,
+        "MOVE_NONE"
+      ],
+      [
+        62,
+        "MOVE_NONE"
+      ],
+      [
+        70,
+        "MOVE_NONE"
+      ],
+      [
+        78,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_VOLCARONA",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 16,
+    "weight": 460,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    },
+    "de": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    },
+    "it": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    },
+    "es": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    },
+    "jp": {
+      "name": "Volcarona",
+      "category": "Sun Pok\u00e9mon",
+      "entry_text": [
+        "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -11,11 +11,9 @@
     },
     "range": "RANGE_USER",
     "priority": 0,
-    "flags": [
-        "MOVE_FLAG_HIDES_HP_GAUGES"
-    ],
+    "flags": [],
     "contest": {
-        "effect": "CONTEST_EFFECT_LOW_VOLTAGE_ADVANTAGE",
-        "type": "CONTEST_TYPE_CUTE"
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
     }
 }

@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 72,
+    "attack": 101,
+    "defense": 100,
+    "speed": 68,
+    "special_attack": 50,
+    "special_defense": 97
+  },
+  "types": [
+    "TYPE_GHOST",
+    "TYPE_GHOST"
+  ],
+  "catch_rate": 60,
+  "base_exp_reward": 171,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_SANDRUSH",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_WHITE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_LASTRESPECTS"
+      ],
+      [
+        1,
+        "MOVE_GROWL"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        3,
+        "MOVE_LICK"
+      ],
+      [
+        6,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        6,
+        "MOVE_BITE"
+      ],
+      [
+        9,
+        "MOVE_ROAR"
+      ],
+      [
+        12,
+        "MOVE_HEADBUTT"
+      ],
+      [
+        16,
+        "MOVE_DIG"
+      ],
+      [
+        24,
+        "MOVE_REST"
+      ],
+      [
+        28,
+        "MOVE_CRUNCH"
+      ],
+      [
+        36,
+        "MOVE_PLAYROUGH"
+      ],
+      [
+        41,
+        "MOVE_HELPING_HAND"
+      ],
+      [
+        46,
+        "MOVE_PHANTOMFORCE"
+      ],
+      [
+        51,
+        "MOVE_CHARM"
+      ],
+      [
+        58,
+        "MOVE_DOUBLE_EDGE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_HOUNDSTONE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 20,
+    "weight": 150,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    },
+    "fr": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    },
+    "de": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    },
+    "it": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    },
+    "es": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    },
+    "jp": {
+      "name": "HOUNDSTONE",
+      "category": "Ghost Dog Pok\u00e9mon",
+      "entry_text": [
+        "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pok\u00e9mon, this one is most loyal to its master."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

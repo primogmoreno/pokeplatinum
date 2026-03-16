@@ -1,0 +1,188 @@
+{
+  "base_stats": {
+    "hp": 74,
+    "attack": 115,
+    "defense": 70,
+    "speed": 106,
+    "special_attack": 135,
+    "special_defense": 80
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_FLYING"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 116,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_ONLY",
+  "hatch_cycles": 120,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_CUTE_CHARM",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PINK",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_FAIRYWIND"
+      ],
+      [
+        1,
+        "MOVE_ASTONISH"
+      ],
+      [
+        5,
+        "MOVE_TORMENT"
+      ],
+      [
+        10,
+        "MOVE_FLATTER"
+      ],
+      [
+        15,
+        "MOVE_TWISTER"
+      ],
+      [
+        20,
+        "MOVE_DRAININGKISS"
+      ],
+      [
+        25,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        30,
+        "MOVE_IMPRISON"
+      ],
+      [
+        35,
+        "MOVE_MYSTICALFIRE"
+      ],
+      [
+        40,
+        "MOVE_DAZZLINGGLEAM"
+      ],
+      [
+        45,
+        "MOVE_EXTRASENSORY"
+      ],
+      [
+        50,
+        "MOVE_UPROAR"
+      ],
+      [
+        55,
+        "MOVE_SUPERPOWER"
+      ],
+      [
+        60,
+        "MOVE_HEALING_WISH"
+      ],
+      [
+        65,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        70,
+        "MOVE_OUTRAGE"
+      ],
+      [
+        75,
+        "MOVE_SPRINGTIDESTORM"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_ENAMORUS",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 16,
+    "weight": 480,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    },
+    "fr": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    },
+    "de": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    },
+    "it": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    },
+    "es": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    },
+    "jp": {
+      "name": "ENAMORUS",
+      "category": "Love-Hate Pok\u00e9mon",
+      "entry_text": [
+        "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pok\u00e9mon’s love gives rise to the budding of fresh life across Hisui."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

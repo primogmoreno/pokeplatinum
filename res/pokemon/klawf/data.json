@@ -1,0 +1,180 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "speed": 75,
+    "special_attack": 35,
+    "special_defense": 55
+  },
+  "types": [
+    "TYPE_ROCK",
+    "TYPE_ROCK"
+  ],
+  "catch_rate": 120,
+  "base_exp_reward": 158,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 35,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_WATER_3",
+    "EGG_GROUP_WATER_3"
+  ],
+  "abilities": [
+    "ABILITY_ANGERSHELL",
+    "ABILITY_SHELL_ARMOR"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ROCK_THROW"
+      ],
+      [
+        1,
+        "MOVE_VISEGRIP"
+      ],
+      [
+        6,
+        "MOVE_HARDEN"
+      ],
+      [
+        9,
+        "MOVE_ROCK_SMASH"
+      ],
+      [
+        13,
+        "MOVE_ROCK_TOMB"
+      ],
+      [
+        17,
+        "MOVE_METAL_CLAW"
+      ],
+      [
+        21,
+        "MOVE_PROTECT"
+      ],
+      [
+        24,
+        "MOVE_ROCK_BLAST"
+      ],
+      [
+        29,
+        "MOVE_X_SCISSOR"
+      ],
+      [
+        33,
+        "MOVE_SWORDS_DANCE"
+      ],
+      [
+        37,
+        "MOVE_FLAIL"
+      ],
+      [
+        42,
+        "MOVE_ROCK_SLIDE"
+      ],
+      [
+        47,
+        "MOVE_HIGHHORSEPOWER"
+      ],
+      [
+        51,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        56,
+        "MOVE_GUILLOTINE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_KLAWF",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 13,
+    "weight": 790,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    },
+    "fr": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    },
+    "de": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    },
+    "it": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    },
+    "es": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    },
+    "jp": {
+      "name": "KLAWF",
+      "category": "Ambush Pok\u00e9mon",
+      "entry_text": [
+        "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

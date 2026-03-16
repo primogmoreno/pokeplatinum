@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 100,
+    "speed": 50,
+    "special_attack": 50,
+    "special_defense": 60
+  },
+  "types": [
+    "TYPE_STEEL",
+    "TYPE_STEEL"
+  ],
+  "catch_rate": 90,
+  "base_exp_reward": 154,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_BATTLE_ARMOR",
+    "ABILITY_TOUGHCLAWS"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_IRON_HEAD"
+      ],
+      [
+        1,
+        "MOVE_GROWL"
+      ],
+      [
+        1,
+        "MOVE_FAKE_OUT"
+      ],
+      [
+        1,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        1,
+        "MOVE_METAL_BURST"
+      ],
+      [
+        1,
+        "MOVE_HONECLAWS"
+      ],
+      [
+        1,
+        "MOVE_SCRATCH"
+      ],
+      [
+        12,
+        "MOVE_PAY_DAY"
+      ],
+      [
+        16,
+        "MOVE_METAL_CLAW"
+      ],
+      [
+        20,
+        "MOVE_TAUNT"
+      ],
+      [
+        24,
+        "MOVE_SWAGGER"
+      ],
+      [
+        31,
+        "MOVE_FURY_SWIPES"
+      ],
+      [
+        36,
+        "MOVE_SCREECH"
+      ],
+      [
+        42,
+        "MOVE_SLASH"
+      ],
+      [
+        48,
+        "MOVE_METAL_SOUND"
+      ],
+      [
+        54,
+        "MOVE_THRASH"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_PERRSERKER",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 8,
+    "weight": 280,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    },
+    "fr": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    },
+    "de": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    },
+    "it": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    },
+    "es": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    },
+    "jp": {
+      "name": "PERRSERKER",
+      "category": "Viking Pok\u00e9mon",
+      "entry_text": [
+        "What appears to be an iron helmet is actually hardened hair. This Pok\u00e9mon lives for the thrill of battle."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

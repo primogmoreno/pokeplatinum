@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 116,
+    "attack": 55,
+    "defense": 85,
+    "speed": 29,
+    "special_attack": 107,
+    "special_defense": 95
+  },
+  "types": [
+    "TYPE_PSYCHIC",
+    "TYPE_PSYCHIC"
+  ],
+  "catch_rate": 75,
+  "base_exp_reward": 170,
+  "ev_yields": {
+    "hp": 2,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 10,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PINK",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_MUSHARNA",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 11,
+    "weight": 605,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    },
+    "de": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    },
+    "it": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    },
+    "es": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    },
+    "jp": {
+      "name": "Musharna",
+      "category": "Drowsing Pok\u00e9mon",
+      "entry_text": [
+        "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

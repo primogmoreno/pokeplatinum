@@ -1,0 +1,176 @@
+{
+  "base_stats": {
+    "hp": 65,
+    "attack": 100,
+    "defense": 100,
+    "speed": 75,
+    "special_attack": 70,
+    "special_defense": 60
+  },
+  "types": [
+    "TYPE_FIGHTING",
+    "TYPE_FIGHTING"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 165,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 25,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FAIRY",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_BATTLE_ARMOR",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_YELLOW",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_PROTECT"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        5,
+        "MOVE_ROCK_SMASH"
+      ],
+      [
+        10,
+        "MOVE_FOCUS_ENERGY"
+      ],
+      [
+        15,
+        "MOVE_HEADBUTT"
+      ],
+      [
+        20,
+        "MOVE_BULK_UP"
+      ],
+      [
+        25,
+        "MOVE_ENDURE"
+      ],
+      [
+        30,
+        "MOVE_REVERSAL"
+      ],
+      [
+        35,
+        "MOVE_FIRSTIMPRESSION"
+      ],
+      [
+        40,
+        "MOVE_NORETREAT"
+      ],
+      [
+        45,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        50,
+        "MOVE_CLOSE_COMBAT"
+      ],
+      [
+        55,
+        "MOVE_MEGAHORN"
+      ],
+      [
+        60,
+        "MOVE_COUNTER"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_FALINKS",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 30,
+    "weight": 620,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    },
+    "fr": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    },
+    "de": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    },
+    "it": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    },
+    "es": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    },
+    "jp": {
+      "name": "FALINKS",
+      "category": "Formation Pok\u00e9mon",
+      "entry_text": [
+        "The six of them work together as one Pok\u00e9mon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

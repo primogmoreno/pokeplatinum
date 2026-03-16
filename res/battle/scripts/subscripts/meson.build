@@ -183,6 +183,7 @@ subscript_files = files(
     'subscript_absorb_and_boost_fire_type_moves.s',
     'subscript_lightning_rod_redirected.s',
     'subscript_blocked_by_soundproof.s',
+    'subscript_absorb_and_attack_up_1_stage.s',
     'subscript_absorb_and_speed_up_1_stage.s',
     'subscript_drizzle.s',
     'subscript_sand_stream.s',

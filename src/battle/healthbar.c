@@ -1381,7 +1381,7 @@ static s32 Healthbar_DrawGauge(Healthbar *healthbar, enum HealthbarGaugeType gau
     s32 fillOffset;
 
     if (gaugeType == HEALTHBAR_GAUGE_HP) {
-        result = UpdateGauge(healthbar->maxHP, healthbar->curHP, healthbar->damage, &healthbar->hpTemp, HEALTHBAR_HP_CELL_COUNT, 4);
+        result = UpdateGauge(healthbar->maxHP, healthbar->curHP, healthbar->damage, &healthbar->hpTemp, HEALTHBAR_HP_CELL_COUNT, 16);
     } else {
         fillOffset = CalcGaugeFill(healthbar->curExp, healthbar->expReward, healthbar->maxExp, HEALTHBAR_EXP_CELL_COUNT);
 

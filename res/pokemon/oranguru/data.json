@@ -1,0 +1,176 @@
+{
+  "base_stats": {
+    "hp": 90,
+    "attack": 60,
+    "defense": 80,
+    "speed": 60,
+    "special_attack": 90,
+    "special_defense": 110
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_PSYCHIC"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 172,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_INNER_FOCUS",
+    "ABILITY_TELEPATHY"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_WHITE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TAUNT"
+      ],
+      [
+        1,
+        "MOVE_CONFUSION"
+      ],
+      [
+        5,
+        "MOVE_AFTERYOU"
+      ],
+      [
+        10,
+        "MOVE_CALM_MIND"
+      ],
+      [
+        15,
+        "MOVE_STOREDPOWER"
+      ],
+      [
+        20,
+        "MOVE_PSYCH_UP"
+      ],
+      [
+        25,
+        "MOVE_QUASH"
+      ],
+      [
+        30,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        35,
+        "MOVE_ZEN_HEADBUTT"
+      ],
+      [
+        40,
+        "MOVE_TRICK_ROOM"
+      ],
+      [
+        45,
+        "MOVE_PSYCHIC"
+      ],
+      [
+        50,
+        "MOVE_INSTRUCT"
+      ],
+      [
+        55,
+        "MOVE_FOULPLAY"
+      ],
+      [
+        60,
+        "MOVE_FUTURE_SIGHT"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_ORANGURU",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 15,
+    "weight": 760,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    },
+    "fr": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    },
+    "de": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    },
+    "it": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    },
+    "es": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    },
+    "jp": {
+      "name": "ORANGURU",
+      "category": "Sage Pok\u00e9mon",
+      "entry_text": [
+        "It normally spends its time meditating in the treetops. It throws Pok\u00e9 Balls and gives other Pok\u00e9mon orders as it pleases."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

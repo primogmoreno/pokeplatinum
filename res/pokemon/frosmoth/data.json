@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 65,
+    "defense": 60,
+    "speed": 65,
+    "special_attack": 125,
+    "special_defense": 90
+  },
+  "types": [
+    "TYPE_ICE",
+    "TYPE_BUG"
+  ],
+  "catch_rate": 75,
+  "base_exp_reward": 168,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_BUG",
+    "EGG_GROUP_BUG"
+  ],
+  "abilities": [
+    "ABILITY_SHIELD_DUST",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_WHITE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_ICY_WIND"
+      ],
+      [
+        1,
+        "MOVE_STRUGGLEBUG"
+      ],
+      [
+        1,
+        "MOVE_POWDER_SNOW"
+      ],
+      [
+        1,
+        "MOVE_ATTRACT"
+      ],
+      [
+        1,
+        "MOVE_HELPING_HAND"
+      ],
+      [
+        4,
+        "MOVE_STUN_SPORE"
+      ],
+      [
+        8,
+        "MOVE_INFESTATION"
+      ],
+      [
+        12,
+        "MOVE_MIST"
+      ],
+      [
+        16,
+        "MOVE_DEFOG"
+      ],
+      [
+        21,
+        "MOVE_FEATHER_DANCE"
+      ],
+      [
+        24,
+        "MOVE_AURORA_BEAM"
+      ],
+      [
+        28,
+        "MOVE_SNOWSCAPE"
+      ],
+      [
+        32,
+        "MOVE_BUG_BUZZ"
+      ],
+      [
+        36,
+        "MOVE_AURORAVEIL"
+      ],
+      [
+        40,
+        "MOVE_BLIZZARD"
+      ],
+      [
+        44,
+        "MOVE_TAILWIND"
+      ],
+      [
+        48,
+        "MOVE_WIDEGUARD"
+      ],
+      [
+        52,
+        "MOVE_QUIVERDANCE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_FROSMOTH",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 13,
+    "weight": 420,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    },
+    "fr": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    },
+    "de": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    },
+    "it": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    },
+    "es": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    },
+    "jp": {
+      "name": "FROSMOTH",
+      "category": "Frost Moth Pok\u00e9mon",
+      "entry_text": [
+        "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

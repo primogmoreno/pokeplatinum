@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 83,
+    "attack": 89,
+    "defense": 71,
+    "speed": 83,
+    "special_attack": 173,
+    "special_defense": 71
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_ELECTRIC"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_BEASTBOOST",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BLACK",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_THUNDER_SHOCK"
+      ],
+      [
+        1,
+        "MOVE_WRAP"
+      ],
+      [
+        5,
+        "MOVE_CHARGE"
+      ],
+      [
+        10,
+        "MOVE_THUNDER_WAVE"
+      ],
+      [
+        15,
+        "MOVE_INGRAIN"
+      ],
+      [
+        20,
+        "MOVE_SPARK"
+      ],
+      [
+        25,
+        "MOVE_SHOCK_WAVE"
+      ],
+      [
+        30,
+        "MOVE_HYPNOSIS"
+      ],
+      [
+        35,
+        "MOVE_EERIEIMPULSE"
+      ],
+      [
+        40,
+        "MOVE_THUNDER_PUNCH"
+      ],
+      [
+        45,
+        "MOVE_DISCHARGE"
+      ],
+      [
+        50,
+        "MOVE_MAGNET_RISE"
+      ],
+      [
+        55,
+        "MOVE_THUNDERBOLT"
+      ],
+      [
+        60,
+        "MOVE_ELECTRICTERRAIN"
+      ],
+      [
+        65,
+        "MOVE_POWER_WHIP"
+      ],
+      [
+        70,
+        "MOVE_ZAP_CANNON"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_XURKITREE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 38,
+    "weight": 1000,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    },
+    "fr": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    },
+    "de": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    },
+    "it": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    },
+    "es": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    },
+    "jp": {
+      "name": "XURKITREE",
+      "category": "Glowing Pok\u00e9mon",
+      "entry_text": [
+        "One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

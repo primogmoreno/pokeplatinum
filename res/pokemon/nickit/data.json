@@ -1,0 +1,164 @@
+{
+  "base_stats": {
+    "hp": 40,
+    "attack": 28,
+    "defense": 28,
+    "speed": 50,
+    "special_attack": 47,
+    "special_defense": 52
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_DARK"
+  ],
+  "catch_rate": 255,
+  "base_exp_reward": 49,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_RUN_AWAY",
+    "ABILITY_UNBURDEN"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        1,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        4,
+        "MOVE_BEAT_UP"
+      ],
+      [
+        8,
+        "MOVE_HONECLAWS"
+      ],
+      [
+        12,
+        "MOVE_SNARL"
+      ],
+      [
+        16,
+        "MOVE_ASSURANCE"
+      ],
+      [
+        20,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        24,
+        "MOVE_SUCKER_PUNCH"
+      ],
+      [
+        28,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        32,
+        "MOVE_TAILSLAP"
+      ],
+      [
+        36,
+        "MOVE_FOULPLAY"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_NICKIT",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 6,
+    "weight": 89,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    },
+    "fr": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    },
+    "de": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    },
+    "it": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    },
+    "es": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    },
+    "jp": {
+      "name": "NICKIT",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "Aided by the soft pads on its feet, it silently raids the food stores of other Pok\u00e9mon. It survives off its ill-gotten gains."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

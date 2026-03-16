@@ -1,0 +1,168 @@
+{
+  "base_stats": {
+    "hp": 44,
+    "attack": 50,
+    "defense": 91,
+    "speed": 10,
+    "special_attack": 24,
+    "special_defense": 86
+  },
+  "types": [
+    "TYPE_GRASS",
+    "TYPE_STEEL"
+  ],
+  "catch_rate": 255,
+  "base_exp_reward": 61,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 1,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_GRASS",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_GRAY",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        5,
+        "MOVE_NONE"
+      ],
+      [
+        10,
+        "MOVE_NONE"
+      ],
+      [
+        15,
+        "MOVE_NONE"
+      ],
+      [
+        20,
+        "MOVE_NONE"
+      ],
+      [
+        25,
+        "MOVE_NONE"
+      ],
+      [
+        30,
+        "MOVE_NONE"
+      ],
+      [
+        35,
+        "MOVE_NONE"
+      ],
+      [
+        41,
+        "MOVE_NONE"
+      ],
+      [
+        45,
+        "MOVE_NONE"
+      ],
+      [
+        50,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_FERROSEED",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 6,
+    "weight": 188,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    },
+    "de": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    },
+    "it": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    },
+    "es": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    },
+    "jp": {
+      "name": "Ferroseed",
+      "category": "Thorn Seed Pok\u00e9mon",
+      "entry_text": [
+        "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

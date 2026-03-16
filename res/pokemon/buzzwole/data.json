@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 107,
+    "attack": 139,
+    "defense": 139,
+    "speed": 79,
+    "special_attack": 53,
+    "special_defense": 53
+  },
+  "types": [
+    "TYPE_BUG",
+    "TYPE_FIGHTING"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_BEASTBOOST",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_HARDEN"
+      ],
+      [
+        1,
+        "MOVE_POWERUPPUNCH"
+      ],
+      [
+        5,
+        "MOVE_TAUNT"
+      ],
+      [
+        10,
+        "MOVE_FELLSTINGER"
+      ],
+      [
+        15,
+        "MOVE_VITAL_THROW"
+      ],
+      [
+        20,
+        "MOVE_BULK_UP"
+      ],
+      [
+        25,
+        "MOVE_ENDURE"
+      ],
+      [
+        30,
+        "MOVE_REVERSAL"
+      ],
+      [
+        35,
+        "MOVE_MEGA_PUNCH"
+      ],
+      [
+        40,
+        "MOVE_LUNGE"
+      ],
+      [
+        45,
+        "MOVE_FOCUS_ENERGY"
+      ],
+      [
+        50,
+        "MOVE_DYNAMIC_PUNCH"
+      ],
+      [
+        55,
+        "MOVE_COUNTER"
+      ],
+      [
+        60,
+        "MOVE_HAMMER_ARM"
+      ],
+      [
+        65,
+        "MOVE_SUPERPOWER"
+      ],
+      [
+        70,
+        "MOVE_FOCUS_PUNCH"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_BUZZWOLE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 24,
+    "weight": 3336,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    },
+    "fr": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    },
+    "de": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    },
+    "it": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    },
+    "es": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    },
+    "jp": {
+      "name": "BUZZWOLE",
+      "category": "Swollen Pok\u00e9mon",
+      "entry_text": [
+        "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "base_stats": {
+    "hp": 105,
+    "attack": 140,
+    "defense": 55,
+    "speed": 95,
+    "special_attack": 30,
+    "special_defense": 55
+  },
+  "types": [
+    "TYPE_FIRE",
+    "TYPE_FIRE"
+  ],
+  "catch_rate": 60,
+  "base_exp_reward": 168,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_NONE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        1,
+        "MOVE_NONE"
+      ],
+      [
+        12,
+        "MOVE_NONE"
+      ],
+      [
+        16,
+        "MOVE_NONE"
+      ],
+      [
+        20,
+        "MOVE_NONE"
+      ],
+      [
+        24,
+        "MOVE_NONE"
+      ],
+      [
+        28,
+        "MOVE_NONE"
+      ],
+      [
+        32,
+        "MOVE_NONE"
+      ],
+      [
+        38,
+        "MOVE_NONE"
+      ],
+      [
+        44,
+        "MOVE_NONE"
+      ],
+      [
+        50,
+        "MOVE_NONE"
+      ],
+      [
+        56,
+        "MOVE_NONE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_DARMANITAN",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 13,
+    "weight": 929,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "en": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    },
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "fr": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    },
+    "de": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    },
+    "it": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    },
+    "es": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    },
+    "jp": {
+      "name": "Darmanitan",
+      "category": "Blazing Pok\u00e9mon",
+      "entry_text": [
+        "When weakened in battle, it transforms into a stone statue. Then it sharpens its mind and fights on mentally."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Crafty Shield",
+    "class": "CLASS_STATUS",
+    "type": "TYPE_NORMAL",
+    "power": 0,
+    "accuracy": 0,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_DO_NOTHING",
+        "chance": 0
+    },
+    "range": "RANGE_USER_SIDE",
+    "priority": 3,
+    "flags": [],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

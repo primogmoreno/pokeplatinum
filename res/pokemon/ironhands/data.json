@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 154,
+    "attack": 140,
+    "defense": 108,
+    "speed": 50,
+    "special_attack": 50,
+    "special_defense": 68
+  },
+  "types": [
+    "TYPE_FIGHTING",
+    "TYPE_ELECTRIC"
+  ],
+  "catch_rate": 50,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 3,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 50,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_QUARKDRIVE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_GRAY",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ELECTRICTERRAIN"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_FOCUS_ENERGY"
+      ],
+      [
+        1,
+        "MOVE_ARM_THRUST"
+      ],
+      [
+        1,
+        "MOVE_SAND_ATTACK"
+      ],
+      [
+        7,
+        "MOVE_FAKE_OUT"
+      ],
+      [
+        14,
+        "MOVE_WHIRLWIND"
+      ],
+      [
+        21,
+        "MOVE_THUNDER_PUNCH"
+      ],
+      [
+        28,
+        "MOVE_SLAM"
+      ],
+      [
+        35,
+        "MOVE_FORCE_PALM"
+      ],
+      [
+        42,
+        "MOVE_SEISMIC_TOSS"
+      ],
+      [
+        49,
+        "MOVE_CHARGE"
+      ],
+      [
+        56,
+        "MOVE_WILDCHARGE"
+      ],
+      [
+        63,
+        "MOVE_CLOSE_COMBAT"
+      ],
+      [
+        70,
+        "MOVE_DETECT"
+      ],
+      [
+        77,
+        "MOVE_HEAVYSLAM"
+      ],
+      [
+        84,
+        "MOVE_BELLY_DRUM"
+      ],
+      [
+        91,
+        "MOVE_FOCUS_PUNCH"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_IRONHANDS",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 18,
+    "weight": 3807,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    },
+    "fr": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    },
+    "de": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    },
+    "it": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    },
+    "es": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    },
+    "jp": {
+      "name": "IRON HANDS",
+      "category": "Paradox Pok\u00e9mon",
+      "entry_text": [
+        "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

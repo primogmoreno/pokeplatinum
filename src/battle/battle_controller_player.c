@@ -3626,6 +3626,7 @@ enum AfterMoveEffectState {
     AFTER_MOVE_EFFECT_TRIGGER_SWITCH_IN_EFFECTS,
     AFTER_MOVE_EFFECT_ATTACKER_ITEM,
     AFTER_MOVE_EFFECT_DEFENDER_ITEM,
+    AFTER_MOVE_EFFECT_DEFIANT_COMPETITIVE,
     AFTER_MOVE_EFFECT_TRIGGER_ITEMS_ON_HIT,
     AFTER_MOVE_EFFECT_THAW_DEFENDER,
     AFTER_MOVE_EFFECT_HELD_ITEM_STATUS,
@@ -3692,6 +3693,31 @@ static void BattleControllerPlayer_AfterMoveEffects(BattleSystem *battleSys, Bat
         if (battleCtx->defender != BATTLER_NONE && BattleSystem_TriggerHeldItem(battleSys, battleCtx, battleCtx->defender) == TRUE) {
             return;
         }
+
+    case AFTER_MOVE_EFFECT_DEFIANT_COMPETITIVE: {
+        battleCtx->afterMoveEffectState++;
+
+        int maxBattlers2 = BattleSystem_GetMaxBattlers(battleSys);
+        for (int b = 0; b < maxBattlers2; b++) {
+            int battler2 = battleCtx->monSpeedOrder[b];
+            if (battleCtx->battleMons[battler2].curHP
+                && battleCtx->selfTurnFlags[battler2].statLoweredByOpponent) {
+                int ability2 = Battler_Ability(battleCtx, battler2);
+                if (ability2 == ABILITY_DEFIANT || ability2 == ABILITY_COMPETITIVE) {
+                    battleCtx->selfTurnFlags[battler2].statLoweredByOpponent = FALSE;
+                    battleCtx->sideEffectParam = (ability2 == ABILITY_DEFIANT)
+                        ? MOVE_SUBSCRIPT_PTR_ATTACK_UP_2_STAGES
+                        : MOVE_SUBSCRIPT_PTR_SP_ATTACK_UP_2_STAGES;
+                    battleCtx->sideEffectType = SIDE_EFFECT_TYPE_ABILITY;
+                    battleCtx->sideEffectMon = battler2;
+                    LOAD_SUBSEQ(subscript_update_stat_stage);
+                    battleCtx->commandNext = battleCtx->command;
+                    battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;
+                    return;
+                }
+            }
+        }
+    }
 
     case AFTER_MOVE_EFFECT_TRIGGER_ITEMS_ON_HIT:
         battleCtx->afterMoveEffectState++;

@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 75,
+    "defense": 115,
+    "speed": 85,
+    "special_attack": 95,
+    "special_defense": 130
+  },
+  "types": [
+    "TYPE_WATER",
+    "TYPE_NORMAL"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_MISTYSURGE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PURPLE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_WATER_GUN"
+      ],
+      [
+        1,
+        "MOVE_DISARMINGVOICE"
+      ],
+      [
+        5,
+        "MOVE_WITHDRAW"
+      ],
+      [
+        10,
+        "MOVE_MIST"
+      ],
+      [
+        10,
+        "MOVE_HAZE"
+      ],
+      [
+        15,
+        "MOVE_AQUA_RING"
+      ],
+      [
+        20,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        25,
+        "MOVE_BRINE"
+      ],
+      [
+        30,
+        "MOVE_DEFOG"
+      ],
+      [
+        35,
+        "MOVE_HEALPULSE"
+      ],
+      [
+        40,
+        "MOVE_SURF"
+      ],
+      [
+        45,
+        "MOVE_MUDDY_WATER"
+      ],
+      [
+        50,
+        "MOVE_MEAN_LOOK"
+      ],
+      [
+        55,
+        "MOVE_NATURESMADNESS"
+      ],
+      [
+        60,
+        "MOVE_MOONBLAST"
+      ],
+      [
+        65,
+        "MOVE_HYDRO_PUMP"
+      ],
+      [
+        70,
+        "MOVE_SOAK"
+      ],
+      [
+        75,
+        "MOVE_MISTYTERRAIN"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_TAPUFINI",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 13,
+    "weight": 212,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    },
+    "fr": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    },
+    "de": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    },
+    "it": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    },
+    "es": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    },
+    "jp": {
+      "name": "TAPU FINI",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "The dense fog it creates brings the downfall and destruction of its confused enemies. Ocean currents are the source of its energy."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

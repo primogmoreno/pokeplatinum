@@ -3109,7 +3109,8 @@ static BOOL BtlCmd_ChangeStatStage(BattleSystem *battleSys, BattleContext *battl
 
                     result = 1;
                 } else if (Battler_IgnorableAbility(battleCtx, battleCtx->attacker, battleCtx->sideEffectMon, ABILITY_CLEAR_BODY) == TRUE
-                    || Battler_IgnorableAbility(battleCtx, battleCtx->attacker, battleCtx->sideEffectMon, ABILITY_WHITE_SMOKE) == TRUE) {
+                    || Battler_IgnorableAbility(battleCtx, battleCtx->attacker, battleCtx->sideEffectMon, ABILITY_WHITE_SMOKE) == TRUE
+                    || Battler_IgnorableAbility(battleCtx, battleCtx->attacker, battleCtx->sideEffectMon, ABILITY_FULLMETALBODY) == TRUE) {
                     if (battleCtx->sideEffectType == SIDE_EFFECT_TYPE_ABILITY) {
                         SetupNicknameAbilityNicknameAbilityMsg(battleCtx, BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly); // "{0}'s {1} suppressed {2}'s {3}!"
                     } else {
@@ -3121,7 +3122,8 @@ static BOOL BtlCmd_ChangeStatStage(BattleSystem *battleSys, BattleContext *battl
 
                     result = 1;
                 } else if (AbilityBlocksSpecificStatReduction(battleCtx, statOffset, ABILITY_KEEN_EYE, BATTLE_STAT_ACCURACY)
-                    || AbilityBlocksSpecificStatReduction(battleCtx, statOffset, ABILITY_HYPER_CUTTER, BATTLE_STAT_ATTACK)) {
+                    || AbilityBlocksSpecificStatReduction(battleCtx, statOffset, ABILITY_HYPER_CUTTER, BATTLE_STAT_ATTACK)
+                    || AbilityBlocksSpecificStatReduction(battleCtx, statOffset, ABILITY_BIGPECKS, BATTLE_STAT_DEFENSE)) {
                     if (battleCtx->sideEffectType == SIDE_EFFECT_TYPE_ABILITY) {
                         SetupNicknameAbilityNicknameAbilityMsg(battleCtx, BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly); // "{0}'s {1} suppressed {2}'s {3}!"
                     } else {
@@ -3198,6 +3200,11 @@ static BOOL BtlCmd_ChangeStatStage(BattleSystem *battleSys, BattleContext *battl
 
         if (mon->statBoosts[BATTLE_STAT_ATTACK + statOffset] < MIN_STAT_STAGE) {
             mon->statBoosts[BATTLE_STAT_ATTACK + statOffset] = MIN_STAT_STAGE;
+        }
+
+        // Flag for DEFIANT/COMPETITIVE: stat was lowered by an opponent this turn
+        if (battleCtx->attacker != battleCtx->sideEffectMon) {
+            battleCtx->selfTurnFlags[battleCtx->sideEffectMon].statLoweredByOpponent = TRUE;
         }
     }
 

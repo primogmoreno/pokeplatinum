@@ -1,0 +1,176 @@
+{
+  "base_stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 90,
+    "speed": 44,
+    "special_attack": 97,
+    "special_defense": 123
+  },
+  "types": [
+    "TYPE_POISON",
+    "TYPE_DRAGON"
+  ],
+  "catch_rate": 55,
+  "base_exp_reward": 173,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_WATER_1",
+    "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+    "ABILITY_POISON_POINT",
+    "ABILITY_POISONTOUCH"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ACID"
+      ],
+      [
+        1,
+        "MOVE_WATER_GUN"
+      ],
+      [
+        1,
+        "MOVE_SMOKE_SCREEN"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        15,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        20,
+        "MOVE_DOUBLE_TEAM"
+      ],
+      [
+        25,
+        "MOVE_POISON_TAIL"
+      ],
+      [
+        30,
+        "MOVE_WATER_PULSE"
+      ],
+      [
+        35,
+        "MOVE_TOXIC"
+      ],
+      [
+        40,
+        "MOVE_DRAGON_PULSE"
+      ],
+      [
+        45,
+        "MOVE_AQUA_TAIL"
+      ],
+      [
+        52,
+        "MOVE_SLUDGE_BOMB"
+      ],
+      [
+        59,
+        "MOVE_HYDRO_PUMP"
+      ],
+      [
+        66,
+        "MOVE_OUTRAGE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_DRAGALGE",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 18,
+    "weight": 815,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    },
+    "fr": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    },
+    "de": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    },
+    "it": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    },
+    "es": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    },
+    "jp": {
+      "name": "DRAGALGE",
+      "category": "Mock Kelp Pok\u00e9mon",
+      "entry_text": [
+        "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

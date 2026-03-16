@@ -1,0 +1,188 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 130,
+    "defense": 115,
+    "speed": 75,
+    "special_attack": 85,
+    "special_defense": 95
+  },
+  "types": [
+    "TYPE_GRASS",
+    "TYPE_NORMAL"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 3,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_GRASSYSURGE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ROCK_SMASH"
+      ],
+      [
+        1,
+        "MOVE_LEAFAGE"
+      ],
+      [
+        5,
+        "MOVE_WITHDRAW"
+      ],
+      [
+        10,
+        "MOVE_DISABLE"
+      ],
+      [
+        15,
+        "MOVE_LEECH_SEED"
+      ],
+      [
+        20,
+        "MOVE_MEGA_DRAIN"
+      ],
+      [
+        25,
+        "MOVE_WHIRLWIND"
+      ],
+      [
+        30,
+        "MOVE_HORN_ATTACK"
+      ],
+      [
+        35,
+        "MOVE_SCARY_FACE"
+      ],
+      [
+        40,
+        "MOVE_HORNLEECH"
+      ],
+      [
+        45,
+        "MOVE_ZEN_HEADBUTT"
+      ],
+      [
+        50,
+        "MOVE_MEAN_LOOK"
+      ],
+      [
+        55,
+        "MOVE_NATURESMADNESS"
+      ],
+      [
+        60,
+        "MOVE_WOOD_HAMMER"
+      ],
+      [
+        65,
+        "MOVE_MEGAHORN"
+      ],
+      [
+        70,
+        "MOVE_SKULL_BASH"
+      ],
+      [
+        75,
+        "MOVE_GRASSYTERRAIN"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_TAPUBULU",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 19,
+    "weight": 455,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    },
+    "fr": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    },
+    "de": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    },
+    "it": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    },
+    "es": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    },
+    "jp": {
+      "name": "TAPU BULU",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

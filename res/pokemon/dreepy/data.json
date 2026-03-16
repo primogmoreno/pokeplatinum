@@ -1,0 +1,136 @@
+{
+  "base_stats": {
+    "hp": 28,
+    "attack": 60,
+    "defense": 30,
+    "speed": 82,
+    "special_attack": 40,
+    "special_defense": 30
+  },
+  "types": [
+    "TYPE_DRAGON",
+    "TYPE_GHOST"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 54,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 1,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 40,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_AMORPHOUS",
+    "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+    "ABILITY_CLEAR_BODY",
+    "ABILITY_INFILTRATOR"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_GREEN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        1,
+        "MOVE_ASTONISH"
+      ],
+      [
+        1,
+        "MOVE_INFESTATION"
+      ],
+      [
+        1,
+        "MOVE_BITE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_DREEPY",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 5,
+    "weight": 20,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    },
+    "fr": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    },
+    "de": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    },
+    "it": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    },
+    "es": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    },
+    "jp": {
+      "name": "DREEPY",
+      "category": "Lingering Pok\u00e9mon",
+      "entry_text": [
+        "After being reborn as a ghost Pok\u00e9mon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Sticky Web",
+    "class": "CLASS_STATUS",
+    "type": "TYPE_BUG",
+    "power": 0,
+    "accuracy": 0,
+    "pp": 20,
+    "effect": {
+        "type": "BATTLE_EFFECT_DO_NOTHING",
+        "chance": 0
+    },
+    "range": "RANGE_OPPONENT_SIDE",
+    "priority": 0,
+    "flags": [],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

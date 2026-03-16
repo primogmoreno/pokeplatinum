@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 88,
+    "attack": 112,
+    "defense": 75,
+    "speed": 143,
+    "special_attack": 102,
+    "special_defense": 80
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_ELECTRIC"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 300,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 3,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 120,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_VOLT_ABSORB",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_YELLOW",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_POWERUPPUNCH"
+      ],
+      [
+        1,
+        "MOVE_FAKE_OUT"
+      ],
+      [
+        1,
+        "MOVE_SCRATCH"
+      ],
+      [
+        1,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        1,
+        "MOVE_SNARL"
+      ],
+      [
+        1,
+        "MOVE_SPARK"
+      ],
+      [
+        8,
+        "MOVE_FURY_SWIPES"
+      ],
+      [
+        16,
+        "MOVE_QUICKGUARD"
+      ],
+      [
+        24,
+        "MOVE_SLASH"
+      ],
+      [
+        32,
+        "MOVE_VOLTSWITCH"
+      ],
+      [
+        40,
+        "MOVE_CHARGE"
+      ],
+      [
+        48,
+        "MOVE_THUNDER_PUNCH"
+      ],
+      [
+        56,
+        "MOVE_HONECLAWS"
+      ],
+      [
+        64,
+        "MOVE_DISCHARGE"
+      ],
+      [
+        72,
+        "MOVE_WILDCHARGE"
+      ],
+      [
+        80,
+        "MOVE_AGILITY"
+      ],
+      [
+        88,
+        "MOVE_PLASMAFISTS"
+      ],
+      [
+        96,
+        "MOVE_CLOSE_COMBAT"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_ZERAORA",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 15,
+    "weight": 445,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    },
+    "fr": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    },
+    "de": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    },
+    "it": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    },
+    "es": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    },
+    "jp": {
+      "name": "ZERAORA",
+      "category": "Thunderclap Pok\u00e9mon",
+      "entry_text": [
+        "It approaches its enemies at the speed of lightning, then tears them limb from limb with its sharp claws."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 115,
+    "defense": 85,
+    "speed": 130,
+    "special_attack": 95,
+    "special_defense": 75
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_NORMAL"
+  ],
+  "catch_rate": 3,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 3,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_ELECTRICSURGE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_YELLOW",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_THUNDER_SHOCK"
+      ],
+      [
+        1,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        5,
+        "MOVE_WITHDRAW"
+      ],
+      [
+        10,
+        "MOVE_FAIRYWIND"
+      ],
+      [
+        15,
+        "MOVE_FALSE_SWIPE"
+      ],
+      [
+        20,
+        "MOVE_SPARK"
+      ],
+      [
+        25,
+        "MOVE_SHOCK_WAVE"
+      ],
+      [
+        30,
+        "MOVE_CHARGE"
+      ],
+      [
+        35,
+        "MOVE_AGILITY"
+      ],
+      [
+        40,
+        "MOVE_SCREECH"
+      ],
+      [
+        45,
+        "MOVE_DISCHARGE"
+      ],
+      [
+        50,
+        "MOVE_MEAN_LOOK"
+      ],
+      [
+        55,
+        "MOVE_NATURESMADNESS"
+      ],
+      [
+        60,
+        "MOVE_WILDCHARGE"
+      ],
+      [
+        65,
+        "MOVE_BRAVE_BIRD"
+      ],
+      [
+        70,
+        "MOVE_POWER_SWAP"
+      ],
+      [
+        75,
+        "MOVE_ELECTRICTERRAIN"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_TAPUKOKO",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 18,
+    "weight": 205,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    },
+    "fr": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    },
+    "de": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    },
+    "it": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    },
+    "es": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    },
+    "jp": {
+      "name": "TAPU KOKO",
+      "category": "Land Spirit Pok\u00e9mon",
+      "entry_text": [
+        "Although it’s called a guardian deity, if a person or Pok\u00e9mon puts it in a bad mood, it will become a malevolent deity and attack."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "base_stats": {
+    "hp": 95,
+    "attack": 120,
+    "defense": 65,
+    "speed": 60,
+    "special_attack": 95,
+    "special_defense": 75
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_NORMAL"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 255,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 3,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_MALE_ONLY",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FAIRY",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_PRANKSTER",
+    "ABILITY_FRISK"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_PURPLE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_SPIRITBREAK"
+      ],
+      [
+        1,
+        "MOVE_CONFIDE"
+      ],
+      [
+        1,
+        "MOVE_BULK_UP"
+      ],
+      [
+        1,
+        "MOVE_BITE"
+      ],
+      [
+        1,
+        "MOVE_FAKE_OUT"
+      ],
+      [
+        1,
+        "MOVE_FLATTER"
+      ],
+      [
+        1,
+        "MOVE_FALSESURRENDER"
+      ],
+      [
+        12,
+        "MOVE_FAKE_TEARS"
+      ],
+      [
+        16,
+        "MOVE_ASSURANCE"
+      ],
+      [
+        20,
+        "MOVE_SWAGGER"
+      ],
+      [
+        24,
+        "MOVE_SUCKER_PUNCH"
+      ],
+      [
+        28,
+        "MOVE_TORMENT"
+      ],
+      [
+        35,
+        "MOVE_DARK_PULSE"
+      ],
+      [
+        40,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        48,
+        "MOVE_PLAYROUGH"
+      ],
+      [
+        56,
+        "MOVE_FOULPLAY"
+      ],
+      [
+        64,
+        "MOVE_HAMMER_ARM"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_GRIMMSNARL",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 15,
+    "weight": 610,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    },
+    "fr": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    },
+    "de": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    },
+    "it": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    },
+    "es": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    },
+    "jp": {
+      "name": "GRIMMSNARL",
+      "category": "Bulk Up Pok\u00e9mon",
+      "entry_text": [
+        "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

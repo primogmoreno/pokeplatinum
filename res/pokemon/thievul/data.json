@@ -1,0 +1,172 @@
+{
+  "base_stats": {
+    "hp": 70,
+    "attack": 58,
+    "defense": 58,
+    "speed": 90,
+    "special_attack": 87,
+    "special_defense": 92
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_DARK"
+  ],
+  "catch_rate": 127,
+  "base_exp_reward": 159,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 15,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_FAST",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_RUN_AWAY",
+    "ABILITY_UNBURDEN"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_THIEF"
+      ],
+      [
+        1,
+        "MOVE_TAIL_WHIP"
+      ],
+      [
+        1,
+        "MOVE_BEAT_UP"
+      ],
+      [
+        1,
+        "MOVE_HONECLAWS"
+      ],
+      [
+        1,
+        "MOVE_QUICK_ATTACK"
+      ],
+      [
+        12,
+        "MOVE_SNARL"
+      ],
+      [
+        16,
+        "MOVE_ASSURANCE"
+      ],
+      [
+        22,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        28,
+        "MOVE_SUCKER_PUNCH"
+      ],
+      [
+        34,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        40,
+        "MOVE_TAILSLAP"
+      ],
+      [
+        46,
+        "MOVE_FOULPLAY"
+      ],
+      [
+        52,
+        "MOVE_PARTINGSHOT"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_THIEVUL",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 12,
+    "weight": 199,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    },
+    "fr": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    },
+    "de": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    },
+    "it": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    },
+    "es": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    },
+    "jp": {
+      "name": "THIEVUL",
+      "category": "Fox Pok\u00e9mon",
+      "entry_text": [
+        "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

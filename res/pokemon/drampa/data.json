@@ -1,0 +1,172 @@
+{
+  "base_stats": {
+    "hp": 78,
+    "attack": 60,
+    "defense": 85,
+    "speed": 36,
+    "special_attack": 135,
+    "special_defense": 91
+  },
+  "types": [
+    "TYPE_NORMAL",
+    "TYPE_DRAGON"
+  ],
+  "catch_rate": 70,
+  "base_exp_reward": 170,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MONSTER",
+    "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+    "ABILITY_BERSERK",
+    "ABILITY_SAPSIPPER"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_WHITE",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_ECHOEDVOICE"
+      ],
+      [
+        1,
+        "MOVE_PLAYNICE"
+      ],
+      [
+        5,
+        "MOVE_TWISTER"
+      ],
+      [
+        10,
+        "MOVE_PROTECT"
+      ],
+      [
+        15,
+        "MOVE_GLARE"
+      ],
+      [
+        20,
+        "MOVE_SAFEGUARD"
+      ],
+      [
+        25,
+        "MOVE_DRAGON_BREATH"
+      ],
+      [
+        30,
+        "MOVE_EXTRASENSORY"
+      ],
+      [
+        35,
+        "MOVE_DRAGON_PULSE"
+      ],
+      [
+        40,
+        "MOVE_LIGHT_SCREEN"
+      ],
+      [
+        45,
+        "MOVE_FLY"
+      ],
+      [
+        50,
+        "MOVE_HYPER_VOICE"
+      ],
+      [
+        55,
+        "MOVE_OUTRAGE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_DRAMPA",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 30,
+    "weight": 1850,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    },
+    "fr": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    },
+    "de": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    },
+    "it": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    },
+    "es": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    },
+    "jp": {
+      "name": "DRAMPA",
+      "category": "Placid Pok\u00e9mon",
+      "entry_text": [
+        "This Pok\u00e9mon is friendly to people and loves children most of all. It comes from deep in the mountains to play with children it likes in town."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "base_stats": {
+    "hp": 55,
+    "attack": 80,
+    "defense": 80,
+    "speed": 100,
+    "special_attack": 135,
+    "special_defense": 120
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_FIRE"
+  ],
+  "catch_rate": 6,
+  "base_exp_reward": 285,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 50,
+  "base_friendship": 0,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_BEADSOFRUIN",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_RED",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_EMBER"
+      ],
+      [
+        1,
+        "MOVE_SPITE"
+      ],
+      [
+        1,
+        "MOVE_MEAN_LOOK"
+      ],
+      [
+        5,
+        "MOVE_FLAME_WHEEL"
+      ],
+      [
+        10,
+        "MOVE_PAYBACK"
+      ],
+      [
+        15,
+        "MOVE_WILL_O_WISP"
+      ],
+      [
+        20,
+        "MOVE_FLAMECHARGE"
+      ],
+      [
+        25,
+        "MOVE_INCINERATE"
+      ],
+      [
+        30,
+        "MOVE_CONFUSE_RAY"
+      ],
+      [
+        35,
+        "MOVE_NASTY_PLOT"
+      ],
+      [
+        40,
+        "MOVE_DARK_PULSE"
+      ],
+      [
+        45,
+        "MOVE_LAVA_PLUME"
+      ],
+      [
+        50,
+        "MOVE_RUINATION"
+      ],
+      [
+        55,
+        "MOVE_BOUNCE"
+      ],
+      [
+        60,
+        "MOVE_SWAGGER"
+      ],
+      [
+        65,
+        "MOVE_INFERNO"
+      ],
+      [
+        70,
+        "MOVE_MEMENTO"
+      ],
+      [
+        75,
+        "MOVE_OVERHEAT"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_CHIYU",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 4,
+    "weight": 49,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    },
+    "fr": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    },
+    "de": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    },
+    "it": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    },
+    "es": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    },
+    "jp": {
+      "name": "CHI-YU",
+      "category": "Ruinous Pok\u00e9mon",
+      "entry_text": [
+        "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "base_stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "speed": 75,
+    "special_attack": 80,
+    "special_defense": 70
+  },
+  "types": [
+    "TYPE_ELECTRIC",
+    "TYPE_DRAGON"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 177,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 2,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_NO_GENDER",
+  "hatch_cycles": 35,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_UNDISCOVERED",
+    "EGG_GROUP_UNDISCOVERED"
+  ],
+  "abilities": [
+    "ABILITY_VOLT_ABSORB",
+    "ABILITY_HUSTLE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_GREEN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_THUNDER_SHOCK"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        7,
+        "MOVE_CHARGE"
+      ],
+      [
+        14,
+        "MOVE_AERIAL_ACE"
+      ],
+      [
+        21,
+        "MOVE_ANCIENT_POWER"
+      ],
+      [
+        28,
+        "MOVE_PLUCK"
+      ],
+      [
+        35,
+        "MOVE_DRAGONTAIL"
+      ],
+      [
+        42,
+        "MOVE_STOMP"
+      ],
+      [
+        49,
+        "MOVE_SLAM"
+      ],
+      [
+        56,
+        "MOVE_DISCHARGE"
+      ],
+      [
+        63,
+        "MOVE_BOLTBEAK"
+      ],
+      [
+        70,
+        "MOVE_DRAGON_PULSE"
+      ],
+      [
+        77,
+        "MOVE_DRAGON_RUSH"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_DRACOZOLT",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 18,
+    "weight": 1900,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    },
+    "fr": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    },
+    "de": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    },
+    "it": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    },
+    "es": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    },
+    "jp": {
+      "name": "DRACOZOLT",
+      "category": "Fossil Pok\u00e9mon",
+      "entry_text": [
+        "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

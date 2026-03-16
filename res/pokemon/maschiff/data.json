@@ -1,0 +1,180 @@
+{
+  "base_stats": {
+    "hp": 60,
+    "attack": 78,
+    "defense": 60,
+    "speed": 51,
+    "special_attack": 40,
+    "special_defense": 51
+  },
+  "types": [
+    "TYPE_DARK",
+    "TYPE_DARK"
+  ],
+  "catch_rate": 150,
+  "base_exp_reward": 68,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 1,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+  "egg_groups": [
+    "EGG_GROUP_FIELD",
+    "EGG_GROUP_FIELD"
+  ],
+  "abilities": [
+    "ABILITY_INTIMIDATE",
+    "ABILITY_RUN_AWAY"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_LEER"
+      ],
+      [
+        1,
+        "MOVE_SCARY_FACE"
+      ],
+      [
+        4,
+        "MOVE_LICK"
+      ],
+      [
+        7,
+        "MOVE_SNARL"
+      ],
+      [
+        10,
+        "MOVE_HONECLAWS"
+      ],
+      [
+        14,
+        "MOVE_BITE"
+      ],
+      [
+        18,
+        "MOVE_ROAR"
+      ],
+      [
+        22,
+        "MOVE_HEADBUTT"
+      ],
+      [
+        26,
+        "MOVE_PAYBACK"
+      ],
+      [
+        31,
+        "MOVE_CRUNCH"
+      ],
+      [
+        35,
+        "MOVE_SWAGGER"
+      ],
+      [
+        39,
+        "MOVE_REVERSAL"
+      ],
+      [
+        43,
+        "MOVE_JAWLOCK"
+      ],
+      [
+        49,
+        "MOVE_DOUBLE_EDGE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_MASCHIFF",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 5,
+    "weight": 160,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    },
+    "fr": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    },
+    "de": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    },
+    "it": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    },
+    "es": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    },
+    "jp": {
+      "name": "MASCHIFF",
+      "category": "Rascal Pok\u00e9mon",
+      "entry_text": [
+        "Its well-developed jaw and fangs are strong enough to crunch through boulders, and its thick fat makes for an excellent defense."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}

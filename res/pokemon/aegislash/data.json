@@ -1,0 +1,184 @@
+{
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 140,
+    "speed": 60,
+    "special_attack": 50,
+    "special_defense": 140
+  },
+  "types": [
+    "TYPE_STEEL",
+    "TYPE_GHOST"
+  ],
+  "catch_rate": 45,
+  "base_exp_reward": 250,
+  "ev_yields": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 2,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "held_items": {
+    "common": "ITEM_NONE",
+    "rare": "ITEM_NONE"
+  },
+  "gender_ratio": "GENDER_RATIO_FEMALE_50",
+  "hatch_cycles": 20,
+  "base_friendship": 50,
+  "exp_rate": "EXP_RATE_MEDIUM_FAST",
+  "egg_groups": [
+    "EGG_GROUP_MINERAL",
+    "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+    "ABILITY_STANCECHANGE",
+    "ABILITY_NONE"
+  ],
+  "safari_flee_rate": 0,
+  "body_color": "MON_COLOR_BROWN",
+  "flip_sprite": false,
+  "icon_palette": 1,
+  "learnset": {
+    "by_level": [
+      [
+        0,
+        "MOVE_KINGSSHIELD"
+      ],
+      [
+        1,
+        "MOVE_HEAD_SMASH"
+      ],
+      [
+        1,
+        "MOVE_AERIAL_ACE"
+      ],
+      [
+        1,
+        "MOVE_METAL_SOUND"
+      ],
+      [
+        1,
+        "MOVE_SLASH"
+      ],
+      [
+        1,
+        "MOVE_NIGHT_SLASH"
+      ],
+      [
+        1,
+        "MOVE_RETALIATE"
+      ],
+      [
+        1,
+        "MOVE_IRON_DEFENSE"
+      ],
+      [
+        1,
+        "MOVE_IRON_HEAD"
+      ],
+      [
+        1,
+        "MOVE_POWER_TRICK"
+      ],
+      [
+        1,
+        "MOVE_SWORDS_DANCE"
+      ],
+      [
+        1,
+        "MOVE_SACREDSWORD"
+      ],
+      [
+        1,
+        "MOVE_TACKLE"
+      ],
+      [
+        1,
+        "MOVE_FURY_CUTTER"
+      ],
+      [
+        1,
+        "MOVE_SHADOW_SNEAK"
+      ],
+      [
+        1,
+        "MOVE_AUTOTOMIZE"
+      ]
+    ],
+    "by_tm": [],
+    "by_tutor": [],
+    "egg_moves": []
+  },
+  "evolutions": [],
+  "offspring": "SPECIES_AEGISLASH",
+  "footprint": {
+    "has": true,
+    "size": "FOOTPRINT_MEDIUM",
+    "type": "FOOTPRINT_TYPE_CUTE"
+  },
+  "pokedex_data": {
+    "height": 17,
+    "weight": 530,
+    "body_shape": "SHAPE_QUADRUPED",
+    "trainer_scale_f": 256,
+    "pokemon_scale_f": 256,
+    "trainer_scale_m": 256,
+    "pokemon_scale_m": 256,
+    "trainer_pos_f": 0,
+    "pokemon_pos_f": 0,
+    "trainer_pos_m": 0,
+    "pokemon_pos_m": 0,
+    "en": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    },
+    "fr": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    },
+    "de": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    },
+    "it": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    },
+    "es": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    },
+    "jp": {
+      "name": "AEGISLASH",
+      "category": "Royal Sword Pok\u00e9mon",
+      "entry_text": [
+        "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+      ]
+    }
+  },
+  "catching_show": {
+    "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+    "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+    "catching_points": 50,
+    "rarity": 30,
+    "unused": 0
+  }
+}
