@@ -3907,13 +3907,33 @@ static u32 BattleScript_CalcPrizeMoney(BattleSystem *battleSys, BattleContext *b
     }
     }
 
+    u8 trainerClass = trainer.header.trainerType;
+    BOOL isBoss = (trainerClass == TRAINER_CLASS_LEADER_ROARK    ||
+                   trainerClass == TRAINER_CLASS_LEADER_BYRON    ||
+                   trainerClass == TRAINER_CLASS_LEADER_GARDENIA ||
+                   trainerClass == TRAINER_CLASS_LEADER_WAKE     ||
+                   trainerClass == TRAINER_CLASS_LEADER_MAYLENE  ||
+                   trainerClass == TRAINER_CLASS_LEADER_FANTINA  ||
+                   trainerClass == TRAINER_CLASS_LEADER_CANDICE  ||
+                   trainerClass == TRAINER_CLASS_LEADER_VOLKNER  ||
+                   trainerClass == TRAINER_CLASS_ELITE_FOUR_AARON  ||
+                   trainerClass == TRAINER_CLASS_ELITE_FOUR_BERTHA ||
+                   trainerClass == TRAINER_CLASS_ELITE_FOUR_FLINT  ||
+                   trainerClass == TRAINER_CLASS_ELITE_FOUR_LUCIAN ||
+                   trainerClass == TRAINER_CLASS_CHAMPION_CYNTHIA);
+
+    if (!isBoss) {
+        Heap_Free(rawParty);
+        return 10000;
+    }
+
     u32 prize;
     if ((battleSys->battleType & BATTLE_TYPE_TAG) || battleSys->battleType == BATTLE_TYPE_TRAINER_WITH_AI_PARTNER) {
-        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * sTrainerClassPrizeMul[trainer.header.trainerType];
+        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * sTrainerClassPrizeMul[trainerClass];
     } else if (battleSys->battleType & BATTLE_TYPE_DOUBLES) {
-        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * 2 * sTrainerClassPrizeMul[trainer.header.trainerType];
+        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * 2 * sTrainerClassPrizeMul[trainerClass];
     } else {
-        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * sTrainerClassPrizeMul[trainer.header.trainerType];
+        prize = lastLevel * 4 * battleCtx->prizeMoneyMul * sTrainerClassPrizeMul[trainerClass];
     }
 
     Heap_Free(rawParty);

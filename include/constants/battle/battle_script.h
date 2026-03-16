@@ -3,7 +3,7 @@
 
 #define MIN_STAT_STAGE     0
 #define DEFAULT_STAT_STAGE 6
-#define MAX_STAT_STAGE     12
+#define MAX_STAT_STAGE     7
 
 #define BALL_3_SHAKES_SUCCESS 4
 
