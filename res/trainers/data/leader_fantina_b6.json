@@ -1,0 +1,98 @@
+{
+    "name": "Fantina",
+    "class": "TRAINER_CLASS_LEADER_FANTINA",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_SPIRITOMB",
+            "form": 0,
+            "level": 50,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_WILL_O_WISP",
+                "MOVE_DARK_PULSE",
+                "MOVE_SHADOW_SNEAK",
+                "MOVE_PAIN_SPLIT"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_MISMAGIUS",
+            "form": 0,
+            "level": 50,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_CALM_MIND",
+                "MOVE_SHADOW_BALL",
+                "MOVE_DAZZLINGGLEAM",
+                "MOVE_MYSTICALFIRE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CHANDELURE",
+            "form": 0,
+            "level": 51,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_SHADOW_BALL",
+                "MOVE_FLAMETHROWER",
+                "MOVE_ENERGY_BALL",
+                "MOVE_WILL_O_WISP"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_AEGISLASH",
+            "form": 0,
+            "level": 51,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_KINGSSHIELD",
+                "MOVE_SHADOW_BALL",
+                "MOVE_FLASH_CANNON",
+                "MOVE_SHADOW_SNEAK"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_MIMIKYU",
+            "form": 0,
+            "level": 51,
+            "item": "ITEM_LUM_BERRY",
+            "moves": [
+                "MOVE_SWORDS_DANCE",
+                "MOVE_PLAYROUGH",
+                "MOVE_SHADOW_CLAW",
+                "MOVE_SHADOW_SNEAK"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_DRAGAPULT",
+            "form": 0,
+            "level": 52,
+            "item": "ITEM_EXPERT_BELT",
+            "moves": [
+                "MOVE_DRAGONDARTS",
+                "MOVE_SHADOW_BALL",
+                "MOVE_THUNDERBOLT",
+                "MOVE_U_TURN"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

@@ -283,6 +283,12 @@
         "Pokémon Rock\n",
         "Sunyshore’s Heritage Site"
       ]
+    },
+    {
+      "id": "SunyshoreCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

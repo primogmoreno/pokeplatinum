@@ -6,7 +6,7 @@
     "accuracy": 0,
     "pp": 20,
     "effect": {
-        "type": "BATTLE_EFFECT_DO_NOTHING",
+        "type": "BATTLE_EFFECT_SET_REFLECT_AND_LIGHT_SCREEN",
         "chance": 0
     },
     "range": "RANGE_USER_SIDE",

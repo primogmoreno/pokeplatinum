@@ -647,6 +647,12 @@
         "Visit Beautiful Lake Valor!\n",
         "Right off Rt. 214!"
       ]
+    },
+    {
+      "id": "VeilstoneCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

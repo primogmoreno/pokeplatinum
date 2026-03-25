@@ -1,7 +1,7 @@
 {
     "bg_events": [
         {
-            "script": 7,
+            "script": 9,
             "type": 0,
             "x": 11,
             "z": 38,
@@ -9,7 +9,7 @@
             "player_facing_dir": "BG_EVENT_DIR_NORTH"
         },
         {
-            "script": 7,
+            "script": 9,
             "type": 0,
             "x": 15,
             "z": 38,
@@ -24,7 +24,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "FLAG_UNK_0x020F",
-            "script": 5,
+            "script": 7,
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -39,7 +39,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "0",
-            "script": 6,
+            "script": 8,
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -148,16 +148,11 @@
         }
     ],
     "warp_events": [
-        {
-            "x": 13,
-            "z": 42,
-            "dest_header_id": "MAP_HEADER_PASTORIA_CITY",
-            "dest_warp_id": 0
-        }
+        {"x": 13, "z": 40, "dest_header_id": "MAP_HEADER_PASTORIA_CITY", "dest_warp_id": 0}
     ],
     "coord_events": [
         {
-            "script": 2,
+            "script": 4,
             "x": 3,
             "z": 6,
             "y": 0,
@@ -167,7 +162,7 @@
             "value": 0
         },
         {
-            "script": 3,
+            "script": 5,
             "x": 19,
             "z": 24,
             "y": 0,
@@ -177,7 +172,7 @@
             "value": 0
         },
         {
-            "script": 2,
+            "script": 4,
             "x": 9,
             "z": 24,
             "y": 0,
@@ -187,7 +182,7 @@
             "value": 0
         },
         {
-            "script": 3,
+            "script": 5,
             "x": 17,
             "z": 9,
             "y": 0,
@@ -197,7 +192,7 @@
             "value": 0
         },
         {
-            "script": 3,
+            "script": 5,
             "x": 10,
             "z": 30,
             "y": 0,
@@ -207,7 +202,7 @@
             "value": 0
         },
         {
-            "script": 3,
+            "script": 5,
             "x": 19,
             "z": 13,
             "y": 0,
@@ -217,7 +212,7 @@
             "value": 0
         },
         {
-            "script": 4,
+            "script": 6,
             "x": 9,
             "z": 14,
             "y": 0,
@@ -227,7 +222,7 @@
             "value": 0
         },
         {
-            "script": 4,
+            "script": 6,
             "x": 23,
             "z": 31,
             "y": 0,
@@ -237,7 +232,7 @@
             "value": 0
         },
         {
-            "script": 4,
+            "script": 6,
             "x": 19,
             "z": 22,
             "y": 0,
@@ -247,13 +242,23 @@
             "value": 0
         },
         {
-            "script": 4,
+            "script": 6,
             "x": 3,
             "z": 34,
             "y": 0,
             "width": 1,
             "length": 1,
             "var": "VAR_MAP_LOCAL_3",
+            "value": 0
+        },
+        {
+            "script": 10,
+            "x": 13,
+            "z": 42,
+            "y": 0,
+            "width": 1,
+            "length": 1,
+            "var": "VAR_UNK_0x4112",
             "value": 0
         }
     ]

@@ -309,6 +309,7 @@ static BOOL BtlCmd_CheckCurMoveIsType(BattleSystem *battleSys, BattleContext *ba
 static BOOL BtlCmd_LoadArchivedMonData(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_RefreshMonData(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_End(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_TriggerProtectContactPunishment(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -568,7 +569,8 @@ static const BtlCmd sBattleCommands[] = {
     BtlCmd_CheckCurMoveIsType,
     BtlCmd_LoadArchivedMonData,
     BtlCmd_RefreshMonData,
-    BtlCmd_End
+    BtlCmd_End,
+    BtlCmd_TriggerProtectContactPunishment,
 };
 
 BOOL BattleScript_Exec(BattleSystem *battleSys, BattleContext *battleCtx)
@@ -5408,7 +5410,13 @@ static BOOL BtlCmd_TryProtection(BattleSystem *battleSys, BattleContext *battleC
 
     if (battleCtx->moveProtect[battleCtx->attacker] != MOVE_PROTECT
         && battleCtx->moveProtect[battleCtx->attacker] != MOVE_DETECT
-        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_ENDURE) {
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_ENDURE
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_KINGSSHIELD
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_OBSTRUCT
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_SPIKYSHIELD
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_BANEFULBUNKER
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_BURNINGBULWARK
+        && battleCtx->moveProtect[battleCtx->attacker] != MOVE_SILKTRAP) {
         battleCtx->battleMons[battleCtx->attacker].moveEffectsData.protectSuccessTurns = 0;
     }
 
@@ -5421,7 +5429,13 @@ static BOOL BtlCmd_TryProtection(BattleSystem *battleSys, BattleContext *battleC
 
     if (sProtectSuccessRate[ATTACKING_MON.moveEffectsData.protectSuccessTurns] >= BattleSystem_RandNext(battleSys)
         && moreBattlersThisTurn) {
-        if (CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_PROTECT) {
+        if (CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_PROTECT
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_KINGS_SHIELD
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_OBSTRUCT
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_SPIKY_SHIELD
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_BANEFUL_BUNKER
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_BURNING_BULWARK
+            || CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_SILK_TRAP) {
             ATTACKER_TURN_FLAGS.protecting = TRUE;
             battleCtx->msgBuffer.id = BattleStrings_Text_PokemonProtectedItself2_Ally; // "{0} protected itself!"
         }
@@ -9715,6 +9729,80 @@ static BOOL BtlCmd_End(BattleSystem *battleSys, BattleContext *battleCtx)
 {
     battleCtx->battleProgressFlag = TRUE;
     return BattleSystem_PopScript(battleCtx);
+}
+
+/**
+ * @brief Apply contact-based punishment from a protect variant (King's Shield,
+ * Obstruct, Spiky Shield, Baneful Bunker, Burning Bulwark, Silk Trap) when the
+ * attacker's contact move is blocked. Stores the punishment subscript in
+ * battleCtx->scriptTemp for use by CallFromVar.
+ *
+ * Inputs:
+ * 1. The distance to jump if no punishment applies (no contact or not a
+ *    punishing protect variant).
+ *
+ * @param battleSys
+ * @param battleCtx
+ * @return FALSE
+ */
+static BOOL BtlCmd_TriggerProtectContactPunishment(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int jumpNoEffect = BattleScript_Read(battleCtx);
+
+    if (!(CURRENT_MOVE_DATA.flags & MOVE_FLAG_MAKES_CONTACT) || !ATTACKING_MON.curHP) {
+        BattleScript_Iter(battleCtx, jumpNoEffect);
+        return FALSE;
+    }
+
+    int protectMoveEffect = MOVE_DATA(battleCtx->moveProtect[battleCtx->defender]).effect;
+
+    switch (protectMoveEffect) {
+    case BATTLE_EFFECT_KINGS_SHIELD:
+        battleCtx->sideEffectParam = MOVE_SUBSCRIPT_PTR_ATTACK_DOWN_2_STAGES;
+        battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+        battleCtx->sideEffectMon = battleCtx->attacker;
+        battleCtx->scriptTemp = subscript_update_stat_stage;
+        break;
+    case BATTLE_EFFECT_OBSTRUCT:
+        battleCtx->sideEffectParam = MOVE_SUBSCRIPT_PTR_DEFENSE_DOWN_2_STAGES;
+        battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+        battleCtx->sideEffectMon = battleCtx->attacker;
+        battleCtx->scriptTemp = subscript_update_stat_stage;
+        break;
+    case BATTLE_EFFECT_SILK_TRAP:
+        battleCtx->sideEffectParam = MOVE_SUBSCRIPT_PTR_SPEED_DOWN_1_STAGE;
+        battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+        battleCtx->sideEffectMon = battleCtx->attacker;
+        battleCtx->scriptTemp = subscript_update_stat_stage;
+        break;
+    case BATTLE_EFFECT_SPIKY_SHIELD:
+        if (Battler_Ability(battleCtx, battleCtx->attacker) != ABILITY_MAGIC_GUARD) {
+            battleCtx->hpCalcTemp = BattleSystem_Divide(ATTACKING_MON.maxHP * -1, 8);
+            battleCtx->msgBattlerTemp = battleCtx->attacker;
+            battleCtx->scriptTemp = subscript_rough_skin;
+        } else {
+            BattleScript_Iter(battleCtx, jumpNoEffect);
+        }
+        break;
+    case BATTLE_EFFECT_BANEFUL_BUNKER:
+        battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+        battleCtx->sideEffectMon = battleCtx->attacker;
+        battleCtx->msgBattlerTemp = battleCtx->defender;
+        battleCtx->scriptTemp = subscript_poison;
+        break;
+    case BATTLE_EFFECT_BURNING_BULWARK:
+        battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+        battleCtx->sideEffectMon = battleCtx->attacker;
+        battleCtx->msgBattlerTemp = battleCtx->defender;
+        battleCtx->scriptTemp = subscript_burn;
+        break;
+    default:
+        BattleScript_Iter(battleCtx, jumpNoEffect);
+        break;
+    }
+
+    return FALSE;
 }
 
 /**

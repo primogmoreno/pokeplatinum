@@ -24,6 +24,7 @@
     ScriptEntry OreburghCity_BattleGirl2
     ScriptEntry OreburghCity_Machop3
     ScriptEntry OreburghCity_Machop2
+    ScriptEntry RandomGym_Enter_0_OreburghCity
     ScriptEntryEnd
 
 OreburghCity_Rival:
@@ -179,6 +180,159 @@ OreburghCity_RemoveRival:
     Common_FadeToDefaultMusic2
     SetVar VAR_OREBURGH_STATE, 3
     ReleaseAll
+    End
+
+
+RandomGym_Enter_0_OreburghCity:
+    GoToIfSet FLAG_UNK_0x0FF3, RandomGym_PortalUsed_OreburghCity
+    SetFlag FLAG_UNK_0x0FF3
+    SetVar VAR_UNK_0x4110, 0
+    GoTo RandomGym_PickAndWarp_OreburghCity
+
+RandomGym_PortalUsed_OreburghCity:
+    LockAll
+    Message 31
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_OreburghCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_OreburghCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_OreburghCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_OreburghCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_OreburghCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_OreburghCity
+    GoTo RandomGym_TryNext_OreburghCity
+
+RandomGym_Check0_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym0_OreburghCity
+
+RandomGym_Check1_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym1_OreburghCity
+
+RandomGym_Check2_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym2_OreburghCity
+
+RandomGym_Check3_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym3_OreburghCity
+
+RandomGym_Check4_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym4_OreburghCity
+
+RandomGym_Check5_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym5_OreburghCity
+
+RandomGym_Check6_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym6_OreburghCity
+
+RandomGym_Check7_OreburghCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_OreburghCity
+    GoTo RandomGym_WarpToGym7_OreburghCity
+
+RandomGym_TryNext_OreburghCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_OreburghCity
+    GoTo RandomGym_FindUnbeaten_OreburghCity
+RandomGym_ResetRoll_OreburghCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_OreburghCity
+
+RandomGym_WarpToGym0_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_OreburghCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_OreburghCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
     End
 
     .balign 4, 0
@@ -630,3 +784,8 @@ OreburghCity_Machop2:
     End
 
     .balign 4, 0
+
+    .balign 4, 0
+RandomGym_PushSouth_OreburghCity:
+    WalkNormalSouth
+    EndMovement

@@ -401,6 +401,12 @@
         "Try the Safari Game in\n",
         "Pastoria’s Great Marsh!"
       ]
+    },
+    {
+      "id": "PastoriaCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

@@ -47,13 +47,21 @@ for i, subdir in enumerate(SPECIES_DIRS):
             target_file = private_dir / f'{i:04}-{j:02}.NCGR'
 
             if source_file.exists():
-                subprocess.run([
-                    args.nitrogfx,
-                    source_file,
-                    target_file,
-                    '-encodefronttoback',
-                    '-scan',
-                ])
+                key_file = pathlib.Path(str(source_file) + '.key')
+                if key_file.exists():
+                    subprocess.run([
+                        args.nitrogfx,
+                        source_file,
+                        target_file,
+                        '-encodefronttoback',
+                        '-scan',
+                    ])
+                else:
+                    subprocess.run([
+                        args.nitrogfx,
+                        source_file,
+                        target_file,
+                    ])
             else:
                 subprocess.run(['touch', target_file])
 

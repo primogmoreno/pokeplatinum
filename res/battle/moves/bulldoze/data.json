@@ -6,7 +6,7 @@
     "accuracy": 100,
     "pp": 20,
     "effect": {
-        "type": "BATTLE_EFFECT_HIT",
+        "type": "BATTLE_EFFECT_LOWER_SPEED_HIT",
         "chance": 100
     },
     "range": "RANGE_SINGLE_TARGET",

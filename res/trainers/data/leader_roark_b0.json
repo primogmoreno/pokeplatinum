@@ -1,0 +1,42 @@
+{
+    "name": "Roark",
+    "class": "TRAINER_CLASS_LEADER_ROARK",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_GEODUDE",
+            "form": 0,
+            "level": 13,
+            "item": "ITEM_ORAN_BERRY",
+            "moves": [
+                "MOVE_ROCK_TOMB",
+                "MOVE_DEFENSE_CURL",
+                "MOVE_TACKLE",
+                "MOVE_STEALTH_ROCK"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CRANIDOS",
+            "form": 0,
+            "level": 15,
+            "item": "ITEM_ORAN_BERRY",
+            "moves": [
+                "MOVE_ROCK_TOMB",
+                "MOVE_HEADBUTT",
+                "MOVE_FOCUS_ENERGY",
+                "MOVE_PURSUIT"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

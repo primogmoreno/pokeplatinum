@@ -149,5 +149,15 @@ static const int sSideEffectSubscripts[] = {
     [MOVE_SUBSCRIPT_PTR_CHATTER]                          = subscript_chatter,
     [MOVE_SUBSCRIPT_PTR_LUNAR_DANCE]                      = subscript_lunar_dance,
     [MOVE_SUBSCRIPT_PTR_GIVE_TARGET_OWN_STATUS]           = subscript_give_target_own_status,
+    [MOVE_SUBSCRIPT_PTR_USER_SPATK_SPDEF_AND_SPEED_UP_1_STAGE] = subscript_user_spatk_spdef_and_speed_up_1_stage,
+    [MOVE_SUBSCRIPT_PTR_USER_REFLECT_AND_LIGHT_SCREEN]    = subscript_user_reflect_and_light_screen,
+    [MOVE_SUBSCRIPT_PTR_USER_ATK_AND_SPATK_UP_1_STAGE]    = subscript_user_atk_and_spatk_up_1_stage,
+    [MOVE_SUBSCRIPT_PTR_USER_ATK_AND_ACC_UP_1_STAGE]      = subscript_user_atk_and_acc_up_1_stage,
+    [MOVE_SUBSCRIPT_PTR_USER_ATK_DEF_AND_ACC_UP_1_STAGE]  = subscript_user_atk_def_and_acc_up_1_stage,
+    [MOVE_SUBSCRIPT_PTR_TARGET_ATK_AND_SPATK_DOWN_1_STAGE] = subscript_target_atk_and_spatk_down_1_stage,
+    [MOVE_SUBSCRIPT_PTR_USER_DEF_UP_3_STAGES]             = subscript_user_def_up_3_stages,
+    [MOVE_SUBSCRIPT_PTR_USER_SHELL_SMASH]                 = subscript_user_shell_smash,
+    [MOVE_SUBSCRIPT_PTR_USER_ALL_STATS_UP_1_STAGE]        = subscript_user_all_stats_up_1_stage,
+    [MOVE_SUBSCRIPT_PTR_USER_SPATK_SPDEF_AND_SPEED_UP_2_STAGES] = subscript_user_spatk_spdef_and_speed_up_2_stages,
 };
 // clang-format on

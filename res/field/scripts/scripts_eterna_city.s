@@ -31,6 +31,7 @@
     ScriptEntry _0D00
     ScriptEntry _0FDC
     ScriptEntry _0EB4
+    ScriptEntry RandomGym_Enter_1_EternaCity
     ScriptEntryEnd
 
 _0072:
@@ -277,6 +278,159 @@ _042B:
     RemoveObject 12
     SetVar VAR_UNK_0x407A, 2
     ReleaseAll
+    End
+
+
+RandomGym_Enter_1_EternaCity:
+    GoToIfSet FLAG_UNK_0x0FF4, RandomGym_PortalUsed_EternaCity
+    SetFlag FLAG_UNK_0x0FF4
+    SetVar VAR_UNK_0x4110, 1
+    GoTo RandomGym_PickAndWarp_EternaCity
+
+RandomGym_PortalUsed_EternaCity:
+    LockAll
+    Message 43
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_EternaCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_EternaCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_EternaCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_EternaCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_EternaCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_EternaCity
+    GoTo RandomGym_TryNext_EternaCity
+
+RandomGym_Check0_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym0_EternaCity
+
+RandomGym_Check1_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym1_EternaCity
+
+RandomGym_Check2_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym2_EternaCity
+
+RandomGym_Check3_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym3_EternaCity
+
+RandomGym_Check4_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym4_EternaCity
+
+RandomGym_Check5_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym5_EternaCity
+
+RandomGym_Check6_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym6_EternaCity
+
+RandomGym_Check7_EternaCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_EternaCity
+    GoTo RandomGym_WarpToGym7_EternaCity
+
+RandomGym_TryNext_EternaCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_EternaCity
+    GoTo RandomGym_FindUnbeaten_EternaCity
+RandomGym_ResetRoll_EternaCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_EternaCity
+
+RandomGym_WarpToGym0_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_EternaCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_EternaCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
     End
 
     .balign 4, 0
@@ -1359,4 +1513,9 @@ _10EC:
     Delay8 2
     Delay4
     WalkOnSpotNormalWest
+    EndMovement
+
+    .balign 4, 0
+RandomGym_PushSouth_EternaCity:
+    WalkNormalSouth
     EndMovement

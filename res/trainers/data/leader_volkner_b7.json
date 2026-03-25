@@ -1,0 +1,98 @@
+{
+    "name": "Volkner",
+    "class": "TRAINER_CLASS_LEADER_VOLKNER",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_ROTOM",
+            "form": 1,
+            "level": 56,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_HYDRO_PUMP",
+                "MOVE_THUNDERBOLT",
+                "MOVE_VOLTSWITCH",
+                "MOVE_WILL_O_WISP"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_LUXRAY",
+            "form": 0,
+            "level": 56,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_WILDCHARGE",
+                "MOVE_CRUNCH",
+                "MOVE_ICE_FANG",
+                "MOVE_VOLTSWITCH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_RAICHU",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_THUNDERBOLT",
+                "MOVE_NASTY_PLOT",
+                "MOVE_GRASS_KNOT",
+                "MOVE_VOLTSWITCH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_ELECTIVIRE",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_THUNDER_PUNCH",
+                "MOVE_ICE_PUNCH",
+                "MOVE_LOW_KICK",
+                "MOVE_FIRE_PUNCH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_MAGNEZONE",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_THUNDERBOLT",
+                "MOVE_FLASH_CANNON",
+                "MOVE_VOLTSWITCH",
+                "MOVE_THUNDER_WAVE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_ZERAORA",
+            "form": 0,
+            "level": 58,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_PLASMAFISTS",
+                "MOVE_CLOSE_COMBAT",
+                "MOVE_KNOCK_OFF",
+                "MOVE_VOLTSWITCH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

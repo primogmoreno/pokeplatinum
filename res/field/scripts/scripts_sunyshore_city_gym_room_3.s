@@ -29,7 +29,39 @@ SunyshoreGymRoom3_Volkner:
     CreateJournalEvent LOCATION_EVENT_GYM_WAS_TOO_TOUGH, 156, 0, 0, 0
     Message SunyshoreGymRoom3_Text_VolknerIntro
     CloseMessage
-    StartTrainerBattle TRAINER_LEADER_VOLKNER
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 7, Volkner_BattleB7
+    GoToIfEq VAR_RESULT, 6, Volkner_BattleB6
+    GoToIfEq VAR_RESULT, 5, Volkner_BattleB5
+    GoToIfEq VAR_RESULT, 4, Volkner_BattleB4
+    GoToIfEq VAR_RESULT, 3, Volkner_BattleB3
+    GoToIfEq VAR_RESULT, 2, Volkner_BattleB2
+    GoToIfEq VAR_RESULT, 1, Volkner_BattleB1
+Volkner_BattleB0:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B0
+    GoTo Volkner_BattleDone
+Volkner_BattleB1:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B1
+    GoTo Volkner_BattleDone
+Volkner_BattleB2:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B2
+    GoTo Volkner_BattleDone
+Volkner_BattleB3:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B3
+    GoTo Volkner_BattleDone
+Volkner_BattleB4:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B4
+    GoTo Volkner_BattleDone
+Volkner_BattleB5:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B5
+    GoTo Volkner_BattleDone
+Volkner_BattleB6:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B6
+    GoTo Volkner_BattleDone
+Volkner_BattleB7:
+    StartTrainerBattle TRAINER_LEADER_VOLKNER_B7
+    GoTo Volkner_BattleDone
+Volkner_BattleDone:
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, SunyshoreGymRoom3_LostBattle
     Message SunyshoreGymRoom3_Text_BeatVolkner
@@ -65,12 +97,16 @@ SunyshoreGymRoom3_VolknerTryGiveTM57:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_SunyshorGymRoom3
     End
 
 SunyshoreGymRoom3_VolknerCannotGiveTM57:
     Common_MessageBagIsFull
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_SunyshorGymRoom3
     End
 
 SunyshoreGymRoom3_VolknerAlreadyHaveBeaconBadge:
@@ -79,9 +115,97 @@ SunyshoreGymRoom3_VolknerAlreadyHaveBeaconBadge:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_SunyshorGymRoom3
     End
 
 SunyshoreGymRoom3_LostBattle:
     BlackOutFromBattle
     ReleaseAll
     End
+
+RandomGym_ReturnToOriginCity_SunyshorGymRoom3:
+    GoToIfEq VAR_UNK_0x4110, 0, ReturnTo_City0_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 1, ReturnTo_City1_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 2, ReturnTo_City2_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 3, ReturnTo_City3_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 4, ReturnTo_City4_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 5, ReturnTo_City5_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 6, ReturnTo_City6_SunyshorGymRoom3
+    GoToIfEq VAR_UNK_0x4110, 7, ReturnTo_City7_SunyshorGymRoom3
+    GoTo ReturnTo_City0_SunyshorGymRoom3
+
+ReturnTo_City0_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY, 0, 282, 758, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City1_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY, 0, 312, 564, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City2_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY, 0, 684, 613, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City3_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City4_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY, 0, 499, 699, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City5_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY, 0, 39, 733, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City6_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY, 0, 367, 224, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City7_SunyshorGymRoom3:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY, 0, 845, 749, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+
+    .balign 4, 0

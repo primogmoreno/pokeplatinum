@@ -4576,6 +4576,14 @@ BOOL BattleSystem_TriggerAbilityOnHit(BattleSystem *battleSys, BattleContext *ba
                 result = TRUE;
                 break;
             }
+
+            // Fell Stinger: raise attacker's Attack by +3 when the target faints
+            if (!result && CURRENT_MOVE_DATA.effect == BATTLE_EFFECT_FELL_STINGER) {
+                battleCtx->sideEffectType = SIDE_EFFECT_TYPE_INDIRECT;
+                battleCtx->sideEffectMon = battleCtx->attacker;
+                *subscript = subscript_fell_stinger_boost;
+                result = TRUE;
+            }
         }
 
         // Defender-side type-triggered boosts

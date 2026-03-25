@@ -3,6 +3,8 @@
 #include "res/field/events/events_eterna_city_gym.h"
 
 
+    ScriptEntry EternaGym_OnTransition
+    ScriptEntry EternaGym_EnterRedirect
     ScriptEntry EternaGym_InitFeatures
     ScriptEntry EternaGym_GymGuide
     ScriptEntry EternaGym_GymStatue
@@ -10,7 +12,122 @@
     ScriptEntry EternaGym_LassCaroline
     ScriptEntry EternaGym_AromaLadyJenna
     ScriptEntry EternaGym_AromaLadyAngela
+    ScriptEntry GymExit_TryLeave_EternaGym
     ScriptEntryEnd
+
+EternaGym_OnTransition:
+    InitPersistedMapFeaturesForEternaGym
+    GoToIfSet FLAG_UNK_0x0FFB, EternaGym_OnTransition_Done
+    SetVar VAR_UNK_0x4110, 1
+    SetVar VAR_UNK_0x4113, 0
+EternaGym_OnTransition_Done:
+    End
+
+EternaGym_EnterRedirect:
+    SetVar VAR_UNK_0x4113, 1
+    WaitFadeScreen
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, EternaGym_NoRedirect
+    SetFlag FLAG_UNK_0x0FFB
+    GetRandom VAR_UNK_0x4111, 8
+EternaGym_TryGym:
+    GoToIfEq VAR_UNK_0x4111, 0, EternaGym_TryIndex0
+    GoToIfEq VAR_UNK_0x4111, 1, EternaGym_TryIndex1
+    GoToIfEq VAR_UNK_0x4111, 2, EternaGym_TryIndex2
+    GoToIfEq VAR_UNK_0x4111, 3, EternaGym_TryIndex3
+    GoToIfEq VAR_UNK_0x4111, 4, EternaGym_TryIndex4
+    GoToIfEq VAR_UNK_0x4111, 5, EternaGym_TryIndex5
+    GoToIfEq VAR_UNK_0x4111, 6, EternaGym_TryIndex6
+    GoTo EternaGym_TryIndex7
+EternaGym_TryIndex0:
+    GoToIfBadgeAcquired BADGE_ID_COAL, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex0
+EternaGym_TryIndex1:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, EternaGym_NextIndex
+    GoTo EternaGym_NextIndex
+EternaGym_TryIndex2:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex2
+EternaGym_TryIndex3:
+    GoToIfBadgeAcquired BADGE_ID_FEN, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex3
+EternaGym_TryIndex4:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex4
+EternaGym_TryIndex5:
+    GoToIfBadgeAcquired BADGE_ID_MINE, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex5
+EternaGym_TryIndex6:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex6
+EternaGym_TryIndex7:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, EternaGym_NextIndex
+    GoTo EternaGym_WarpToIndex7
+EternaGym_NextIndex:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, EternaGym_ResetIndex
+    GoTo EternaGym_TryGym
+EternaGym_ResetIndex:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo EternaGym_TryGym
+EternaGym_WarpToIndex0:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 22, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex1:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex2:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 28, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex3:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 40, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex4:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 13, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex5:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex6:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_WarpToIndex7:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+EternaGym_NoRedirect:
+    End
 
 EternaGym_InitFeatures:
     InitPersistedMapFeaturesForEternaGym
@@ -65,7 +182,39 @@ EternaGym_Gardenia:
     CreateJournalEvent LOCATION_EVENT_GYM_WAS_TOO_TOUGH, 67, 0, 0, 0
     Message EternaGym_Text_GardeniaIntro
     CloseMessage
-    StartTrainerBattle TRAINER_LEADER_GARDENIA
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 7, Gardenia_BattleB7
+    GoToIfEq VAR_RESULT, 6, Gardenia_BattleB6
+    GoToIfEq VAR_RESULT, 5, Gardenia_BattleB5
+    GoToIfEq VAR_RESULT, 4, Gardenia_BattleB4
+    GoToIfEq VAR_RESULT, 3, Gardenia_BattleB3
+    GoToIfEq VAR_RESULT, 2, Gardenia_BattleB2
+    GoToIfEq VAR_RESULT, 1, Gardenia_BattleB1
+Gardenia_BattleB0:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B0
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB1:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B1
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB2:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B2
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB3:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B3
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB4:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B4
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB5:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B5
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB6:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B6
+    GoTo Gardenia_BattleDone
+Gardenia_BattleB7:
+    StartTrainerBattle TRAINER_LEADER_GARDENIA_B7
+    GoTo Gardenia_BattleDone
+Gardenia_BattleDone:
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, EternaGym_LostBattle
     Message EternaGym_Text_BeatGardenia
@@ -97,12 +246,16 @@ EternaGym_GardeniaTryGiveTM86Again:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
     End
 
 EternaGym_GardeniaGiveTM86BagFullAgain:
     Common_MessageBagIsFull
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
     End
 
 EternaGym_Gardenia_AlreadyHaveForestbadge:
@@ -111,6 +264,8 @@ EternaGym_Gardenia_AlreadyHaveForestbadge:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
     End
 
 EternaGym_GardeniaGiveTM86:
@@ -138,6 +293,8 @@ EternaGym_GardeniaGiveTM86BagFull:
 EternaGym_LostBattle:
     BlackOutFromBattle
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
     End
 
 EternaGym_LassCaroline:
@@ -164,6 +321,8 @@ EternaGym_LassCarolineBeaten:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
     End
 
 EternaGym_AromaLadyJenna:
@@ -249,3 +408,104 @@ EternaGym_FaceWest:
     SetObjectEventMovementType VAR_0x8007, MOVEMENT_TYPE_LOOK_WEST
     SetObjectEventDir VAR_0x8007, DIR_WEST
     Return
+
+GymExit_TryLeave_EternaGym:
+    GoToIfSet FLAG_UNK_0x0FFB, GymExit_Blocked_EternaGym
+    GoTo RandomGym_ReturnToOriginCity_EternaGym
+    End
+
+GymExit_Blocked_EternaGym:
+    LockAll
+    Message 17
+    WaitABXPadPress
+    CloseMessage
+    ReleaseAll
+    End
+
+# GymExit_Text_MustDefeatLeader_EternaGym = index 17
+
+RandomGym_ReturnToOriginCity_EternaGym:
+    GoToIfEq VAR_UNK_0x4110, 0, ReturnTo_City0_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 1, ReturnTo_City1_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 2, ReturnTo_City2_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 3, ReturnTo_City3_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 4, ReturnTo_City4_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 5, ReturnTo_City5_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 6, ReturnTo_City6_EternaGym
+    GoToIfEq VAR_UNK_0x4110, 7, ReturnTo_City7_EternaGym
+    GoTo ReturnTo_City0_EternaGym
+
+ReturnTo_City0_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY, 0, 282, 758, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City1_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY, 0, 312, 564, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City2_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY, 0, 684, 613, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City3_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City4_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY, 0, 499, 699, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City5_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY, 0, 39, 733, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City6_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY, 0, 367, 224, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City7_EternaGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY, 0, 845, 749, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+
+    .balign 4, 0

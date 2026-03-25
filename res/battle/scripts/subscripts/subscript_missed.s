@@ -29,6 +29,9 @@ _058:
 _063:
     // {0} protected itself!
     PrintMessage BattleStrings_Text_PokemonProtectedItself_Ally, TAG_NICKNAME, BTLSCR_DEFENDER
+    TriggerProtectContactPunishment _063_skip
+    CallFromVar BTLVAR_SCRIPT_TEMP
+_063_skip:
     GoTo _179
 
 _069:

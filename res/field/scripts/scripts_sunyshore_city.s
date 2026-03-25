@@ -21,6 +21,7 @@
     ScriptEntry _0791
     ScriptEntry _0850
     ScriptEntry _004E
+    ScriptEntry RandomGym_Enter_7_SunyshorCity
     ScriptEntryEnd
 
 _004E:
@@ -232,6 +233,159 @@ _03C2:
     ApplyMovement 9, _0448
     WaitMovement
     Return
+
+
+RandomGym_Enter_7_SunyshorCity:
+    GoToIfSet FLAG_UNK_0x0FFA, RandomGym_PortalUsed_SunyshorCity
+    SetFlag FLAG_UNK_0x0FFA
+    SetVar VAR_UNK_0x4110, 7
+    GoTo RandomGym_PickAndWarp_SunyshorCity
+
+RandomGym_PortalUsed_SunyshorCity:
+    LockAll
+    Message 28
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_SunyshorCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_SunyshorCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_SunyshorCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_SunyshorCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_SunyshorCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_SunyshorCity
+    GoTo RandomGym_TryNext_SunyshorCity
+
+RandomGym_Check0_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym0_SunyshorCity
+
+RandomGym_Check1_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym1_SunyshorCity
+
+RandomGym_Check2_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym2_SunyshorCity
+
+RandomGym_Check3_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym3_SunyshorCity
+
+RandomGym_Check4_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym4_SunyshorCity
+
+RandomGym_Check5_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym5_SunyshorCity
+
+RandomGym_Check6_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym6_SunyshorCity
+
+RandomGym_Check7_SunyshorCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_SunyshorCity
+    GoTo RandomGym_WarpToGym7_SunyshorCity
+
+RandomGym_TryNext_SunyshorCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_SunyshorCity
+    GoTo RandomGym_FindUnbeaten_SunyshorCity
+RandomGym_ResetRoll_SunyshorCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_SunyshorCity
+
+RandomGym_WarpToGym0_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_SunyshorCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_SunyshorCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
 
     .balign 4, 0
 _03D0:
@@ -723,4 +877,9 @@ _0920:
     Delay8
     WalkOnSpotNormalSouth
     WalkOnSpotNormalEast
+    EndMovement
+
+    .balign 4, 0
+RandomGym_PushSouth_SunyshorCity:
+    WalkNormalSouth
     EndMovement

@@ -29,6 +29,7 @@
     ScriptEntry _0959
     ScriptEntry _01D2
     ScriptEntry _09BC
+    ScriptEntry RandomGym_Enter_5_CanalavCity
     ScriptEntryEnd
 
 _0066:
@@ -191,6 +192,159 @@ _0334:
     SetFlag FLAG_HIDE_CANALAVE_RIVAL
     BlackOutFromBattle
     ReleaseAll
+    End
+
+
+RandomGym_Enter_5_CanalavCity:
+    GoToIfSet FLAG_UNK_0x0FF8, RandomGym_PortalUsed_CanalavCity
+    SetFlag FLAG_UNK_0x0FF8
+    SetVar VAR_UNK_0x4110, 5
+    GoTo RandomGym_PickAndWarp_CanalavCity
+
+RandomGym_PortalUsed_CanalavCity:
+    LockAll
+    Message 44
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_CanalavCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_CanalavCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_CanalavCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_CanalavCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_CanalavCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_CanalavCity
+    GoTo RandomGym_TryNext_CanalavCity
+
+RandomGym_Check0_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym0_CanalavCity
+
+RandomGym_Check1_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym1_CanalavCity
+
+RandomGym_Check2_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym2_CanalavCity
+
+RandomGym_Check3_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym3_CanalavCity
+
+RandomGym_Check4_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym4_CanalavCity
+
+RandomGym_Check5_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym5_CanalavCity
+
+RandomGym_Check6_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym6_CanalavCity
+
+RandomGym_Check7_CanalavCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_CanalavCity
+    GoTo RandomGym_WarpToGym7_CanalavCity
+
+RandomGym_TryNext_CanalavCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_CanalavCity
+    GoTo RandomGym_FindUnbeaten_CanalavCity
+RandomGym_ResetRoll_CanalavCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_CanalavCity
+
+RandomGym_WarpToGym0_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_CanalavCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_CanalavCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
     End
 
     .balign 4, 0
@@ -736,4 +890,9 @@ CanalaveCity_RIVAL_FaceNorth:
 CanalaveCity_RIVAL_EnterDoor:
     WalkNormalNorth
     SetInvisible
+    EndMovement
+
+    .balign 4, 0
+RandomGym_PushSouth_CanalavCity:
+    WalkNormalSouth
     EndMovement

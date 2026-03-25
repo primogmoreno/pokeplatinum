@@ -450,11 +450,13 @@ TwinleafTownPlayerHouse2F_Catalog:
     AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogPiplup, 0
     AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogChimchar, 1
     AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogTurtwig, 2
-    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogCancel, 3
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogGiratina, 3
+    AddListMenuEntry TwinleafTownPlayerHouse2F_Text_CatalogCancel, 4
     ShowListMenu
     GoToIfEq VAR_MAP_LOCAL_1, 0, TwinleafTownPlayerHouse2F_CatalogGivePiplup
     GoToIfEq VAR_MAP_LOCAL_1, 1, TwinleafTownPlayerHouse2F_CatalogGiveChimchar
     GoToIfEq VAR_MAP_LOCAL_1, 2, TwinleafTownPlayerHouse2F_CatalogGiveTurtwig
+    GoToIfEq VAR_MAP_LOCAL_1, 3, TwinleafTownPlayerHouse2F_CatalogGiveGiratina
     ReleaseAll
     End
 
@@ -500,6 +502,17 @@ TwinleafTownPlayerHouse2F_CatalogGiveTurtwig:
     Message TwinleafTownPlayerHouse2F_Text_ReceivedTurtwig
     WaitSound
     CloseMessage
+    ReleaseAll
+    End
+
+TwinleafTownPlayerHouse2F_CatalogGiveGiratina:
+    GetPartyCount VAR_MAP_LOCAL_2
+    GoToIfEq VAR_MAP_LOCAL_2, 6, TwinleafTownPlayerHouse2F_CatalogPartyFull
+    GivePokemon SPECIES_GIRATINA, 100, ITEM_NONE, VAR_RESULT
+    AddItem ITEM_RARE_CANDY, 99, VAR_RESULT
+    AddItem ITEM_BICYCLE, 1, VAR_RESULT
+    AddItem ITEM_BLITZ_REPEL, 1, VAR_RESULT
+    PlaySound SEQ_FANFA4
     ReleaseAll
     End
 

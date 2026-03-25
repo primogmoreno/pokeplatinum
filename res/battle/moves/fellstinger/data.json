@@ -6,7 +6,7 @@
     "accuracy": 100,
     "pp": 25,
     "effect": {
-        "type": "BATTLE_EFFECT_HIT",
+        "type": "BATTLE_EFFECT_FELL_STINGER",
         "chance": 0
     },
     "range": "RANGE_SINGLE_TARGET",

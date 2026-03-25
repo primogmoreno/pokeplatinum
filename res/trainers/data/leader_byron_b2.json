@@ -1,0 +1,70 @@
+{
+    "name": "Byron",
+    "class": "TRAINER_CLASS_LEADER_BYRON",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_BRONZOR",
+            "form": 0,
+            "level": 27,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_REFLECT",
+                "MOVE_LIGHT_SCREEN",
+                "MOVE_CONFUSION",
+                "MOVE_STEALTH_ROCK"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_KLANG",
+            "form": 0,
+            "level": 27,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_IRON_HEAD",
+                "MOVE_METAL_SOUND",
+                "MOVE_CHARGE_BEAM",
+                "MOVE_SCREECH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_LAIRON",
+            "form": 0,
+            "level": 28,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_ROCK_SLIDE",
+                "MOVE_METAL_CLAW",
+                "MOVE_ROCK_POLISH",
+                "MOVE_PROTECT"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_BASTIODON",
+            "form": 0,
+            "level": 29,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_METAL_BURST",
+                "MOVE_ROCK_SLIDE",
+                "MOVE_TAUNT",
+                "MOVE_IRON_DEFENSE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

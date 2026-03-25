@@ -9,6 +9,8 @@
     ScriptEntry HearthomeGym_FantinaAfterBadge
     ScriptEntry HearthomeGym_LostBattle
     ScriptEntry HearthomeGym_TryRemoveBollards
+    ScriptEntry HearthomeGym_LeaderRoom_OnTransition
+    ScriptEntry HearthomeGym_LeaderRoom_EnterRedirect
     ScriptEntryEnd
 
 HearthomeGym_TryRemoveBollards:
@@ -59,7 +61,39 @@ HearthomeGym_FantinaMain:
     Message HearthomeGym_Text_FantinaIntro
     CloseMessage
     SetFlag FLAG_MAP_LOCAL
-    StartTrainerBattle TRAINER_LEADER_FANTINA
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 7, Fantina_BattleB7
+    GoToIfEq VAR_RESULT, 6, Fantina_BattleB6
+    GoToIfEq VAR_RESULT, 5, Fantina_BattleB5
+    GoToIfEq VAR_RESULT, 4, Fantina_BattleB4
+    GoToIfEq VAR_RESULT, 3, Fantina_BattleB3
+    GoToIfEq VAR_RESULT, 2, Fantina_BattleB2
+    GoToIfEq VAR_RESULT, 1, Fantina_BattleB1
+Fantina_BattleB0:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B0
+    GoTo Fantina_BattleDone
+Fantina_BattleB1:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B1
+    GoTo Fantina_BattleDone
+Fantina_BattleB2:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B2
+    GoTo Fantina_BattleDone
+Fantina_BattleB3:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B3
+    GoTo Fantina_BattleDone
+Fantina_BattleB4:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B4
+    GoTo Fantina_BattleDone
+Fantina_BattleB5:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B5
+    GoTo Fantina_BattleDone
+Fantina_BattleB6:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B6
+    GoTo Fantina_BattleDone
+Fantina_BattleB7:
+    StartTrainerBattle TRAINER_LEADER_FANTINA_B7
+    GoTo Fantina_BattleDone
+Fantina_BattleDone:
     ClearFlag FLAG_MAP_LOCAL
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, HearthomeGym_LostBattle
@@ -97,12 +131,16 @@ HearthomeGym_FantinaTryGiveTM65:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_HearthomeGym
     End
 
 HearthomeGym_FantinaCannotGiveTM65:
     Common_MessageBagIsFull
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_HearthomeGym
     End
 
 HearthomeGym_FantinaAfterBadge:
@@ -111,6 +149,202 @@ HearthomeGym_FantinaAfterBadge:
     WaitABXPadPress
     CloseMessage
     ReleaseAll
+    ClearFlag FLAG_UNK_0x0FFB
+    GoTo RandomGym_ReturnToOriginCity_HearthomeGym
+    End
+
+
+RandomGym_ReturnToOriginCity_HearthomeGym:
+    GoToIfEq VAR_UNK_0x4110, 0, ReturnTo_City0_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 1, ReturnTo_City1_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 2, ReturnTo_City2_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 3, ReturnTo_City3_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 4, ReturnTo_City4_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 5, ReturnTo_City5_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 6, ReturnTo_City6_HearthomeGym
+    GoToIfEq VAR_UNK_0x4110, 7, ReturnTo_City7_HearthomeGym
+    GoTo ReturnTo_City0_HearthomeGym
+
+ReturnTo_City0_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY, 0, 282, 758, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City1_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY, 0, 312, 564, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City2_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY, 0, 684, 613, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City3_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City4_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY, 0, 499, 699, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City5_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY, 0, 39, 733, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City6_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY, 0, 367, 224, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+ReturnTo_City7_HearthomeGym:
+    WaitFadeScreen
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY, 0, 845, 749, DIR_SOUTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+
+HearthomeGym_LeaderRoom_OnTransition:
+    GoToIfSet FLAG_UNK_0x0FFB, HearthomeGym_LeaderRoom_OnTransition_Done
+    SetVar VAR_UNK_0x4110, 4
+    SetVar VAR_UNK_0x4113, 0
+HearthomeGym_LeaderRoom_OnTransition_Done:
+    End
+
+HearthomeGym_LeaderRoom_EnterRedirect:
+    SetVar VAR_UNK_0x4113, 1
+    GoToIfSet FLAG_UNK_0x0FF7, HearthomeGym_LeaderRoom_NoRedirect
+    SetFlag FLAG_UNK_0x0FF7
+    WaitFadeScreen
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, HearthomeGym_LeaderRoom_NoRedirect
+    SetFlag FLAG_UNK_0x0FFB
+    GetRandom VAR_UNK_0x4111, 8
+HearthomeGym_LeaderRoom_TryGym:
+    GoToIfEq VAR_UNK_0x4111, 0, HearthomeGym_LeaderRoom_TryIndex0
+    GoToIfEq VAR_UNK_0x4111, 1, HearthomeGym_LeaderRoom_TryIndex1
+    GoToIfEq VAR_UNK_0x4111, 2, HearthomeGym_LeaderRoom_TryIndex2
+    GoToIfEq VAR_UNK_0x4111, 3, HearthomeGym_LeaderRoom_TryIndex3
+    GoToIfEq VAR_UNK_0x4111, 4, HearthomeGym_LeaderRoom_TryIndex4
+    GoToIfEq VAR_UNK_0x4111, 5, HearthomeGym_LeaderRoom_TryIndex5
+    GoToIfEq VAR_UNK_0x4111, 6, HearthomeGym_LeaderRoom_TryIndex6
+    GoTo HearthomeGym_LeaderRoom_TryIndex7
+HearthomeGym_LeaderRoom_TryIndex0:
+    GoToIfBadgeAcquired BADGE_ID_COAL, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex0
+HearthomeGym_LeaderRoom_TryIndex1:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex1
+HearthomeGym_LeaderRoom_TryIndex2:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex2
+HearthomeGym_LeaderRoom_TryIndex3:
+    GoToIfBadgeAcquired BADGE_ID_FEN, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex3
+HearthomeGym_LeaderRoom_TryIndex4:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_NoRedirect
+HearthomeGym_LeaderRoom_TryIndex5:
+    GoToIfBadgeAcquired BADGE_ID_MINE, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex5
+HearthomeGym_LeaderRoom_TryIndex6:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex6
+HearthomeGym_LeaderRoom_TryIndex7:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, HearthomeGym_LeaderRoom_NextIndex
+    GoTo HearthomeGym_LeaderRoom_WarpToIndex7
+HearthomeGym_LeaderRoom_NextIndex:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, HearthomeGym_LeaderRoom_ResetIndex
+    GoTo HearthomeGym_LeaderRoom_TryGym
+HearthomeGym_LeaderRoom_ResetIndex:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo HearthomeGym_LeaderRoom_TryGym
+HearthomeGym_LeaderRoom_WarpToIndex0:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 22, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex1:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex2:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 28, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex3:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 40, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex5:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex6:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_WarpToIndex7:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 25, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+HearthomeGym_LeaderRoom_NoRedirect:
+    ClearFlag FLAG_UNK_0x0FFB
     End
 
     .balign 4, 0

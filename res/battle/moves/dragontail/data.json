@@ -6,7 +6,7 @@
     "accuracy": 90,
     "pp": 10,
     "effect": {
-        "type": "BATTLE_EFFECT_HIT",
+        "type": "BATTLE_EFFECT_FORCE_SWITCH",
         "chance": 0
     },
     "range": "RANGE_SINGLE_TARGET",

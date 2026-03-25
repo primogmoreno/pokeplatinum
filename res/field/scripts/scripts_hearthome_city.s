@@ -35,6 +35,7 @@
     ScriptEntry _095A
     ScriptEntry _0971
     ScriptEntry _0997
+    ScriptEntry RandomGym_Enter_4_HearthomeCity
     ScriptEntryEnd
 
 _0082:
@@ -205,6 +206,167 @@ HearthomeCity_UnusedMovement:
     EmoteExclamationMark
     Delay16
     EndMovement
+
+
+RandomGym_Enter_4_HearthomeCity:
+    GoToIfSet FLAG_UNK_0x0FF7, RandomGym_PortalUsed_HearthomeCity
+    SetFlag FLAG_UNK_0x0FF7
+    SetVar VAR_UNK_0x4110, 4
+    GoTo RandomGym_PickAndWarp_HearthomeCity
+
+RandomGym_PortalUsed_HearthomeCity:
+    LockAll
+    Message 61
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_HearthomeCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_HearthomeCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_HearthomeCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_HearthomeCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_HearthomeCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_HearthomeCity
+    GoTo RandomGym_TryNext_HearthomeCity
+
+RandomGym_Check0_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym0_HearthomeCity
+
+RandomGym_Check1_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym1_HearthomeCity
+
+RandomGym_Check2_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym2_HearthomeCity
+
+RandomGym_Check3_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym3_HearthomeCity
+
+RandomGym_Check4_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym4_HearthomeCity
+
+RandomGym_Check5_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym5_HearthomeCity
+
+RandomGym_Check6_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym6_HearthomeCity
+
+RandomGym_Check7_HearthomeCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_HearthomeCity
+    GoTo RandomGym_WarpToGym7_HearthomeCity
+
+RandomGym_TryNext_HearthomeCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_HearthomeCity
+    GoTo RandomGym_FindUnbeaten_HearthomeCity
+RandomGym_ResetRoll_HearthomeCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_HearthomeCity
+
+RandomGym_WarpToGym0_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_HearthomeCity:
+    SetFlag FLAG_UNK_0x0FFB
+    SetVar VAR_UNK_0x4113, 1
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_HearthomeCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
 
     .balign 4, 0
 _0240:
@@ -694,3 +856,8 @@ _0997:
     End
 
     .balign 4, 0
+
+    .balign 4, 0
+RandomGym_PushSouth_HearthomeCity:
+    WalkNormalSouth
+    EndMovement

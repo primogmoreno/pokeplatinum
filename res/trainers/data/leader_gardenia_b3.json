@@ -1,0 +1,70 @@
+{
+    "name": "Gardenia",
+    "class": "TRAINER_CLASS_LEADER_GARDENIA",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_TANGELA",
+            "form": 0,
+            "level": 34,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_SLEEP_POWDER",
+                "MOVE_GIGA_DRAIN",
+                "MOVE_KNOCK_OFF",
+                "MOVE_GROWTH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_TORTERRA",
+            "form": 0,
+            "level": 34,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_STEALTH_ROCK",
+                "MOVE_RAZOR_LEAF",
+                "MOVE_EARTHQUAKE",
+                "MOVE_LEECH_SEED"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_ROSERADE",
+            "form": 0,
+            "level": 35,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_GIGA_DRAIN",
+                "MOVE_SLUDGE_BOMB",
+                "MOVE_TOXIC_SPIKES",
+                "MOVE_STUN_SPORE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CHERRIM",
+            "form": 0,
+            "level": 36,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_SUNNY_DAY",
+                "MOVE_SOLAR_BEAM",
+                "MOVE_WEATHER_BALL",
+                "MOVE_GROWTH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

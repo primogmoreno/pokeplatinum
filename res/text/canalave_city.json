@@ -363,6 +363,12 @@
         "The door is tightly shut.\n",
         "It appears impossible to open."
       ]
+    },
+    {
+      "id": "CaLave_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

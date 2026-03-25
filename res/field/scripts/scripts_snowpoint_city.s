@@ -14,6 +14,7 @@
     ScriptEntry _01FE
     ScriptEntry _0215
     ScriptEntry _022A
+    ScriptEntry RandomGym_Enter_6_SnowpointCity
     ScriptEntryEnd
 
 _0032:
@@ -45,6 +46,159 @@ _0072:
 _0088:
     GoToIfUnset FLAG_GAME_COMPLETED, _0072
     GoTo _0111
+
+
+RandomGym_Enter_6_SnowpointCity:
+    GoToIfSet FLAG_UNK_0x0FF9, RandomGym_PortalUsed_SnowpointCity
+    SetFlag FLAG_UNK_0x0FF9
+    SetVar VAR_UNK_0x4110, 6
+    GoTo RandomGym_PickAndWarp_SnowpointCity
+
+RandomGym_PortalUsed_SnowpointCity:
+    LockAll
+    Message 20
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_SnowpointCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_SnowpointCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_SnowpointCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_SnowpointCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_SnowpointCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_SnowpointCity
+    GoTo RandomGym_TryNext_SnowpointCity
+
+RandomGym_Check0_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym0_SnowpointCity
+
+RandomGym_Check1_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym1_SnowpointCity
+
+RandomGym_Check2_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym2_SnowpointCity
+
+RandomGym_Check3_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym3_SnowpointCity
+
+RandomGym_Check4_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym4_SnowpointCity
+
+RandomGym_Check5_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym5_SnowpointCity
+
+RandomGym_Check6_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym6_SnowpointCity
+
+RandomGym_Check7_SnowpointCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_SnowpointCity
+    GoTo RandomGym_WarpToGym7_SnowpointCity
+
+RandomGym_TryNext_SnowpointCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_SnowpointCity
+    GoTo RandomGym_FindUnbeaten_SnowpointCity
+RandomGym_ResetRoll_SnowpointCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_SnowpointCity
+
+RandomGym_WarpToGym0_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_SnowpointCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_SnowpointCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
 
     .balign 4, 0
 _009C:
@@ -337,4 +491,9 @@ _039C:
 _03A4:
     WalkNormalSouth
     Delay15
+    EndMovement
+
+    .balign 4, 0
+RandomGym_PushSouth_SnowpointCity:
+    WalkNormalSouth
     EndMovement

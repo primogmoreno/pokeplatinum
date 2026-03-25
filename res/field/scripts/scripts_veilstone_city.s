@@ -35,6 +35,7 @@
     ScriptEntry _0FB0
     ScriptEntry _1204
     ScriptEntry _123E
+    ScriptEntry RandomGym_Enter_2_VeilstoneCity
     ScriptEntryEnd
 
 _0082:
@@ -254,6 +255,159 @@ _042D:
     ApplyMovement LOCALID_PLAYER, _0544
     WaitMovement
     Return
+
+
+RandomGym_Enter_2_VeilstoneCity:
+    GoToIfSet FLAG_UNK_0x0FF5, RandomGym_PortalUsed_VeilstoneCity
+    SetFlag FLAG_UNK_0x0FF5
+    SetVar VAR_UNK_0x4110, 2
+    GoTo RandomGym_PickAndWarp_VeilstoneCity
+
+RandomGym_PortalUsed_VeilstoneCity:
+    LockAll
+    Message 69
+    WaitABXPadPress
+    CloseMessage
+    ApplyMovement LOCALID_PLAYER, RandomGym_PushSouth_VeilstoneCity
+    WaitMovement
+    ReleaseAll
+    End
+
+RandomGym_PickAndWarp_VeilstoneCity:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 8, RandomGym_AllBeaten_VeilstoneCity
+    GetRandom VAR_UNK_0x4111, 8
+
+RandomGym_FindUnbeaten_VeilstoneCity:
+    GoToIfEq VAR_UNK_0x4111, 0, RandomGym_Check0_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 1, RandomGym_Check1_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 2, RandomGym_Check2_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 3, RandomGym_Check3_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 4, RandomGym_Check4_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 5, RandomGym_Check5_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 6, RandomGym_Check6_VeilstoneCity
+    GoToIfEq VAR_UNK_0x4111, 7, RandomGym_Check7_VeilstoneCity
+    GoTo RandomGym_TryNext_VeilstoneCity
+
+RandomGym_Check0_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_COAL, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym0_VeilstoneCity
+
+RandomGym_Check1_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_FOREST, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym1_VeilstoneCity
+
+RandomGym_Check2_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_COBBLE, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym2_VeilstoneCity
+
+RandomGym_Check3_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_FEN, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym3_VeilstoneCity
+
+RandomGym_Check4_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_RELIC, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym4_VeilstoneCity
+
+RandomGym_Check5_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_MINE, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym5_VeilstoneCity
+
+RandomGym_Check6_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_ICICLE, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym6_VeilstoneCity
+
+RandomGym_Check7_VeilstoneCity:
+    GoToIfBadgeAcquired BADGE_ID_BEACON, RandomGym_TryNext_VeilstoneCity
+    GoTo RandomGym_WarpToGym7_VeilstoneCity
+
+RandomGym_TryNext_VeilstoneCity:
+    AddVar VAR_UNK_0x4111, 1
+    GoToIfEq VAR_UNK_0x4111, 8, RandomGym_ResetRoll_VeilstoneCity
+    GoTo RandomGym_FindUnbeaten_VeilstoneCity
+RandomGym_ResetRoll_VeilstoneCity:
+    SetVar VAR_UNK_0x4111, 0
+    GoTo RandomGym_FindUnbeaten_VeilstoneCity
+
+RandomGym_WarpToGym0_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_OREBURGH_CITY_GYM, 0, 5, 23, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym1_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_ETERNA_CITY_GYM, 0, 11, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym2_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym3_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_PASTORIA_CITY_GYM, 0, 13, 41, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym4_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_HEARTHOME_CITY_GYM_LEADER_ROOM, 0, 4, 12, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym5_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_CANALAVE_CITY_GYM, 0, 16, 26, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym6_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SNOWPOINT_CITY_GYM, 0, 11, 27, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_WarpToGym7_VeilstoneCity:
+    SetFlag FLAG_UNK_0x0FFB
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_SUNYSHORE_CITY_GYM_ROOM_3, 0, 11, 24, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
+
+RandomGym_AllBeaten_VeilstoneCity:
+    FadeScreenOut
+    WaitFadeScreen
+    Warp MAP_HEADER_VEILSTONE_CITY_GYM, 0, 12, 29, DIR_NORTH
+    FadeScreenIn
+    WaitFadeScreen
+    End
 
     .balign 4, 0
 _0444:
@@ -1464,3 +1618,8 @@ _123E:
     End
 
     .balign 4, 0
+
+    .balign 4, 0
+RandomGym_PushSouth_VeilstoneCity:
+    WalkNormalSouth
+    EndMovement

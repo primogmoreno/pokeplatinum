@@ -1,11 +1,12 @@
 #include "macros/scrcmd.inc"
 
 
+    InitScriptEntry_OnTransition 1
     InitScriptEntry_OnFrameTable InitScriptFrameTable
     InitScriptEntryEnd
 
 InitScriptFrameTable:
-    InitScriptGoToIfEqual VAR_HAS_ENTERED_HEARTHOME_GYM_BEFORE, FALSE, 3
+    InitScriptGoToIfEqual VAR_UNK_0x4113, 0, 2
     InitScriptFrameTableEnd
 
     InitScriptEnd

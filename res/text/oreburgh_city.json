@@ -249,6 +249,12 @@
         "Oreburgh Mine\n",
         "Beware of Busy Pokémon!"
       ]
+    },
+    {
+      "id": "OreburghCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+    "name": "Volkner",
+    "class": "TRAINER_CLASS_LEADER_VOLKNER",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_SHINX",
+            "form": 0,
+            "level": 21,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_SPARK",
+                "MOVE_BITE",
+                "MOVE_CHARGE",
+                "MOVE_LEER"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_FLAAFFY",
+            "form": 0,
+            "level": 22,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_SPARK",
+                "MOVE_THUNDER_WAVE",
+                "MOVE_CHARGE",
+                "MOVE_COTTON_SPORE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_LUXIO",
+            "form": 0,
+            "level": 23,
+            "item": "ITEM_SITRUS_BERRY",
+            "moves": [
+                "MOVE_SPARK",
+                "MOVE_BITE",
+                "MOVE_ICE_FANG",
+                "MOVE_SCARY_FACE"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

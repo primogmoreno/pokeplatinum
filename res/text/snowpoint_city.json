@@ -187,6 +187,12 @@
         "Leader: Candice\f",
         "The Diamond Dust Girl!"
       ]
+    },
+    {
+      "id": "SnowpointCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

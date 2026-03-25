@@ -396,6 +396,12 @@
         "There seems to have been a descriptive\n",
         "plate, but it appears it was torn off."
       ]
+    },
+    {
+      "id": "EternaCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }

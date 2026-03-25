@@ -1,0 +1,98 @@
+{
+    "name": "Gardenia",
+    "class": "TRAINER_CLASS_LEADER_GARDENIA",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_TORTERRA",
+            "form": 0,
+            "level": 56,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_STEALTH_ROCK",
+                "MOVE_EARTHQUAKE",
+                "MOVE_WOOD_HAMMER",
+                "MOVE_LEECH_SEED"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_ROSERADE",
+            "form": 0,
+            "level": 56,
+            "item": "ITEM_BLACK_SLUDGE",
+            "moves": [
+                "MOVE_GIGA_DRAIN",
+                "MOVE_SLUDGE_BOMB",
+                "MOVE_TOXIC_SPIKES",
+                "MOVE_SLEEP_POWDER"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_TANGROWTH",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_KNOCK_OFF",
+                "MOVE_GIGA_DRAIN",
+                "MOVE_SLEEP_POWDER",
+                "MOVE_GROWTH"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_LILLIGANT",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_NONE",
+            "moves": [
+                "MOVE_QUIVERDANCE",
+                "MOVE_GIGA_DRAIN",
+                "MOVE_SLEEP_POWDER",
+                "MOVE_HIDDEN_POWER"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_WHIMSICOTT",
+            "form": 0,
+            "level": 57,
+            "item": "ITEM_MENTAL_HERB",
+            "moves": [
+                "MOVE_SUNNY_DAY",
+                "MOVE_ENCORE",
+                "MOVE_MOONBLAST",
+                "MOVE_U_TURN"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CHERRIM",
+            "form": 0,
+            "level": 58,
+            "item": "ITEM_HEAT_ROCK",
+            "moves": [
+                "MOVE_SOLAR_BEAM",
+                "MOVE_WEATHER_BALL",
+                "MOVE_GROWTH",
+                "MOVE_DAZZLINGGLEAM"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

@@ -1233,6 +1233,11 @@
     .long 222
     .endm
 
+    .macro TriggerProtectContactPunishment jump_no_effect
+    .long 223
+    .long (\jump_no_effect-.) / 4 - 1
+    .endm
+
     .text
     .globl _start
 _start:

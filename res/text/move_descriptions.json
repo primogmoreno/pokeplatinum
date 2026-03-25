@@ -4572,6 +4572,2026 @@
         "It hits even if the\n",
         "foe used Protect."
       ]
+    },
+    {
+      "id": "pl_msg_00000646_00468",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00469",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00470",
+      "en_US": [
+        "A Flying-type\n",
+        "physical move with\n",
+        "55 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00471",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00472",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00473",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00474",
+      "en_US": [
+        "A Grass-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00475",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00476",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00477",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00478",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00479",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "110 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00480",
+      "en_US": [
+        "A Ice-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00481",
+      "en_US": [
+        "A Steel-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00482",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00483",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00484",
+      "en_US": [
+        "A Poison-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00485",
+      "en_US": [
+        "A Poison-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00486",
+      "en_US": [
+        "A Flying-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00487",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00488",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00489",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00490",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00491",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "140 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00492",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00493",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00494",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00495",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00496",
+      "en_US": [
+        "A Fire-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00497",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "130 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00498",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00499",
+      "en_US": [
+        "A Dragon-type\n",
+        "special move with\n",
+        "110 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00500",
+      "en_US": [
+        "A Dragon-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00501",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00502",
+      "en_US": [
+        "A Poison-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00503",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00504",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00505",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00506",
+      "en_US": [
+        "A Dragon-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00507",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00508",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00509",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00510",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00511",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00512",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00513",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00514",
+      "en_US": [
+        "A Poison-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00515",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00516",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00517",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00518",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00519",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00520",
+      "en_US": [
+        "A Dragon-type\n",
+        "special move with\n",
+        "150 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00521",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00522",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00523",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00524",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00525",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00526",
+      "en_US": [
+        "A Flying-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00527",
+      "en_US": [
+        "A Dragon-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00528",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00529",
+      "en_US": [
+        "A Electric-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00530",
+      "en_US": [
+        "A Electric-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00531",
+      "en_US": [
+        "A Electric-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00532",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00533",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00534",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "130 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00535",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "55 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00536",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00537",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00538",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00539",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00540",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00541",
+      "en_US": [
+        "A Bug-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00542",
+      "en_US": [
+        "A Dragon-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00543",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00544",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00545",
+      "en_US": [
+        "A Fighting-type\n",
+        "special move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00546",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00547",
+      "en_US": [
+        "A Bug-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00548",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00549",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00550",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "130 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00551",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00552",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00553",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00554",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00555",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00556",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "95 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00557",
+      "en_US": [
+        "A Ice-type special\n",
+        "move with 70\n",
+        "power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00558",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00559",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "160 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00560",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00561",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00562",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00563",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00564",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00565",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00566",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00567",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00568",
+      "en_US": [
+        "A Ghost-type\n",
+        "special move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00569",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "95 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00570",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "130 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00571",
+      "en_US": [
+        "A Dark-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00572",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00573",
+      "en_US": [
+        "A Flying-type\n",
+        "special move with\n",
+        "110 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00574",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00575",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00576",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00577",
+      "en_US": [
+        "A Ice-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00578",
+      "en_US": [
+        "A Ice-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00579",
+      "en_US": [
+        "A Ice-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00580",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00581",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00582",
+      "en_US": [
+        "A Bug-type special\n",
+        "move with 20\n",
+        "power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00583",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00584",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00585",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00586",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00587",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00588",
+      "en_US": [
+        "A Steel-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00589",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00590",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00591",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00592",
+      "en_US": [
+        "A Ghost-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00593",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00594",
+      "en_US": [
+        "A Grass-type\n",
+        "special move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00595",
+      "en_US": [
+        "A Water-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00596",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00597",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00598",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00599",
+      "en_US": [
+        "A Bug-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00600",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00601",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00602",
+      "en_US": [
+        "A Electric-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00603",
+      "en_US": [
+        "A Steel-type\n",
+        "special move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00604",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00605",
+      "en_US": [
+        "A Grass-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00606",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "150 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00607",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "95 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00608",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "150 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00609",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00610",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "95 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00611",
+      "en_US": [
+        "A Ghost-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00612",
+      "en_US": [
+        "A Poison-type\n",
+        "physical move with\n",
+        "30 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00613",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00614",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00615",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00616",
+      "en_US": [
+        "A Dark-type\n",
+        "special move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00617",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00618",
+      "en_US": [
+        "A Fighting-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00619",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "20 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00620",
+      "en_US": [
+        "A Flying-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00621",
+      "en_US": [
+        "A Dark-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00622",
+      "en_US": [
+        "A Fighting-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00623",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00624",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00625",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00626",
+      "en_US": [
+        "A Dark-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00627",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00628",
+      "en_US": [
+        "A Ghost-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00629",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00630",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00631",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00632",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00633",
+      "en_US": [
+        "A Bug-type special\n",
+        "move with 90\n",
+        "power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00634",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "20 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00635",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00636",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00637",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00638",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "160 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00639",
+      "en_US": [
+        "A Psychic-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00640",
+      "en_US": [
+        "A Psychic-type\n",
+        "physical move with\n",
+        "85 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00641",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00642",
+      "en_US": [
+        "A Psychic-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00643",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00644",
+      "en_US": [
+        "A Poison-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00645",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00646",
+      "en_US": [
+        "A Dark-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00647",
+      "en_US": [
+        "A Fighting-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00648",
+      "en_US": [
+        "A Bug-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00649",
+      "en_US": [
+        "A Ghost-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00650",
+      "en_US": [
+        "A Bug-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00651",
+      "en_US": [
+        "A Fire-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00652",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00653",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00654",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00655",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00656",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00657",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00658",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00659",
+      "en_US": [
+        "A Dark-type\n",
+        "special move with\n",
+        "1 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00660",
+      "en_US": [
+        "A Fighting-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00661",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00662",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00663",
+      "en_US": [
+        "A Dragon-type\n",
+        "physical move with\n",
+        "25 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00664",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00665",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00666",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "150 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00667",
+      "en_US": [
+        "A Steel-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00668",
+      "en_US": [
+        "A Ground-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00669",
+      "en_US": [
+        "A Bug-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00670",
+      "en_US": [
+        "A Bug-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00671",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "95 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00672",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00673",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00674",
+      "en_US": [
+        "A Dark-type\n",
+        "special move with\n",
+        "55 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00675",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00676",
+      "en_US": [
+        "A Ice-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00677",
+      "en_US": [
+        "A Water-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00678",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "125 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00679",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00680",
+      "en_US": [
+        "A Ghost-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00681",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00682",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00683",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00684",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00685",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00686",
+      "en_US": [
+        "A Ghost-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00687",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00688",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "110 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00689",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "130 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00690",
+      "en_US": [
+        "A Bug-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00691",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00692",
+      "en_US": [
+        "A Rock-type\n",
+        "physical move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00693",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "20 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00694",
+      "en_US": [
+        "A Grass-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00695",
+      "en_US": [
+        "A Bug-type special\n",
+        "move with 50\n",
+        "power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00696",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00697",
+      "en_US": [
+        "A Steel-type\n",
+        "physical move with\n",
+        "100 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00698",
+      "en_US": [
+        "A Grass-type\n",
+        "special move with\n",
+        "60 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00699",
+      "en_US": [
+        "A Steel-type\n",
+        "special move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00700",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "25 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00701",
+      "en_US": [
+        "A Rock-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00702",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00703",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00704",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00705",
+      "en_US": [
+        "A Normal-type\n",
+        "special move with\n",
+        "50 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00706",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00707",
+      "en_US": [
+        "A Ground-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00708",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00709",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00710",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00711",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00712",
+      "en_US": [
+        "A Dark-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00713",
+      "en_US": [
+        "A Fire-type\n",
+        "special move with\n",
+        "80 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00714",
+      "en_US": [
+        "A Ghost-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00715",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "30 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00716",
+      "en_US": [
+        "A Grass-type\n",
+        "physical move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00717",
+      "en_US": [
+        "A Psychic-type\n",
+        "special move with\n",
+        "40 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00718",
+      "en_US": [
+        "A Poison-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00719",
+      "en_US": [
+        "A Poison-type\n",
+        "special move with\n",
+        "65 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00720",
+      "en_US": [
+        "A Normal-type\n",
+        "physical move with\n",
+        "55 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00721",
+      "en_US": [
+        "A Electric-type\n",
+        "special move with\n",
+        "70 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00722",
+      "en_US": [
+        "A Water-type\n",
+        "special move with\n",
+        "15 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00723",
+      "en_US": [
+        "A Water-type\n",
+        "physical move with\n",
+        "120 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00724",
+      "en_US": [
+        "A Dark-type\n",
+        "physical move with\n",
+        "75 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00725",
+      "en_US": [
+        "A Rock-type status\n",
+        "move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00726",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "90 power.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00727",
+      "en_US": [
+        "A Psychic-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00728",
+      "en_US": [
+        "A Normal-type\n",
+        "status move.\n"
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00729",
+      "en_US": [
+        "A Electric-type\n",
+        "physical move with\n",
+        "80 power.\n"
+      ]
     }
   ]
 }

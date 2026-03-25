@@ -548,6 +548,12 @@
         "The Poffin House\n",
         "Delicious Poffins--Smiles for All"
       ]
+    },
+    {
+      "id": "HearthomeCity_Text_GymPortalClosed",
+      "en_US": [
+        "The Gym portal has already\nbeen used. You cannot enter\nthis Gym anymore.’"
+      ]
     }
   ]
 }
