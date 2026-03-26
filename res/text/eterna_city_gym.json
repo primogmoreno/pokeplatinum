@@ -180,6 +180,16 @@
                 "You can\u2019t leave until you\n",
                 "defeat the Gym Leader!\r"
             ]
+        },
+        {
+            "id": "Blitz_Text_FifthBadgePower",
+            "en_US": [
+                "You now have 5 Gym Badges!\n",
+                "In Blitz mode, these HMs\n",
+                "are now available:\r",
+                "Fly, Cut, Strength,\n",
+                "Rock Climb, and Surf!"
+            ]
         }
     ]
 }

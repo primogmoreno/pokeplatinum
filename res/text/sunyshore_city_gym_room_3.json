@@ -76,6 +76,16 @@
         "Against you, even the Elite Four will\n",
         "be pushed to fend off your challenge!"
       ]
+    },
+    {
+      "id": "Blitz_Text_FifthBadgePower",
+      "en_US": [
+        "You now have 5 Gym Badges!\n",
+        "In Blitz mode, these HMs\n",
+        "are now available:\r",
+        "Fly, Cut, Strength,\n",
+        "Rock Climb, and Surf!"
+      ]
     }
   ]
 }

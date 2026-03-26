@@ -245,14 +245,45 @@ EternaGym_GardeniaTryGiveTM86Again:
     Message EternaGym_Text_GardeniaExplainGrassKnot
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
-    ClearFlag FLAG_UNK_0x0FFB
-    GoTo RandomGym_ReturnToOriginCity_EternaGym
+    GoTo EternaGym_PostWin
     End
 
 EternaGym_GardeniaGiveTM86BagFullAgain:
     Common_MessageBagIsFull
     CloseMessage
+    GoTo EternaGym_PostWin
+    End
+
+EternaGym_PostWin:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 5, EternaGym_Badge5
+    GoToIfEq VAR_RESULT, 6, EternaGym_Badge6
+    GoToIfEq VAR_RESULT, 8, EternaGym_Badge8
+    GoTo EternaGym_PostWin_End
+EternaGym_Badge5:
+    GoToIfSet FLAG_UNK_0x0FFC, EternaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFC
+    Message 18
+    WaitABXPadPress
+    CloseMessage
+    AddItem ITEM_HM01, 1, VAR_RESULT
+    AddItem ITEM_HM02, 1, VAR_RESULT
+    AddItem ITEM_HM03, 1, VAR_RESULT
+    AddItem ITEM_HM04, 1, VAR_RESULT
+    AddItem ITEM_HM08, 1, VAR_RESULT
+    GoTo EternaGym_PostWin_End
+EternaGym_Badge6:
+    GoToIfSet FLAG_UNK_0x0FFD, EternaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFD
+    SetFlag FLAG_FIRST_ARRIVAL_SNOWPOINT_CITY
+    SetFlag FLAG_FIRST_ARRIVAL_SUNYSHORE_CITY
+    GoTo EternaGym_PostWin_End
+EternaGym_Badge8:
+    GoToIfSet FLAG_UNK_0x0FFE, EternaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFE
+    SetFlag FLAG_FIRST_ARRIVAL_OUTSIDE_VICTORY_ROAD
+    SetFlag FLAG_FIRST_ARRIVAL_POKEMON_LEAGUE
+EternaGym_PostWin_End:
     ReleaseAll
     ClearFlag FLAG_UNK_0x0FFB
     GoTo RandomGym_ReturnToOriginCity_EternaGym
@@ -466,7 +497,7 @@ ReturnTo_City3_EternaGym:
     WaitFadeScreen
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     FadeScreenIn
     WaitFadeScreen
     End

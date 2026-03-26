@@ -79,6 +79,16 @@
     {
       "id": "pl_msg_00000109_00008",
       "garbage": 15
+    },
+    {
+      "id": "Blitz_Text_FifthBadgePower",
+      "en_US": [
+        "You now have 5 Gym Badges!\n",
+        "In Blitz mode, these HMs\n",
+        "are now available:\r",
+        "Fly, Cut, Strength,\n",
+        "Rock Climb, and Surf!"
+      ]
     }
   ]
 }

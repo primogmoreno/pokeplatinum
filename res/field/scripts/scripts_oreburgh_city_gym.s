@@ -202,14 +202,45 @@ OreburghGym_RoarkGiveTM76:
     Message OreburghGym_Text_RoarkExplainStealthRock
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
-    ClearFlag FLAG_UNK_0x0FFB
-    GoTo RandomGym_ReturnToOriginCity_OreburghGym
+    GoTo OreburghGym_PostWin
     End
 
 OreburghGym_RoarkGiveTM76BagFull:
     Common_MessageBagIsFull
     CloseMessage
+    GoTo OreburghGym_PostWin
+    End
+
+OreburghGym_PostWin:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 5, OreburghGym_Badge5
+    GoToIfEq VAR_RESULT, 6, OreburghGym_Badge6
+    GoToIfEq VAR_RESULT, 8, OreburghGym_Badge8
+    GoTo OreburghGym_PostWin_End
+OreburghGym_Badge5:
+    GoToIfSet FLAG_UNK_0x0FFC, OreburghGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFC
+    Message 11
+    WaitABXPadPress
+    CloseMessage
+    AddItem ITEM_HM01, 1, VAR_RESULT
+    AddItem ITEM_HM02, 1, VAR_RESULT
+    AddItem ITEM_HM03, 1, VAR_RESULT
+    AddItem ITEM_HM04, 1, VAR_RESULT
+    AddItem ITEM_HM08, 1, VAR_RESULT
+    GoTo OreburghGym_PostWin_End
+OreburghGym_Badge6:
+    GoToIfSet FLAG_UNK_0x0FFD, OreburghGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFD
+    SetFlag FLAG_FIRST_ARRIVAL_SNOWPOINT_CITY
+    SetFlag FLAG_FIRST_ARRIVAL_SUNYSHORE_CITY
+    GoTo OreburghGym_PostWin_End
+OreburghGym_Badge8:
+    GoToIfSet FLAG_UNK_0x0FFE, OreburghGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFE
+    SetFlag FLAG_FIRST_ARRIVAL_OUTSIDE_VICTORY_ROAD
+    SetFlag FLAG_FIRST_ARRIVAL_POKEMON_LEAGUE
+OreburghGym_PostWin_End:
     ReleaseAll
     ClearFlag FLAG_UNK_0x0FFB
     GoTo RandomGym_ReturnToOriginCity_OreburghGym
@@ -329,7 +360,7 @@ ReturnTo_City3_OreburghGym:
     WaitFadeScreen
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     FadeScreenIn
     WaitFadeScreen
     End

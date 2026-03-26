@@ -234,14 +234,45 @@ PastoriaGym_WakeTryGiveTm55:
     Message PastoriaGym_Text_WakeExplainTM55
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
-    ClearFlag FLAG_UNK_0x0FFB
-    GoTo RandomGym_ReturnToOriginCity_PastoriaGym
+    GoTo PastoriaGym_PostWin
     End
 
 PastoriaGym_WakeCannotGiveTm55:
     Common_MessageBagIsFull
     CloseMessage
+    GoTo PastoriaGym_PostWin
+    End
+
+PastoriaGym_PostWin:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 5, PastoriaGym_Badge5
+    GoToIfEq VAR_RESULT, 6, PastoriaGym_Badge6
+    GoToIfEq VAR_RESULT, 8, PastoriaGym_Badge8
+    GoTo PastoriaGym_PostWin_End
+PastoriaGym_Badge5:
+    GoToIfSet FLAG_UNK_0x0FFC, PastoriaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFC
+    Message 10
+    WaitABXPadPress
+    CloseMessage
+    AddItem ITEM_HM01, 1, VAR_RESULT
+    AddItem ITEM_HM02, 1, VAR_RESULT
+    AddItem ITEM_HM03, 1, VAR_RESULT
+    AddItem ITEM_HM04, 1, VAR_RESULT
+    AddItem ITEM_HM08, 1, VAR_RESULT
+    GoTo PastoriaGym_PostWin_End
+PastoriaGym_Badge6:
+    GoToIfSet FLAG_UNK_0x0FFD, PastoriaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFD
+    SetFlag FLAG_FIRST_ARRIVAL_SNOWPOINT_CITY
+    SetFlag FLAG_FIRST_ARRIVAL_SUNYSHORE_CITY
+    GoTo PastoriaGym_PostWin_End
+PastoriaGym_Badge8:
+    GoToIfSet FLAG_UNK_0x0FFE, PastoriaGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFE
+    SetFlag FLAG_FIRST_ARRIVAL_OUTSIDE_VICTORY_ROAD
+    SetFlag FLAG_FIRST_ARRIVAL_POKEMON_LEAGUE
+PastoriaGym_PostWin_End:
     ReleaseAll
     ClearFlag FLAG_UNK_0x0FFB
     GoTo RandomGym_ReturnToOriginCity_PastoriaGym
@@ -361,7 +392,7 @@ ReturnTo_City3_PastoriaGym:
     WaitFadeScreen
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     FadeScreenIn
     WaitFadeScreen
     End

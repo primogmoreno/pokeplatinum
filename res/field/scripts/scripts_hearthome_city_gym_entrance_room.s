@@ -224,7 +224,7 @@ ReturnTo_City2_HearthomeGymEntrance:
 ReturnTo_City3_HearthomeGymEntrance:
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     End
 
 ReturnTo_City4_HearthomeGymEntrance:

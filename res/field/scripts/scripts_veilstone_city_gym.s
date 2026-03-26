@@ -206,14 +206,45 @@ VeilstoneGym_MayleneTryGiveTM60:
     Message VeilstoneGym_Text_MayleneExplainTM60
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
-    ClearFlag FLAG_UNK_0x0FFB
-    GoTo RandomGym_ReturnToOriginCity_VeilstoneGym
+    GoTo VeilstoneGym_PostWin
     End
 
 VeilstoneGym_MayleneCannotGiveTM60:
     Common_MessageBagIsFull
     CloseMessage
+    GoTo VeilstoneGym_PostWin
+    End
+
+VeilstoneGym_PostWin:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 5, VeilstoneGym_Badge5
+    GoToIfEq VAR_RESULT, 6, VeilstoneGym_Badge6
+    GoToIfEq VAR_RESULT, 8, VeilstoneGym_Badge8
+    GoTo VeilstoneGym_PostWin_End
+VeilstoneGym_Badge5:
+    GoToIfSet FLAG_UNK_0x0FFC, VeilstoneGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFC
+    Message 13
+    WaitABXPadPress
+    CloseMessage
+    AddItem ITEM_HM01, 1, VAR_RESULT
+    AddItem ITEM_HM02, 1, VAR_RESULT
+    AddItem ITEM_HM03, 1, VAR_RESULT
+    AddItem ITEM_HM04, 1, VAR_RESULT
+    AddItem ITEM_HM08, 1, VAR_RESULT
+    GoTo VeilstoneGym_PostWin_End
+VeilstoneGym_Badge6:
+    GoToIfSet FLAG_UNK_0x0FFD, VeilstoneGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFD
+    SetFlag FLAG_FIRST_ARRIVAL_SNOWPOINT_CITY
+    SetFlag FLAG_FIRST_ARRIVAL_SUNYSHORE_CITY
+    GoTo VeilstoneGym_PostWin_End
+VeilstoneGym_Badge8:
+    GoToIfSet FLAG_UNK_0x0FFE, VeilstoneGym_PostWin_End
+    SetFlag FLAG_UNK_0x0FFE
+    SetFlag FLAG_FIRST_ARRIVAL_OUTSIDE_VICTORY_ROAD
+    SetFlag FLAG_FIRST_ARRIVAL_POKEMON_LEAGUE
+VeilstoneGym_PostWin_End:
     ReleaseAll
     ClearFlag FLAG_UNK_0x0FFB
     GoTo RandomGym_ReturnToOriginCity_VeilstoneGym
@@ -361,7 +392,7 @@ ReturnTo_City3_VeilstoneGym:
     WaitFadeScreen
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     FadeScreenIn
     WaitFadeScreen
     End

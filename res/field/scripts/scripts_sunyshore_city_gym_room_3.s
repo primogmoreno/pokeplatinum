@@ -96,14 +96,45 @@ SunyshoreGymRoom3_VolknerTryGiveTM57:
     Message SunyshoreGymRoom3_Text_VolknerExplainTM57
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
-    ClearFlag FLAG_UNK_0x0FFB
-    GoTo RandomGym_ReturnToOriginCity_SunyshorGymRoom3
+    GoTo SunyshoreGymRoom3_PostWin
     End
 
 SunyshoreGymRoom3_VolknerCannotGiveTM57:
     Common_MessageBagIsFull
     CloseMessage
+    GoTo SunyshoreGymRoom3_PostWin
+    End
+
+SunyshoreGymRoom3_PostWin:
+    CountBadgesAcquired VAR_RESULT
+    GoToIfEq VAR_RESULT, 5, SunyshoreGymRoom3_Badge5
+    GoToIfEq VAR_RESULT, 6, SunyshoreGymRoom3_Badge6
+    GoToIfEq VAR_RESULT, 8, SunyshoreGymRoom3_Badge8
+    GoTo SunyshoreGymRoom3_PostWin_End
+SunyshoreGymRoom3_Badge5:
+    GoToIfSet FLAG_UNK_0x0FFC, SunyshoreGymRoom3_PostWin_End
+    SetFlag FLAG_UNK_0x0FFC
+    Message 6
+    WaitABXPadPress
+    CloseMessage
+    AddItem ITEM_HM01, 1, VAR_RESULT
+    AddItem ITEM_HM02, 1, VAR_RESULT
+    AddItem ITEM_HM03, 1, VAR_RESULT
+    AddItem ITEM_HM04, 1, VAR_RESULT
+    AddItem ITEM_HM08, 1, VAR_RESULT
+    GoTo SunyshoreGymRoom3_PostWin_End
+SunyshoreGymRoom3_Badge6:
+    GoToIfSet FLAG_UNK_0x0FFD, SunyshoreGymRoom3_PostWin_End
+    SetFlag FLAG_UNK_0x0FFD
+    SetFlag FLAG_FIRST_ARRIVAL_SNOWPOINT_CITY
+    SetFlag FLAG_FIRST_ARRIVAL_SUNYSHORE_CITY
+    GoTo SunyshoreGymRoom3_PostWin_End
+SunyshoreGymRoom3_Badge8:
+    GoToIfSet FLAG_UNK_0x0FFE, SunyshoreGymRoom3_PostWin_End
+    SetFlag FLAG_UNK_0x0FFE
+    SetFlag FLAG_FIRST_ARRIVAL_OUTSIDE_VICTORY_ROAD
+    SetFlag FLAG_FIRST_ARRIVAL_POKEMON_LEAGUE
+SunyshoreGymRoom3_PostWin_End:
     ReleaseAll
     ClearFlag FLAG_UNK_0x0FFB
     GoTo RandomGym_ReturnToOriginCity_SunyshorGymRoom3
@@ -166,7 +197,7 @@ ReturnTo_City3_SunyshorGymRoom3:
     WaitFadeScreen
     FadeScreenOut
     WaitFadeScreen
-    Warp MAP_HEADER_PASTORIA_CITY, 0, 589, 835, DIR_SOUTH
+    Warp MAP_HEADER_PASTORIA_CITY, 0, 591, 830, DIR_SOUTH
     FadeScreenIn
     WaitFadeScreen
     End
