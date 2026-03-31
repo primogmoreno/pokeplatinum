@@ -2419,57 +2419,11 @@ static BOOL BtlCmd_CalcExpGain(BattleSystem *battleSys, BattleContext *battleCtx
     BattleScript_Iter(battleCtx, 1);
     jump = BattleScript_Read(battleCtx);
 
-    if ((battlerData->battlerType & BATTLER_TYPE_SOLO_ENEMY) && (battleType & BATTLE_TYPE_NO_EXPERIENCE) == FALSE) {
-        int i;
-        int totalMonsGainingExp = 0;
-        int totalMonsWithExpShare = 0;
-
-        for (i = 0; i < Party_GetCurrentCount(BattleSystem_GetParty(battleSys, BATTLER_US)); i++) {
-            Pokemon *mon = BattleSystem_GetPartyPokemon(battleSys, BATTLER_US, i);
-
-            if (Pokemon_GetValue(mon, MON_DATA_SPECIES, NULL) && Pokemon_GetValue(mon, MON_DATA_HP, NULL)) {
-                if (battleCtx->sideGetExpMask[(battleCtx->faintedMon >> 1) & 1] & FlagIndex(i)) {
-                    totalMonsGainingExp++;
-                }
-
-                u16 item = Pokemon_GetValue(mon, MON_DATA_HELD_ITEM, NULL);
-                if (BattleSystem_GetItemData(battleCtx, item, ITEM_PARAM_HOLD_EFFECT) == HOLD_EFFECT_EXP_SHARE) {
-                    totalMonsWithExpShare++;
-                }
-            }
-        }
-
-        u16 exp = SpeciesData_GetSpeciesValue(battleCtx->battleMons[battleCtx->faintedMon].species, SPECIES_DATA_BASE_EXP_REWARD);
-        exp = (exp * battleCtx->battleMons[battleCtx->faintedMon].level) / 7;
-
-        if (totalMonsWithExpShare) {
-            battleCtx->gainedExp = (exp / 2) / totalMonsGainingExp;
-
-            if (battleCtx->gainedExp == 0) {
-                battleCtx->gainedExp = 1;
-            }
-
-            battleCtx->sharedExp = (exp / 2) / totalMonsWithExpShare;
-
-            if (battleCtx->sharedExp == 0) {
-                battleCtx->sharedExp = 1;
-            }
-        } else {
-            battleCtx->gainedExp = exp / totalMonsGainingExp;
-
-            if (battleCtx->gainedExp == 0) {
-                battleCtx->gainedExp = 1;
-            }
-
-            battleCtx->sharedExp = 0;
-        }
-    } else {
-        BattleScript_Iter(battleCtx, jump);
-    }
-
-    // Blitz: no EXP from battles — level up via Rare Candy only
+    // Blitz: no EXP from battles — level up via Rare Candy only.
+    // Always zero exp and jump past StartGetExpTask/WaitGetExpTask to avoid crash.
     battleCtx->gainedExp = 0;
     battleCtx->sharedExp = 0;
+    BattleScript_Iter(battleCtx, jump);
 
     return FALSE;
 }
@@ -2527,7 +2481,8 @@ enum GetExpTaskDataIndex {
     GET_EXP_NEW_EXP,
     GET_EXP_MOVE,
     GET_EXP_MOVE_SLOT,
-    GET_EXP_PARTY_SLOT
+    GET_EXP_PARTY_SLOT,
+    GET_EXP_LEVEL_UP_AUTO_DISMISS
 };
 
 /**
@@ -10252,6 +10207,7 @@ static void BattleScript_GetExpTask(SysTask *task, void *inData)
         Window_FillTilemap(window, 0xFF);
         Window_DrawStandardFrame(window, 0, 1, 8);
 
+        data->tmpData[GET_EXP_LEVEL_UP_AUTO_DISMISS] = 0;
         data->seqNum = SEQ_GET_EXP_LEVEL_UP_SUMMARY_PRINT_DIFF;
         break;
 
@@ -10316,8 +10272,11 @@ static void BattleScript_GetExpTask(SysTask *task, void *inData)
 
     case SEQ_GET_EXP_LEVEL_UP_SUMMARY_PRINT_DIFF_WAIT:
     case SEQ_GET_EXP_LEVEL_UP_SUMMARY_PRINT_TRUE_WAIT:
-        if ((gSystem.pressedKeys & (PAD_BUTTON_A | PAD_BUTTON_B | PAD_BUTTON_X | PAD_BUTTON_Y)) || TouchScreen_Tapped()) {
+        if ((gSystem.pressedKeys & (PAD_BUTTON_A | PAD_BUTTON_B | PAD_BUTTON_X | PAD_BUTTON_Y))
+            || TouchScreen_Tapped()
+            || ++data->tmpData[GET_EXP_LEVEL_UP_AUTO_DISMISS] >= 30) {
             Sound_PlayEffect(SEQ_SE_CONFIRM);
+            data->tmpData[GET_EXP_LEVEL_UP_AUTO_DISMISS] = 0;
             data->seqNum++;
         }
         break;

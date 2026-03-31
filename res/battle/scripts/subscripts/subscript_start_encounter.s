@@ -7,10 +7,10 @@ _000:
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_TYPE, BATTLE_TYPE_PAL_PARK, _237
     SetPokemonEncounter BTLSCR_ENEMY
     SetTrainerEncounter BTLSCR_PLAYER
-    PlayEncounterAnimation 
-    WaitTime 122
+    PlayEncounterAnimation
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_ENEMY
-    Wait 
+    Wait
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_SYS_STATUS, BATTLE_STATUS_DISTORTION, _073
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_SYS_STATUS, BATTLE_STATUS_LEGENDARY, _067
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_SYS_STATUS, BATTLE_STATUS_FIRST_BATTLE, _055
@@ -45,8 +45,8 @@ _079:
     PrintGlobalMessage BattleStrings_Text_AWildPokemonAndPokemonAppeared, TAG_NICKNAME_NICKNAME, BTLSCR_ENEMY_SLOT_1, BTLSCR_ENEMY_SLOT_2
 
 _084:
-    Wait 
-    WaitButtonABTime 30
+    Wait
+    WaitButtonABTime 10
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_TYPE, BATTLE_TYPE_2vs2, _098
     // Go! {0}!
     PrintMessage BattleStrings_Text_GoPokemon, TAG_NICKNAME, BTLSCR_PLAYER
@@ -60,88 +60,88 @@ _100:
     Wait 
     ThrowPokeball BTLSCR_PLAYER, BTLSCR_THROW_POKE_BALL
     PokemonSlideIn BTLSCR_PLAYER
-    WaitTime 96
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_PLAYER
-    Wait 
+    Wait
     OAMToSprite BTLSCR_ENEMY
     Wait 
     GoTo _258
 
 _118:
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_SYS_STATUS, BATTLE_STATUS_RECORDED, _169
-    PlayEncounterAnimation 
+    PlayEncounterAnimation
     SetTrainerEncounter BTLSCR_ALL_BATTLERS
-    WaitTime 96
-    LoadPartyGaugeGraphics 
+    WaitTime 45
+    LoadPartyGaugeGraphics
     ShowBattleStartPartyGauge BTLSCR_ENEMY
     ShowBattleStartPartyGauge BTLSCR_PLAYER
     PrintEncounterMessage BTLSCR_ENEMY
-    Wait 
-    WaitButtonABTime 30
+    Wait
+    WaitButtonABTime 10
     PrintFirstSendOutMessage BTLSCR_ENEMY
     HideBattleStartPartyGauge BTLSCR_ENEMY
     ThrowPokeball BTLSCR_ENEMY, BTLSCR_THROW_POKE_BALL
     PokemonSlideIn BTLSCR_ENEMY
-    WaitTime 112
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_ENEMY
-    Wait 
+    Wait
     PrintFirstSendOutMessage BTLSCR_PLAYER
     HideBattleStartPartyGauge BTLSCR_PLAYER
     ThrowPokeball BTLSCR_PLAYER, BTLSCR_THROW_POKE_BALL
     PokemonSlideIn BTLSCR_PLAYER
-    WaitTime 96
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_PLAYER
-    Wait 
-    FreePartyGaugeGraphics 
+    Wait
+    FreePartyGaugeGraphics
     GoTo _258
 
 _169:
-    PlayEncounterAnimation 
+    PlayEncounterAnimation
     SetTrainerEncounter BTLSCR_ALL_BATTLERS
-    WaitTime 96
-    LoadPartyGaugeGraphics 
+    WaitTime 45
+    LoadPartyGaugeGraphics
     ShowBattleStartPartyGauge BTLSCR_ENEMY
     ShowBattleStartPartyGauge BTLSCR_PLAYER
     PrintEncounterMessage BTLSCR_ENEMY
-    Wait 
-    WaitButtonABTime 30
+    Wait
+    WaitButtonABTime 10
     PrintFirstSendOutMessage BTLSCR_PLAYER
     HideBattleStartPartyGauge BTLSCR_PLAYER
     ThrowPokeball BTLSCR_PLAYER, BTLSCR_THROW_POKE_BALL
     PokemonSlideIn BTLSCR_PLAYER
-    WaitTime 96
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_PLAYER
-    Wait 
+    Wait
     PrintFirstSendOutMessage BTLSCR_ENEMY
     HideBattleStartPartyGauge BTLSCR_ENEMY
     ThrowPokeball BTLSCR_ENEMY, BTLSCR_THROW_POKE_BALL
     PokemonSlideIn BTLSCR_ENEMY
-    WaitTime 112
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_ENEMY
-    Wait 
-    FreePartyGaugeGraphics 
+    Wait
+    FreePartyGaugeGraphics
     GoTo _258
 
 _215:
     SetPokemonEncounter BTLSCR_ENEMY
     SetTrainerEncounter BTLSCR_PLAYER
-    PlayEncounterAnimation 
-    WaitTime 122
+    PlayEncounterAnimation
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_ENEMY
-    Wait 
+    Wait
     // A wild {0} appeared!
     PrintGlobalMessage BattleStrings_Text_AWildPokemonAppeared, TAG_NICKNAME, BTLSCR_ENEMY
-    Wait 
+    Wait
     HealthbarSlideIn BTLSCR_PLAYER
     WaitButtonABTime 7
-    Wait 
+    Wait
     GoTo _258
 
 _237:
     SetPokemonEncounter BTLSCR_ENEMY
     SetTrainerEncounter BTLSCR_PLAYER
-    PlayEncounterAnimation 
-    WaitTime 122
+    PlayEncounterAnimation
+    WaitTime 45
     HealthbarSlideInDelay BTLSCR_ENEMY
     Wait 
     // Wow! {0}’s {1} is drawing close!

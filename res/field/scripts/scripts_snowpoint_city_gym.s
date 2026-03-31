@@ -225,7 +225,7 @@ SnowpointGym_PostWin:
 SnowpointGym_Badge5:
     GoToIfSet FLAG_UNK_0x0FFC, SnowpointGym_PostWin_End
     SetFlag FLAG_UNK_0x0FFC
-    Message 10
+    Message 11
     WaitABXPadPress
     CloseMessage
     AddItem ITEM_HM01, 1, VAR_RESULT

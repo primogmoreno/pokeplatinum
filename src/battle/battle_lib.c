@@ -6481,16 +6481,16 @@ enum PokemonCryMod Battler_CryModulation(BattleContext *battleCtx, int battler, 
         doubles = FALSE;
     }
 
-    int cryMod = POKECRY_NORMAL;
+    int cryMod = POKECRY_HALF_DURATION;
     if (doubles == TRUE) { // conditional must stay to match, even though it's superfluous
-        cryMod = POKECRY_NORMAL;
+        cryMod = POKECRY_HALF_DURATION;
     }
 
     int hpColor = HealthBar_Color(battleCtx->battleMons[battler].curHP, battleCtx->battleMons[battler].maxHP, (8 * 6));
 
     if ((battleCtx->battleMons[battler].status & MON_CONDITION_ANY)
         || (hpColor != BARCOLOR_MAX && hpColor != BARCOLOR_GREEN)) {
-        cryMod = POKECRY_PINCH_NORMAL;
+        cryMod = POKECRY_PINCH_HALF_DURATION;
     }
 
     return cryMod;

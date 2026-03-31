@@ -278,8 +278,7 @@ HearthomeGym_LeaderRoom_OnTransition_Done:
 
 HearthomeGym_LeaderRoom_EnterRedirect:
     SetVar VAR_UNK_0x4113, 1
-    GoToIfSet FLAG_UNK_0x0FF7, HearthomeGym_LeaderRoom_NoRedirect
-    SetFlag FLAG_UNK_0x0FF7
+    GoToIfSet FLAG_UNK_0x0FFB, HearthomeGym_LeaderRoom_NoRedirect
     WaitFadeScreen
     CountBadgesAcquired VAR_RESULT
     GoToIfEq VAR_RESULT, 8, HearthomeGym_LeaderRoom_NoRedirect

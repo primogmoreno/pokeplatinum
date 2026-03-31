@@ -310,15 +310,15 @@ EternaGym_GardeniaGiveTM86:
     Message EternaGym_Text_GardeniaExplainGrassKnot
     WaitABXPadPress
     CloseMessage
-    ReleaseAll
     AdvanceEternaGymClock
+    GoTo EternaGym_PostWin
     End
 
 EternaGym_GardeniaGiveTM86BagFull:
     Common_MessageBagIsFull
     CloseMessage
-    ReleaseAll
     AdvanceEternaGymClock
+    GoTo EternaGym_PostWin
     End
 
 EternaGym_LostBattle:

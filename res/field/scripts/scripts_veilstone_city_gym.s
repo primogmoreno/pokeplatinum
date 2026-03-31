@@ -224,7 +224,7 @@ VeilstoneGym_PostWin:
 VeilstoneGym_Badge5:
     GoToIfSet FLAG_UNK_0x0FFC, VeilstoneGym_PostWin_End
     SetFlag FLAG_UNK_0x0FFC
-    Message 13
+    Message 14
     WaitABXPadPress
     CloseMessage
     AddItem ITEM_HM01, 1, VAR_RESULT

@@ -49,7 +49,7 @@ HearthomeGym_TryIndex3:
     GoTo HearthomeGym_WarpToIndex3
 HearthomeGym_TryIndex4:
     GoToIfBadgeAcquired BADGE_ID_RELIC, HearthomeGym_NextIndex
-    GoTo HearthomeGym_NextIndex
+    GoTo HearthomeGym_WarpToIndex4
 HearthomeGym_TryIndex5:
     GoToIfBadgeAcquired BADGE_ID_MINE, HearthomeGym_NextIndex
     GoTo HearthomeGym_WarpToIndex5

@@ -1429,7 +1429,7 @@ static void ov16_0225E4E8(SysTask *param0, void *param1)
 
     switch (v0->unk_12) {
     case 0:
-        v0->unk_20 = 28;
+        v0->unk_20 = 8;
         v0->unk_12++;
     case 1:
         if (--v0->unk_20) {
@@ -1569,7 +1569,7 @@ static void ov16_0225E894(SysTask *param0, void *param1)
 
     switch (v0->unk_12) {
     case 0:
-        v0->unk_20 = 28;
+        v0->unk_20 = 8;
         v0->unk_12++;
     case 1:
         if (--v0->unk_20) {

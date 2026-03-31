@@ -31,6 +31,7 @@
 
 _005E:
     SetVar VAR_UNK_0x40C7, 0
+    SetVar VAR_UNK_0x4112, 3
     SetFlag FLAG_UNK_0x017E
     CallIfEq VAR_PASTORIA_STATE, 5, _074D
     CallIfEq VAR_PASTORIA_STATE, 4, _0721
@@ -931,6 +932,7 @@ _09A8:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
     FacePlayer
+    GoToIfSet FLAG_UNK_0x01FB, PastoriaCity_WakeSkip
     Call _086F
     GetPlayerMapPos VAR_0x8004, VAR_0x8005
     CallIfEq VAR_0x8004, 0x263, _0A31
@@ -947,6 +949,7 @@ _09A8:
     CallIfEq VAR_0x8004, 0x263, _0A79
     CallIfEq VAR_0x8004, 0x264, _0A8D
     Call _091C
+PastoriaCity_WakeSkip:
     ReleaseAll
     End
 
